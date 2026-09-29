@@ -1,0 +1,51 @@
+SLO: 9.1.1
+
+Topic: Ease of Use and Efficiency of Digital Devices
+
+A digital device should help a user perform a task easily and efficiently.
+
+EASE OF USE
+
+Ease of use means how simple a digital device is to understand and operate.
+
+A device is easy to use when:
+- its buttons and menus are clear;
+- the user can learn it quickly;
+- tasks can be performed without confusion.
+
+Example:
+A smartphone with clear icons and simple menus is easy to use.
+
+
+EFFICIENCY
+
+Efficiency means completing a task with less time and effort.
+
+A device is efficient when:
+- it performs tasks quickly;
+- it reduces unnecessary steps;
+- it can automate or speed up work.
+
+Example:
+A calculator is efficient because it performs calculations much faster than doing them manually.
+
+
+KEY DIFFERENCE
+
+Ease of use = How easy is the device to operate?
+
+Efficiency = How quickly and effectively does the device help complete a task?
+
+
+REAL-LIFE EXAMPLE: ATM
+
+Ease of use:
+An ATM gives clear instructions and simple options, making it easy to operate.
+
+Efficiency:
+It allows a person to withdraw money quickly without waiting for a bank employee.
+
+
+SUMMARY
+
+A good digital device should be easy to understand and should help the user complete tasks quickly with minimum effort.

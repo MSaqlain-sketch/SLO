@@ -1,0 +1,16 @@
+Subject: Computer Science
+Level: HSSC Grade XII
+Board: AKU-EB
+
+Topic: Computing Systems
+
+Sub-topic:
+Usability, Security and Accessibility of Devices
+
+SLO ID: 9.1.1
+
+Student Learning Outcome:
+Describe the use of digital device in terms of ease of use and efficiency.
+
+Cognitive Level:
+Understanding
