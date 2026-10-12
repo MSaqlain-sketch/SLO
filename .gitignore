@@ -1,1 +1,32 @@
 .env
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python environment
+rag_env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Generated RAG data
+data/rag_index/
+data/full_pipeline_checkpoint/
+*.pkl
+
+# Large files
+*.pdf
+
+rag_env/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+data/rag_index/
+data/full_pipeline_checkpoint/
+*.pkl
+*.pdf
