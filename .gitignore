@@ -32,3 +32,10 @@ data/full_pipeline_checkpoint/
 *.pdf
 
 /data/data/full_pipeline_checkpoint/
+
+
+# Allow AKU Learn frontend syllabus PDFs
+!frontend/public/akueb-computer-science.pdf
+!frontend/public/mathematics-syllabus.pdf
+!frontend/public/physics-syllabus.pdf
+!frontend/public/statistics-syllabus.pdf
