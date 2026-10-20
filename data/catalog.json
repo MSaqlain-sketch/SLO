@@ -1,0 +1,151 @@
+
+{
+  "catalog_version": 1,
+  "grades": [
+    {
+      "grade": 9,
+      "subjects": [
+        {
+          "id": "computer_science",
+          "name": "Computer Science",
+          "available": false
+        },
+        {
+          "id": "physics",
+          "name": "Physics",
+          "available": false
+        },
+        {
+          "id": "chemistry",
+          "name": "Chemistry",
+          "available": false
+        },
+        {
+          "id": "biology",
+          "name": "Biology",
+          "available": false
+        },
+        {
+          "id": "mathematics",
+          "name": "Mathematics",
+          "available": false
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "available": false
+        }
+      ]
+    },
+    {
+      "grade": 10,
+      "subjects": [
+        {
+          "id": "computer_science",
+          "name": "Computer Science",
+          "available": false
+        },
+        {
+          "id": "physics",
+          "name": "Physics",
+          "available": false
+        },
+        {
+          "id": "chemistry",
+          "name": "Chemistry",
+          "available": false
+        },
+        {
+          "id": "biology",
+          "name": "Biology",
+          "available": false
+        },
+        {
+          "id": "mathematics",
+          "name": "Mathematics",
+          "available": false
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "available": false
+        }
+      ]
+    },
+    {
+      "grade": 11,
+      "subjects": [
+        {
+          "id": "computer_science",
+          "name": "Computer Science",
+          "available": false
+        },
+        {
+          "id": "physics",
+          "name": "Physics",
+          "available": false
+        },
+        {
+          "id": "chemistry",
+          "name": "Chemistry",
+          "available": false
+        },
+        {
+          "id": "biology",
+          "name": "Biology",
+          "available": false
+        },
+        {
+          "id": "mathematics",
+          "name": "Mathematics",
+          "available": false
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "available": false
+        }
+      ]
+    },
+    {
+      "grade": 12,
+      "subjects": [
+        {
+          "id": "computer_science",
+          "name": "Computer Science",
+          "available": true,
+          "content_id": "grade12_cs_current",
+          "curriculum_status": "unverified",
+          "chapters_endpoint": "/api/chapters",
+          "ask_endpoint": "/api/ask",
+          "quiz_endpoint": "/api/quiz/generate"
+        },
+        {
+          "id": "physics",
+          "name": "Physics",
+          "available": false
+        },
+        {
+          "id": "chemistry",
+          "name": "Chemistry",
+          "available": false
+        },
+        {
+          "id": "biology",
+          "name": "Biology",
+          "available": false
+        },
+        {
+          "id": "mathematics",
+          "name": "Mathematics",
+          "available": false
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "available": false
+        }
+      ]
+    }
+  ]
+}
