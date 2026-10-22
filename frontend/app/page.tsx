@@ -1026,9 +1026,13 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                         </p>
                       )}
 
-                      <div className="whitespace-pre-wrap break-words">
-                        {message.content}
-                      </div>
+                     <div
+  className={`whitespace-pre-wrap break-words leading-8 ${
+    message.role === "assistant" ? "text-lg" : "text-base"
+  }`}
+>
+  {message.content}
+</div>
 
                       {message.role === "assistant" && (
                         <button
