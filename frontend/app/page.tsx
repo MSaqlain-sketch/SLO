@@ -294,8 +294,15 @@ const [view, setView] = useState<"chat" | "study" | "slos">("chat");
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          question: `${text} (${marks} marks)`,
-        }),
+  question: text,
+  marks,
+  history: (
+    chats.find((chat) => chat.id === chatId)?.messages ?? []
+  ).slice(-10).map((message) => ({
+    role: message.role,
+    content: message.content,
+  })),
+}),
       });
 
       if (!response.ok) {
