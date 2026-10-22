@@ -210,7 +210,7 @@ const [view, setView] = useState<"chat" | "study" | "slos">("chat");
   useEffect(() => {
     async function loadChapters() {
       try {
-        const response = await fetch(`${API_URL}/api/chapters`);
+        const response = await fetch(`${API_URL}/chapters`)
 
         if (!response.ok) {
           throw new Error("Unable to fetch chapters");
@@ -288,7 +288,7 @@ const [view, setView] = useState<"chat" | "study" | "slos">("chat");
     setQuestion("");
 
     try {
-      const response = await fetch(`${API_URL}/api/ask`, {
+      const response = await fetch(`${API_URL}/ai-chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
