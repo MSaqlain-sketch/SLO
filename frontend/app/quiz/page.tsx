@@ -5,9 +5,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "https://fltaxhryfwthjlvltffr.supabase.co/functions/v1";
+const SUPABASE_URL = (
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  "https://fltaxhryfwthjlvltffr.supabase.co"
+).replace(/\/$/, "");
+const QUIZ_API_URL = (
+  process.env.NEXT_PUBLIC_SUPABASE_FUNCTIONS_URL ||
+  `${SUPABASE_URL}/functions/v1`
+).replace(/\/$/, "") + "/quiz";
 type Question = {
   id: number;
   question_number: number;
@@ -45,9 +50,7 @@ export default function QuizPage() {
   const [started, setStarted] = useState(false);
 
   async function callQuiz(body: object) {
-    if (!API_URL) throw new Error("API URL is missing");
-
-    const response = await fetch(`${API_URL}/quiz`, {
+    const response = await fetch(QUIZ_API_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

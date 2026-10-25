@@ -77,13 +77,27 @@ type ChaptersResponse = {
 
 const STORAGE_KEY = "aku-learn-chats";
 const ACTIVE_KEY = "aku-learn-active-chat";
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const SUPABASE_URL = (
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  "https://fltaxhryfwthjlvltffr.supabase.co"
+).replace(/\/$/, "");
+const SUPABASE_FUNCTIONS_URL = (
+  process.env.NEXT_PUBLIC_SUPABASE_FUNCTIONS_URL ||
+  `${SUPABASE_URL}/functions/v1`
+).replace(/\/$/, "");
+const LOCAL_BACKEND_URL =
+  process.env.NODE_ENV === "development"
+    ? process.env.NEXT_PUBLIC_LOCAL_API_URL
+    : undefined;
 const CHAPTERS_API_URL =
-  process.env.NEXT_PUBLIC_CHAPTERS_API_URL || "http://127.0.0.1:8000";
-const QUIZ_API_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "https://fltaxhryfwthjlvltffr.supabase.co/functions/v1";
+  process.env.NODE_ENV === "development"
+    ? process.env.NEXT_PUBLIC_CHAPTERS_API_URL ||
+      (LOCAL_BACKEND_URL
+        ? `${LOCAL_BACKEND_URL}/api/chapters`
+        : `${SUPABASE_FUNCTIONS_URL}/chapters`)
+    : `${SUPABASE_FUNCTIONS_URL}/chapters`;
+const AI_CHAT_API_URL = `${SUPABASE_FUNCTIONS_URL}/ai-chat`;
+const QUIZ_API_URL = `${SUPABASE_FUNCTIONS_URL}/quiz`;
 const CS_CHAPTERS = {
   11: [
     { name: "Computing Systems", page: 10 },
@@ -148,6 +162,54 @@ const MATHEMATICS_CHAPTER_TITLES: Record<11 | 12, Record<number, string>> = {
   },
 };
 
+const STATISTICS_CHAPTER_TITLES: Record<11 | 12, Record<number, string>> = {
+  11: {
+    1: "Introduction to Statistics",
+    2: "Presentation of Statistical Data",
+    3: "Measures of Central Tendency",
+    4: "Measures of Dispersion",
+    5: "Index Numbers",
+    6: "Time-Series",
+    7: "Regression and Correlation",
+  },
+  12: {
+    8: "Counting Techniques",
+    9: "Probability",
+    10: "Random Variables",
+    11: "Probability Distributions",
+    12: "Sampling and Sampling Distributions",
+    13: "Estimation",
+    14: "Statistical Inference",
+  },
+};
+
+const PHYSICS_CHAPTER_TITLES: Record<11 | 12, Record<number, string>> = {
+  11: {
+    1: "Physical Quantities and Measurement",
+    2: "Scalars and Vectors",
+    3: "Motion in One Dimension",
+    4: "Motion in Two Dimensions",
+    5: "Deformation in Solids",
+    6: "Fluids Dynamics",
+    7: "Oscillations",
+    8: "Waves",
+    9: "Physical Optics",
+    10: "Thermodynamics",
+  },
+  12: {
+    11: "Gravitation",
+    12: "Electrostatics",
+    13: "Electric Current",
+    14: "Electromagnetism",
+    15: "Electromagnetic Induction and Alternating Current",
+    16: "Quantum Mechanics",
+    17: "Nuclear Physics",
+    18: "Particle Physics",
+    19: "Medical and Space Physics",
+    20: "Nature of Science",
+  },
+};
+
 const STUDY_SUBJECTS = [
   { id: "computer-science", name: "Computer Science", icon: CodeXml },
   { id: "mathematics", name: "Mathematics", icon: Calculator },
@@ -194,8 +256,14 @@ function getStudyChapterTitle(
   const subjectTitle =
     subject === "mathematics"
       ? MATHEMATICS_CHAPTER_TITLES[grade]?.[chapter.chapter]
+      : subject === "statistics"
+        ? STATISTICS_CHAPTER_TITLES[grade]?.[chapter.chapter]
+        : subject === "physics"
+          ? PHYSICS_CHAPTER_TITLES[grade]?.[chapter.chapter]
       : subject === "computer-science" && grade === 12
         ? GRADE_12_CHAPTER_TITLES[chapter.chapter]
+        : subject === "computer-science" && grade === 11
+          ? CS_CHAPTERS[11][chapter.chapter - 1]?.name
         : undefined;
   const title = subjectTitle ?? chapter.title;
 
@@ -272,7 +340,7 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
       setRelatedModelQuestionsLoading(true);
 
       try {
-        const response = await fetch(`${QUIZ_API_URL}/quiz`, {
+        const response = await fetch(QUIZ_API_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ action: "for_slos", slo_codes: sloCodes }),
@@ -369,7 +437,9 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
   useEffect(() => {
     async function loadChapters() {
       try {
-        const response = await fetch(`${CHAPTERS_API_URL}/api/chapters?grade=12&subject=computer-science`);
+        const response = await fetch(
+          `${CHAPTERS_API_URL}?grade=12&subject=computer-science`
+        );
 
         if (!response.ok) {
           throw new Error("Unable to fetch chapters");
@@ -404,7 +474,7 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
 
       try {
         const response = await fetch(
-          `${CHAPTERS_API_URL}/api/chapters?grade=${studyGrade}&subject=${studySubject}`,
+          `${CHAPTERS_API_URL}?grade=${studyGrade}&subject=${studySubject}`,
           { signal: controller.signal }
         );
 
@@ -495,7 +565,7 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
     setQuestion("");
 
     try {
-      const response = await fetch(`${API_URL}/ai-chat`, {
+      const response = await fetch(AI_CHAT_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1189,6 +1259,12 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                 <p className="mt-8 text-slate-500">Loading study chapters...</p>
               ) : studyChaptersError ? (
                 <p className="mt-8 rounded-xl bg-red-50 p-4 text-red-700">{studyChaptersError}</p>
+              ) : studyChapters.length === 0 ? (
+                <p className="mt-8 rounded-xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
+                  No syllabus data is available in the production database for{" "}
+                  {STUDY_SUBJECTS.find((subject) => subject.id === studySubject)?.name}{" "}
+                  Grade {studyGrade} yet.
+                </p>
               ) : (
                 <>
                   <div className="mt-6 flex flex-wrap gap-3">
