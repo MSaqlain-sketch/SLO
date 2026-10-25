@@ -11,6 +11,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Babul Learn AI",
   description: "Your AI study companion",
+  verification: {
+    google: "0we_a-R_o7Qn8uyZoUnQmZUJj7Ds3iyDr-dzG0eQoBM",
+  },
   icons: {
     icon: "/babul-learn-logo.png",
   },
