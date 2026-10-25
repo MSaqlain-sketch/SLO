@@ -42,6 +42,114 @@ Deno.serve(async (req) => {
       Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
     );
 
+    if (action === "for_slos") {
+      if (
+        !Array.isArray(body.slo_codes) ||
+        body.slo_codes.length === 0 ||
+        body.slo_codes.length > 100 ||
+        body.slo_codes.some(
+          (code: unknown) =>
+            typeof code !== "string" ||
+            code.length === 0 ||
+            code.length > 50,
+        )
+      ) {
+        return json({ error: "A valid slo_codes array is required" }, 400);
+      }
+
+      const sloCodes = [...new Set(body.slo_codes as string[])];
+      const { data, error } = await supabase
+        .from("quiz_questions")
+        .select(
+          "id, model_year, paper, question_number, slo_code, question, option_a, option_b, option_c, option_d, source_page",
+        )
+        .eq("grade", 12)
+        .eq("subject", "computer-science")
+        .eq("source_type", "official_model_paper")
+        .eq("paper", "paper-1")
+        .eq("answer_verified", true)
+        .in("slo_code", sloCodes);
+
+      if (error) throw error;
+
+      const questions = (data ?? [])
+        .sort(
+          (
+            a: { slo_code: string; question_number: number },
+            b: { slo_code: string; question_number: number },
+          ) =>
+            a.slo_code.localeCompare(b.slo_code) ||
+            a.question_number - b.question_number,
+        )
+        .map((q: {
+          id: number;
+          model_year: number;
+          paper: string;
+          question_number: number;
+          slo_code: string;
+          question: string;
+          option_a: string;
+          option_b: string;
+          option_c: string;
+          option_d: string;
+          source_page: number | null;
+        }) => ({
+          id: q.id,
+          model_year: q.model_year,
+          paper: q.paper,
+          question_number: q.question_number,
+          slo_code: q.slo_code,
+          question: q.question,
+          options: {
+            A: q.option_a,
+            B: q.option_b,
+            C: q.option_c,
+            D: q.option_d,
+          },
+          source_page: q.source_page,
+        }));
+
+      return json({ mode: "official_model_paper", questions });
+    }
+
+    if (action === "question") {
+      if (!Number.isSafeInteger(body.question_id) || body.question_id < 1) {
+        return json({ error: "A valid question_id is required" }, 400);
+      }
+
+      const { data, error } = await supabase
+        .from("quiz_questions")
+        .select(
+          "id, question_number, question, option_a, option_b, option_c, option_d, source_page",
+        )
+        .eq("id", body.question_id)
+        .eq("grade", 12)
+        .eq("subject", "computer-science")
+        .eq("source_type", "official_model_paper")
+        .eq("paper", "paper-1")
+        .eq("answer_verified", true)
+        .maybeSingle();
+
+      if (error) throw error;
+      if (!data) return json({ error: "Verified model-paper question not found" }, 404);
+
+      return json({
+        mode: "official_model_paper",
+        question: {
+          id: data.id,
+          question_number: data.question_number,
+          question: data.question,
+          options: {
+            A: data.option_a,
+            B: data.option_b,
+            C: data.option_c,
+            D: data.option_d,
+          },
+          source_page: data.source_page,
+        },
+      });
+    }
+
     if (action === "start" || action === "more") {
       const excludedIds = Array.isArray(body.exclude_ids)
         ? body.exclude_ids.filter(

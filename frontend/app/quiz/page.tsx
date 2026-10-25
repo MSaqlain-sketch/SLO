@@ -1,6 +1,7 @@
 
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -77,7 +78,7 @@ export default function QuizPage() {
 
       if (incoming.length === 0) {
   setError(
-    "🎉 Quiz Completed! You have finished all available Model Paper MCQs."
+        "Quiz completed. You have finished all available Model Paper MCQs."
   );
   return;
 }
@@ -100,9 +101,58 @@ setStarted(true);
     }
   }
 
+  async function loadQuestion(questionId: number) {
+    setLoading(true);
+    setError("");
+
+    try {
+      const data: { question?: Question } = await callQuiz({
+        action: "question",
+        question_id: questionId,
+      });
+
+      if (!data.question) {
+        throw new Error("Verified model-paper question was not found.");
+      }
+
+      setQuestions([data.question]);
+      setSeenIds([data.question.id]);
+      setAnswers({});
+      setScore(null);
+      setStarted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Unable to load the model-paper question."
+      );
+      setStarted(true);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  // Initialize once from the URL; subsequent question loads are user-triggered.
   useEffect(() => {
-    loadQuestions();
-    // Initial load only
+    async function initializeQuiz() {
+      const requestedQuestionId = new URLSearchParams(
+        window.location.search,
+      ).get("questionId");
+
+      if (requestedQuestionId === null) {
+        await loadQuestions();
+        return;
+      }
+
+      const questionId = Number(requestedQuestionId);
+      if (!Number.isSafeInteger(questionId) || questionId < 1) {
+        setError("Invalid model-paper question link.");
+        setStarted(true);
+        return;
+      }
+
+      await loadQuestion(questionId);
+    }
+
+    void initializeQuiz();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -152,13 +202,21 @@ setStarted(true);
   const resultMap = new Map(score?.results.map((r) => [r.id, r]) ?? []);
 
   return (
-    <main className="min-h-screen bg-slate-50 px-4 py-8 text-slate-900">
+    <main className="babul-quiz min-h-screen bg-slate-50 px-4 py-8 text-slate-900">
       <div className="mx-auto max-w-3xl">
-        <div className="mb-6 flex items-center justify-between">
+        <div className="babul-quiz-header mb-6 flex items-center justify-between">
           <Link href="/" className="text-sm font-medium text-blue-700">
             ← Back to Chat
           </Link>
-          <span className="text-sm font-semibold">AKU Learn</span>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/babul-learn-logo.png"
+              alt="Babul Tech logo"
+              width={34}
+              height={34}
+            />
+            <span className="text-sm font-semibold">Babul Learn</span>
+          </div>
         </div>
 
         <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
@@ -188,6 +246,14 @@ setStarted(true);
         
         {loading && !started && (
           <p className="text-center">Loading questions...</p>
+        )}
+        {error && questions.length === 0 && (
+          <p
+            role="alert"
+            className="mb-4 rounded-xl bg-red-50 p-3 text-sm text-red-700"
+          >
+            {error}
+          </p>
         )}
 {questions.length > 0 && (
   <div className="mb-4 rounded-xl bg-white p-4 shadow-sm">

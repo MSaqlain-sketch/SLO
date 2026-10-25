@@ -27,7 +27,7 @@ load_dotenv(ROOT / ".env")
 SLO_FILE = ROOT / "data" / "grade_12_slos.json"
 SLO_FILES = {
     (12, "computer-science"): SLO_FILE,
-    (11, "computer-science"): ROOT / "data" / "grade_11_computer_science_slos.json",
+    (11, "computer-science"): ROOT / "data" / "grade_11_computer-science_slos.json",
     (11, "mathematics"): ROOT / "data" / "grade_11_mathematics_slos.json",
     (12, "mathematics"): ROOT / "data" / "grade_12_mathematics_slos.json",
     (11, "statistics"): ROOT / "data" / "grade_11_statistics_slos.json",
@@ -35,11 +35,58 @@ SLO_FILES = {
     (11, "physics"): ROOT / "data" / "grade_11_physics_slos.json",
     (12, "physics"): ROOT / "data" / "grade_12_physics_slos.json",
 }
+CHAPTER_TITLES = {
+    (11, "statistics"): {
+        1: "Introduction to Statistics",
+        2: "Presentation of Statistical Data",
+        3: "Measures of Central Tendency",
+        4: "Measures of Dispersion",
+        5: "Index Numbers",
+        6: "Time-Series",
+        7: "Regression and Correlation",
+    },
+    (12, "statistics"): {
+        8: "Counting Techniques",
+        9: "Probability",
+        10: "Random Variables",
+        11: "Probability Distributions",
+        12: "Sampling and Sampling Distributions",
+        13: "Estimation",
+        14: "Statistical Inference",
+    },
+    (11, "physics"): {
+        1: "Physical Quantities and Measurement",
+        2: "Scalars and Vectors",
+        3: "Motion in One Dimension",
+        4: "Motion in Two Dimensions",
+        5: "Deformation in Solids",
+        6: "Fluids Dynamics",
+        7: "Oscillations",
+        8: "Waves",
+        9: "Physical Optics",
+        10: "Thermodynamics",
+    },
+    (12, "physics"): {
+        11: "Gravitation",
+        12: "Electrostatics",
+        13: "Electric Current",
+        14: "Electromagnetism",
+        15: "Electromagnetic Induction and Alternating Current",
+        16: "Quantum Mechanics",
+        17: "Nuclear Physics",
+        18: "Particle Physics",
+        19: "Medical and Space Physics",
+        20: "Nature of Science",
+    },
+}
 app = FastAPI(title="AKU Learn API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
@@ -123,13 +170,17 @@ def get_chapters(
             if key not in chapters:
                 chapters[key] = {
                     "chapter": chapter,
-                    "title": f"Chapter {chapter}",
+                    "title": CHAPTER_TITLES.get((grade, subject), {}).get(
+                        chapter,
+                        f"Chapter {chapter}",
+                    ),
                     "slos": [],
                 }
 
             chapters[key]["slos"].append({
                 "slo_code": slo["slo_code"],
                 "topic": slo["topic"],
+                "topic_title": slo.get("topic_title"),
                 "statement": slo["statement"],
                 "page": slo.get("page"),
             })

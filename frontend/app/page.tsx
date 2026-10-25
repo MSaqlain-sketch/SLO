@@ -1,7 +1,29 @@
 
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import {
+  Atom,
+  BarChart3,
+  BookOpen,
+  ChartColumn,
+  Check,
+  ClipboardCheck,
+  CodeXml,
+  Copy,
+  Maximize2,
+  Menu,
+  MessageSquare,
+  Minimize2,
+  Pencil,
+  Plus,
+  Send,
+  Trash2,
+  X,
+  Calculator,
+} from "lucide-react";
 type Paper2Question = {
   question_number: number;
   question_part: string | null;
@@ -25,6 +47,7 @@ type Chat = {
 type SLO = {
   slo_code: string;
   topic: string;
+  topic_title?: string;
   statement: string;
   page: number | null;
 };
@@ -33,6 +56,17 @@ type Chapter = {
   chapter: number;
   title: string;
   slos: SLO[];
+};
+
+type ModelPaperMCQ = {
+  id: number;
+  question_number: number;
+  question: string;
+  options: Record<"A" | "B" | "C" | "D", string>;
+  source_page: number | null;
+  model_year: number;
+  paper: string;
+  slo_code: string;
 };
 
 type ChaptersResponse = {
@@ -45,6 +79,11 @@ const STORAGE_KEY = "aku-learn-chats";
 const ACTIVE_KEY = "aku-learn-active-chat";
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const CHAPTERS_API_URL =
+  process.env.NEXT_PUBLIC_CHAPTERS_API_URL || "http://127.0.0.1:8000";
+const QUIZ_API_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  "https://fltaxhryfwthjlvltffr.supabase.co/functions/v1";
 const CS_CHAPTERS = {
   11: [
     { name: "Computing Systems", page: 10 },
@@ -68,72 +107,109 @@ const CS_CHAPTERS = {
   ],
 };
 
+const GRADE_12_CHAPTER_TITLES: Record<number, string> = {
+  9: "Computing Systems",
+  10: "Computational Thinking and Algorithm",
+  11: "Programming Fundamentals (Python)",
+  12: "Data and Analysis",
+  13: "Applications of Computer Science",
+  14: "Impacts of Computing",
+  15: "Digital Literacy",
+  16: "Entrepreneurship in the Digital Age",
+};
+
+const MATHEMATICS_CHAPTER_TITLES: Record<11 | 12, Record<number, string>> = {
+  11: {
+    1: "Complex Numbers",
+    2: "Matrices and Determinants",
+    3: "Sequence and Series",
+    4: "Miscellaneous Series",
+    5: "Permutation and Combination",
+    6: "Mathematical Induction and Binomial Theorem",
+    7: "Factor and Remainder Theorems",
+    8: "Trigonometric Identities",
+    9: "Trigonometric Functions and their Graphs",
+    10: "Inverse Trigonometric Functions and Trigonometric Equations",
+    11: "Vectors",
+  },
+  12: {
+    12: "Straight Line",
+    13: "Functions and Limits",
+    14: "Differentiation",
+    15: "Higher Order Derivatives and their Applications",
+    16: "Vector Differentiation",
+    17: "Integration",
+    18: "Numerical Solution of Nonlinear Equations",
+    19: "Circles",
+    20: "Parabola",
+    21: "Ellipse",
+    22: "Hyperbola",
+    23: "MAPLE",
+  },
+};
+
+const STUDY_SUBJECTS = [
+  { id: "computer-science", name: "Computer Science", icon: CodeXml },
+  { id: "mathematics", name: "Mathematics", icon: Calculator },
+  { id: "statistics", name: "Statistics", icon: ChartColumn },
+  { id: "physics", name: "Physics", icon: Atom },
+] as const;
+
 const SLO_SUBJECTS = [
   {
     id: "computer-science",
     name: "Computer Science",
-    icon: "💻",
+    icon: CodeXml,
     file: "/akueb-computer-science.pdf",
     pages: { 11: 10, 12: 27 },
   },
   {
     id: "mathematics",
     name: "Mathematics",
-    icon: "📐",
+    icon: Calculator,
     file: "/mathematics-syllabus.pdf",
     pages: { 11: 10, 12: 28 },
   },
   {
     id: "statistics",
     name: "Statistics",
-    icon: "📊",
+    icon: ChartColumn,
     file: "/statistics-syllabus.pdf",
     pages: { 11: 10, 12: 22 },
   },
   {
     id: "physics",
     name: "Physics",
-    icon: "⚛️",
+    icon: Atom,
     file: "/physics-syllabus.pdf",
     pages: { 11: 10, 12: 28 },
   },
 ] as const;
+
+function getStudyChapterTitle(
+  subject: (typeof STUDY_SUBJECTS)[number]["id"],
+  grade: 11 | 12,
+  chapter: Chapter
+) {
+  const subjectTitle =
+    subject === "mathematics"
+      ? MATHEMATICS_CHAPTER_TITLES[grade]?.[chapter.chapter]
+      : subject === "computer-science" && grade === 12
+        ? GRADE_12_CHAPTER_TITLES[chapter.chapter]
+        : undefined;
+  const title = subjectTitle ?? chapter.title;
+
+  return title === `Chapter ${chapter.chapter}`
+    ? title
+    : `Chapter ${chapter.chapter}: ${title}`;
+}
+
 export default function Home() {
   const [question, setQuestion] = useState("");
   const [marks, setMarks] = useState("2");
   const [chats, setChats] = useState<Chat[]>([]);
   const [activeChatId, setActiveChatId] = useState<string | null>(null);
 
-const sloSubjects = [
-  {
-    id: "computer-science",
-    name: "Computer Science",
-    pdf: "/akueb-computer-science.pdf",
-    year: 2025,
-    pages: { 11: 10, 12: 27 },
-  },
-  {
-    id: "mathematics",
-    name: "Mathematics",
-    pdf: "/mathematics-syllabus.pdf",
-    year: 2025,
-    pages: { 11: 10, 12: 28 },
-  },
-  {
-    id: "statistics",
-    name: "Statistics",
-    pdf: "/statistics-syllabus.pdf",
-    year: 2026,
-    pages: { 11: 10, 12: 22 },
-  },
-  {
-    id: "physics",
-    name: "Physics",
-    pdf: "/physics-syllabus.pdf",
-    year: 2025,
-    pages: { 11: 10, 12: 28 },
-  },
-];
   const [historyLoaded, setHistoryLoaded] = useState(false);
   const [loading, setLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -147,7 +223,19 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [chaptersLoading, setChaptersLoading] = useState(true);
   const [chaptersError, setChaptersError] = useState("");
+  const [studySubject, setStudySubject] = useState<
+    (typeof STUDY_SUBJECTS)[number]["id"]
+  >("computer-science");
+  const [studyGrade, setStudyGrade] = useState<11 | 12>(12);
+  const [selectedStudyChapter, setSelectedStudyChapter] = useState<number | null>(null);
+  const [studyChapters, setStudyChapters] = useState<Chapter[]>([]);
+  const [studyChaptersLoading, setStudyChaptersLoading] = useState(false);
+  const [studyChaptersError, setStudyChaptersError] = useState("");
   const [selectedChapter, setSelectedChapter] = useState<number | null>(null);
+  const [relatedModelQuestions, setRelatedModelQuestions] = useState<ModelPaperMCQ[]>([]);
+  const [relatedModelQuestionsLoading, setRelatedModelQuestionsLoading] = useState(false);
+  const [relatedModelQuestionsError, setRelatedModelQuestionsError] = useState("");
+  const [selectedQuizQuestionId, setSelectedQuizQuestionId] = useState<number | null>(null);
   const [editingChatId, setEditingChatId] = useState<string | null>(null);
   const [editTitle, setEditTitle] = useState("");
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -162,6 +250,70 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
   const currentChapter = chapters.find(
     (chapter) => chapter.chapter === selectedChapter
   );
+
+  const studyCurrentChapter = studyChapters.find(
+    (chapter) => chapter.chapter === selectedStudyChapter
+  );
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadRelatedModelQuestions() {
+      if (view !== "study" || !currentChapter) {
+        setRelatedModelQuestions([]);
+        setRelatedModelQuestionsError("");
+        setRelatedModelQuestionsLoading(false);
+        return;
+      }
+
+      const sloCodes = currentChapter.slos.map((slo) => slo.slo_code);
+      setRelatedModelQuestions([]);
+      setRelatedModelQuestionsError("");
+      setRelatedModelQuestionsLoading(true);
+
+      try {
+        const response = await fetch(`${QUIZ_API_URL}/quiz`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ action: "for_slos", slo_codes: sloCodes }),
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`Unable to load related model-paper questions (${response.status}).`);
+        }
+
+        const data: { questions?: ModelPaperMCQ[] } = await response.json();
+        const chapterSloCodes = new Set(sloCodes);
+
+        setRelatedModelQuestions(
+          (data.questions ?? []).filter(
+            (question) =>
+              chapterSloCodes.has(question.slo_code) &&
+              Number.isSafeInteger(question.id) &&
+              Number.isSafeInteger(question.question_number) &&
+              Number.isSafeInteger(question.model_year)
+          )
+        );
+      } catch (error) {
+        if (controller.signal.aborted) return;
+
+        setRelatedModelQuestionsError(
+          error instanceof Error
+            ? error.message
+            : "Unable to load related model-paper questions."
+        );
+      } finally {
+        if (!controller.signal.aborted) {
+          setRelatedModelQuestionsLoading(false);
+        }
+      }
+    }
+
+    void loadRelatedModelQuestions();
+
+    return () => controller.abort();
+  }, [currentChapter, view]);
 
   // Load existing saved chat history
   useEffect(() => {
@@ -217,7 +369,7 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
   useEffect(() => {
     async function loadChapters() {
       try {
-        const response = await fetch(`${API_URL}/chapters`)
+        const response = await fetch(`${CHAPTERS_API_URL}/api/chapters?grade=12&subject=computer-science`);
 
         if (!response.ok) {
           throw new Error("Unable to fetch chapters");
@@ -239,9 +391,57 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
     void loadChapters();
   }, []);
 
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadStudyChapters() {
+      if (view !== "study") {
+        return;
+      }
+
+      setStudyChaptersLoading(true);
+      setStudyChaptersError("");
+
+      try {
+        const response = await fetch(
+          `${CHAPTERS_API_URL}/api/chapters?grade=${studyGrade}&subject=${studySubject}`,
+          { signal: controller.signal }
+        );
+
+        if (!response.ok) {
+          throw new Error("Unable to fetch study chapters");
+        }
+
+        const data: ChaptersResponse = await response.json();
+        const nextChapters = data.chapters ?? [];
+        setStudyChapters(nextChapters);
+
+        if (nextChapters.length > 0) {
+          setSelectedStudyChapter((current) =>
+            current && nextChapters.some((chapter) => chapter.chapter === current)
+              ? current
+              : nextChapters[0].chapter
+          );
+        } else {
+          setSelectedStudyChapter(null);
+        }
+      } catch {
+        setStudyChapters([]);
+        setStudyChaptersError(
+          "Could not load this syllabus. Check that the study data service is running."
+        );
+      } finally {
+        setStudyChaptersLoading(false);
+      }
+    }
+
+    void loadStudyChapters();
+    return () => controller.abort();
+  }, [studyGrade, studySubject, view]);
+
   // Automatically scroll to newest chat message
   useEffect(() => {
-    if (view !== "chat") return;
+    if (view !== "chat" || messages.length === 0) return;
 
     messagesEndRef.current?.scrollIntoView({
       behavior: "smooth",
@@ -264,7 +464,7 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
     const userMessage: Message = {
       id: crypto.randomUUID(),
       role: "user",
-      content: `${text} (${marks} marks)`,
+      content: `${text.replace(/\s*\(\s*\d+\s*marks?\s*\)/gi, "").trim()} (${marks} marks)`,
     };
 
     setChats((prev) => {
@@ -356,7 +556,7 @@ ${message.paper2_questions
         id: crypto.randomUUID(),
         role: "assistant",
         content:
-          "Unable to connect to AKU Learn AI. Please check the backend server.",
+          "Unable to connect to Babul Learn AI. Please check the backend server.",
       };
 
       setChats((prev) =>
@@ -414,7 +614,16 @@ function closeSLOs() {
   function openStudy() {
     if (requestInFlight.current) return;
 
+    setStudySubject("computer-science");
+    setStudyGrade(12);
+    setSelectedStudyChapter(null);
     setView("study");
+    setSidebarOpen(false);
+  }
+
+  function practiceModelQuestion(questionId: number) {
+    setSelectedQuizQuestionId(questionId);
+    setView("quiz");
     setSidebarOpen(false);
   }
 
@@ -496,7 +705,7 @@ function closeSLOs() {
   }
 
   return (
-    <div className="flex h-dvh bg-white text-slate-900">
+    <div className="babul-app flex h-dvh bg-white text-slate-900">
       {/* Mobile sidebar overlay */}
       {sidebarOpen && (
         <button
@@ -509,78 +718,89 @@ function closeSLOs() {
 
       {/* Sidebar */}
       <aside
+        aria-label="Main navigation"
         className={`${
           sidebarOpen ? "flex" : "hidden"
-        } fixed inset-y-0 left-0 z-30 w-72 flex-col border-r border-slate-200 bg-slate-50 p-4 md:static md:flex`}
+        } babul-sidebar fixed inset-y-0 left-0 z-30 flex-col md:static md:flex`}
       >
-        <div className="mb-7 flex items-center justify-between">
-          <div>
-            <h1 className="text-xl font-bold text-blue-700">
-              AKU Learn
-            </h1>
-            <p className="text-xs text-slate-500">
-              Your AI Study Companion
-            </p>
+        <div className="babul-brand flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/babul-learn-logo.png"
+              alt="Babul Tech logo"
+              width={46}
+              height={46}
+              priority
+            />
+            <div>
+              <h1 className="text-lg font-bold">Babul Learn</h1>
+              <p>Your AI study companion</p>
+            </div>
           </div>
 
           <button
             onClick={() => setSidebarOpen(false)}
-            className="rounded-lg p-2 hover:bg-slate-200 md:hidden"
+            className="babul-sidebar-close rounded-lg p-2 md:hidden"
             aria-label="Close sidebar"
           >
-            ✕
+            <X size={18} />
           </button>
         </div>
 
         <button
           onClick={newChat}
           disabled={loading}
-          className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-left font-medium hover:bg-slate-100 disabled:opacity-50"
+          className="babul-new-chat"
         >
-          ＋ New Chat
+          <Plus size={18} strokeWidth={2} />
+          New chat
         </button>
 
-        {/* New Study by Chapter navigation */}
+        <nav className="babul-nav mt-3 flex flex-col gap-1" aria-label="Study navigation">
+          <button
+            type="button"
+            onClick={() => {
+              setView("chat");
+              setSidebarOpen(false);
+            }}
+            className={`babul-nav-item ${view === "chat" ? "is-active" : ""}`}
+          >
+            <span className="babul-icon-tile"><MessageSquare size={18} /></span>
+            Ask a question
+          </button>
         <button
           onClick={openStudy}
           disabled={loading}
-          className={`mt-3 rounded-xl px-4 py-3 text-left font-medium disabled:opacity-50 ${
-            view === "study"
-              ? "bg-blue-100 text-blue-700"
-              : "hover:bg-slate-200"
-          }`}
+          className={`babul-nav-item ${view === "study" ? "is-active" : ""}`}
         >
-          📚 Study by Chapter
+          <span className="babul-icon-tile"><BookOpen size={18} /></span>
+          Study by chapter
         </button>
-<button
-  type="button"
-  onClick={openSLOs}
-  disabled={loading}
-  className={`mt-3 rounded-xl px-4 py-3 text-left font-medium disabled:opacity-50 ${
-    view === "slos"
-      ? "bg-blue-100 text-blue-700"
-      : "hover:bg-slate-200"
-  }`}
->
-  📋 View SLOs
-</button>
-<button
-  type="button"
-  onClick={() => {
-    setView("quiz");
-    setSidebarOpen(false);
-  }}
-  className={`mt-3 rounded-xl px-4 py-3 text-left font-medium ${
-    view === "quiz"
-      ? "bg-blue-100 text-blue-700"
-      : "hover:bg-slate-200"
-  }`}
->
-  📝 Model Paper Quiz
-</button>
-        <div className="mt-8 min-h-0 flex-1 overflow-y-auto">
+          <button
+            type="button"
+            onClick={openSLOs}
+            disabled={loading}
+            className={`babul-nav-item ${view === "slos" ? "is-active" : ""}`}
+          >
+            <span className="babul-icon-tile"><ClipboardCheck size={18} /></span>
+            Learning outcomes (SLOs)
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setSelectedQuizQuestionId(null);
+              setView("quiz");
+              setSidebarOpen(false);
+            }}
+            className={`babul-nav-item ${view === "quiz" ? "is-active" : ""}`}
+          >
+            <span className="babul-icon-tile"><BarChart3 size={18} /></span>
+            MCQ Practice
+          </button>
+        </nav>
+        <div className="babul-recent-chats mt-8 min-h-0 flex-1 overflow-y-auto">
           <p className="mb-3 text-xs font-semibold uppercase text-slate-400">
-            Recent Chats
+            Recent chats
           </p>
 
           {!historyLoaded ? (
@@ -596,8 +816,8 @@ function closeSLOs() {
                   key={chat.id}
                   className={`rounded-xl p-1 ${
                     view === "chat" && activeChatId === chat.id
-                      ? "bg-blue-100"
-                      : "hover:bg-slate-200"
+                      ? "is-active"
+                      : ""
                   }`}
                 >
                   {editingChatId === chat.id ? (
@@ -612,24 +832,24 @@ function closeSLOs() {
                             setEditingChatId(null);
                           }
                         }}
-                        className="min-w-0 flex-1 rounded-lg border border-blue-300 bg-white px-2 py-2 text-sm outline-none"
+                        className="babul-rename-input min-w-0 flex-1 rounded-lg px-2 py-2 text-sm outline-none"
                         aria-label="New chat title"
                       />
 
                       <button
                         onClick={() => saveRename(chat.id)}
-                        className="p-2 text-green-700"
+                        className="babul-chat-action p-2"
                         aria-label="Save chat name"
                       >
-                        ✓
+                        <Check size={16} />
                       </button>
 
                       <button
                         onClick={() => setEditingChatId(null)}
-                        className="p-2 text-slate-500"
+                        className="babul-chat-action p-2"
                         aria-label="Cancel rename"
                       >
-                        ✕
+                        <X size={16} />
                       </button>
                     </div>
                   ) : (
@@ -640,27 +860,30 @@ function closeSLOs() {
                         className="min-w-0 flex-1 truncate px-2 py-2 text-left text-sm disabled:opacity-50"
                         title={chat.title}
                       >
-                        💬 {chat.title}
+                        <span className="babul-recent-title">
+                          <MessageSquare size={16} />
+                          <span>{chat.title}</span>
+                        </span>
                       </button>
 
                       <button
                         onClick={() => startRename(chat)}
                         disabled={loading}
-                        className="shrink-0 p-2 text-slate-500 hover:text-blue-700 disabled:opacity-50"
+                        className="babul-chat-action shrink-0 p-2 disabled:opacity-50"
                         aria-label={`Rename ${chat.title}`}
                         title="Rename chat"
                       >
-                        ✎
+                        <Pencil size={15} />
                       </button>
 
                       <button
                         onClick={() => deleteChat(chat.id)}
                         disabled={loading}
-                        className="shrink-0 p-2 text-slate-500 hover:text-red-600 disabled:opacity-50"
+                        className="babul-chat-action shrink-0 p-2 disabled:opacity-50"
                         aria-label={`Delete ${chat.title}`}
                         title="Delete chat"
                       >
-                        🗑
+                        <Trash2 size={15} />
                       </button>
                     </div>
                   )}
@@ -670,26 +893,25 @@ function closeSLOs() {
           )}
         </div>
 
-        <div className="mt-4 border-t border-slate-200 pt-4">
-          <p className="text-sm font-semibold">
-            Grade 12 Computer Science
-          </p>
-          <p className="text-xs text-slate-500">
-            AI-Powered Learning
-          </p>
+        <div className="babul-profile mt-4">
+          <span className="babul-avatar" aria-hidden="true">B</span>
+          <div>
+            <p>Grade 12</p>
+            <span>Computer Science</span>
+          </div>
         </div>
       </aside>
 
       {/* Main content */}
       <main className="flex min-w-0 flex-1 flex-col">
-        <header className="flex h-16 shrink-0 items-center justify-between border-b border-slate-200 px-5">
+        <header className="babul-header flex h-16 shrink-0 items-center justify-between">
           <div className="flex items-center gap-3">
             <button
               onClick={() => setSidebarOpen(true)}
-              className="text-xl md:hidden"
+              className="babul-mobile-menu md:hidden"
               aria-label="Open sidebar"
             >
-              ☰
+              <Menu size={20} />
             </button>
 
             <h2 className="font-semibold">
@@ -697,17 +919,21 @@ function closeSLOs() {
   ? "Study by Chapter"
   : view === "slos"
     ? "View SLOs"
-    : "AKU Learn AI"}
+    : "Babul Learn AI"}
             </h2>
           </div>
 
-          <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
-            Computer Science • Grade 12
+          <span className="babul-status">
+            Computer Science <span aria-hidden="true">·</span> Grade 12
           </span>
         </header>
 {view === "quiz" ? (
   <iframe
-    src="/quiz"
+    src={
+      selectedQuizQuestionId === null
+        ? "/quiz"
+        : `/quiz?questionId=${selectedQuizQuestionId}`
+    }
     title="MCQ Practice "
     className="min-h-0 w-full flex-1 border-0"
   />
@@ -738,7 +964,8 @@ function closeSLOs() {
         onClick={closeSLOs}
         className="rounded-lg border px-4 py-2 text-sm hover:bg-slate-100"
       >
-        ✕ Close SLOs
+        <X className="mr-1 inline" size={16} />
+        Close SLOs
       </button>
     </div>
 
@@ -749,7 +976,7 @@ function closeSLOs() {
       onClick={() => setSelectedSloGrade(11)}
       className="rounded-xl border bg-white p-6 text-left shadow-sm hover:border-blue-500 hover:bg-blue-50"
     >
-      <div className="text-3xl">📘</div>
+      <span className="babul-icon-tile"><BookOpen size={18} /></span>
       <h3 className="mt-3 text-xl font-bold text-slate-900">
         1st Year
       </h3>
@@ -763,7 +990,7 @@ function closeSLOs() {
       onClick={() => setSelectedSloGrade(12)}
       className="rounded-xl border bg-white p-6 text-left shadow-sm hover:border-blue-500 hover:bg-blue-50"
     >
-      <div className="text-3xl">📗</div>
+      <span className="babul-icon-tile"><BookOpen size={18} /></span>
       <h3 className="mt-3 text-xl font-bold text-slate-900">
         2nd Year
       </h3>
@@ -792,7 +1019,7 @@ function closeSLOs() {
               onClick={() => setSelectedSloSubject(subject.id)}
               className="rounded-xl border bg-white p-6 text-left shadow-sm hover:border-blue-500 hover:bg-blue-50"
             >
-              <div className="text-3xl">{subject.icon}</div>
+              <span className="babul-icon-tile"><subject.icon size={18} /></span>
               <h3 className="mt-3 font-bold">
                 {subject.name}
               </h3>
@@ -825,7 +1052,11 @@ function closeSLOs() {
   onClick={() => setSloFullscreen((prev) => !prev)}
   className="ml-4 rounded-lg border border-blue-300 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-100"
 >
-  {sloFullscreen ? "⤡ Exit Full Screen" : "⛶ Full Screen"}
+  {sloFullscreen ? (
+    <><Minimize2 className="mr-1 inline" size={16} /> Exit Full Screen</>
+  ) : (
+    <><Maximize2 className="mr-1 inline" size={16} /> Full Screen</>
+  )}
 </button>
         </div>
 {selectedSloSubject === "computer-science" &&
@@ -835,7 +1066,7 @@ function closeSLOs() {
         htmlFor="slo-chapter"
         className="mb-2 block text-sm font-medium text-slate-700"
       >
-        📚 Select Chapter
+        Select chapter
       </label>
 
       <select
@@ -904,34 +1135,68 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
     )}
   </div>
 ) : view === "study" ? (
-          /* Study by Chapter screen */
           <div className="min-h-0 flex-1 overflow-y-auto bg-slate-50 px-4 py-8">
-            <div className="mx-auto max-w-4xl">
-              <h2 className="text-2xl font-bold">
-                📚 Explore Your Syllabus
-              </h2>
-
+            <div className="mx-auto max-w-5xl">
+              <h2 className="text-2xl font-bold">Explore Your Syllabus</h2>
               <p className="mt-2 text-sm text-slate-500">
-                Select a chapter and practice its learning outcomes.
+                Select a subject and grade, then explore chapters and learning outcomes.
               </p>
 
-              {chaptersLoading ? (
-                <p className="mt-8 text-slate-500">
-                  Loading chapters...
-                </p>
-              ) : chaptersError ? (
-                <p className="mt-8 rounded-xl bg-red-50 p-4 text-red-700">
-                  {chaptersError}
-                </p>
+              <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div className="flex flex-wrap gap-2">
+                  {STUDY_SUBJECTS.map((subject) => (
+                    <button
+                      key={subject.id}
+                      type="button"
+                      onClick={() => {
+                        setStudySubject(subject.id);
+                        setSelectedStudyChapter(null);
+                      }}
+                      className={`babul-subject-button rounded-xl border px-4 py-2 text-sm font-medium transition ${
+                        studySubject === subject.id
+                          ? "is-selected border-blue-500 bg-blue-50 text-blue-700"
+                          : "border-slate-200 bg-white text-slate-700 hover:bg-slate-100"
+                      }`}
+                    >
+                      <span className="babul-icon-tile mr-2 inline-flex"><subject.icon size={18} /></span>
+                      {subject.name}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {[11, 12].map((grade) => (
+                    <button
+                      key={grade}
+                      type="button"
+                      onClick={() => {
+                        setStudyGrade(grade as 11 | 12);
+                        setSelectedStudyChapter(null);
+                      }}
+                      className={`rounded-xl border px-4 py-2 text-sm font-medium transition ${
+                        studyGrade === grade
+                          ? "border-blue-500 bg-blue-50 text-blue-700"
+                          : "border-slate-200 bg-white text-slate-700 hover:bg-slate-100"
+                      }`}
+                    >
+                      Grade {grade}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {studyChaptersLoading ? (
+                <p className="mt-8 text-slate-500">Loading study chapters...</p>
+              ) : studyChaptersError ? (
+                <p className="mt-8 rounded-xl bg-red-50 p-4 text-red-700">{studyChaptersError}</p>
               ) : (
                 <>
                   <div className="mt-6 flex flex-wrap gap-3">
                     <span className="rounded-lg bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
-                      {chapters.length} Chapters
+                      {studyChapters.length} Chapters
                     </span>
-
                     <span className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-700">
-                      {chapters.reduce(
+                      {studyChapters.reduce(
                         (total, chapter) => total + chapter.slos.length,
                         0
                       )}{" "}
@@ -940,79 +1205,115 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                   </div>
 
                   <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {chapters.map((chapter) => (
-                      <button
-                        key={chapter.chapter}
-                        onClick={() => setSelectedChapter(chapter.chapter)}
-                        className={`rounded-2xl border p-5 text-left transition hover:border-blue-400 hover:shadow-sm ${
-                          selectedChapter === chapter.chapter
-                            ? "border-blue-500 bg-blue-50"
-                            : "border-slate-200 bg-white"
-                        }`}
-                      >
-                        <div className="mb-3 text-2xl">📖</div>
+                    {studyChapters.map((chapter) => {
+                      const chapterTitle = getStudyChapterTitle(
+                        studySubject,
+                        studyGrade,
+                        chapter
+                      );
 
-                        <h3 className="font-bold">
-                          {chapter.title}
-                        </h3>
-
-                        <p className="mt-2 text-sm text-slate-500">
-                          {chapter.slos.length} SLOs
-                        </p>
-
-                        <p className="mt-3 text-sm font-medium text-blue-700">
-                          View learning outcomes →
-                        </p>
-                      </button>
-                    ))}
+                      return (
+                        <button
+                          key={chapter.chapter}
+                          type="button"
+                          onClick={() => setSelectedStudyChapter(chapter.chapter)}
+                          className={`rounded-2xl border p-5 text-left transition hover:border-blue-400 hover:shadow-sm ${
+                            selectedStudyChapter === chapter.chapter
+                              ? "border-blue-500 bg-blue-50"
+                              : "border-slate-200 bg-white"
+                          }`}
+                        >
+                          <span className="babul-icon-tile mb-3"><BookOpen size={18} /></span>
+                          <h3 className="font-bold">{chapterTitle}</h3>
+                          <p className="mt-2 text-sm text-slate-500">{chapter.slos.length} SLOs</p>
+                          <p className="mt-3 text-sm font-medium text-blue-700">View learning outcomes →</p>
+                        </button>
+                      );
+                    })}
                   </div>
 
-                  {currentChapter && (
+                  {studyCurrentChapter && (
                     <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5">
                       <h3 className="text-xl font-bold">
-                        {currentChapter.title} — Learning Outcomes
+                        {getStudyChapterTitle(
+                          studySubject,
+                          studyGrade,
+                          studyCurrentChapter
+                        )}
+                        {" "} — Learning Outcomes
                       </h3>
 
-                      <p className="mt-2 text-sm text-slate-500">
-                        Choose an SLO to generate an exam-style explanation.
-                      </p>
-
-                      <div className="mt-5 space-y-3">
-                        {currentChapter.slos.map((slo) => (
-                          <div
-                            key={slo.slo_code}
-                            className="rounded-xl border border-slate-200 p-4"
-                          >
-                            <div className="flex flex-wrap items-center gap-2">
-                              <span className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">
-                                SLO {slo.slo_code}
-                              </span>
-
-                              <span className="text-xs text-slate-500">
-                                Topic {slo.topic}
-                              </span>
-
-                              {slo.page != null && (
-                                <span className="text-xs text-slate-500">
-                                  • SLO document page {slo.page}
-                                </span>
-                              )}
+                      {studySubject !== "computer-science" && (
+                        <div className="mt-5 space-y-4">
+                          {Array.from(
+                            studyCurrentChapter.slos.reduce((groups, slo) => {
+                              const key = slo.topic || "general";
+                              const label = slo.topic_title || `Subtopic ${slo.topic}`;
+                              const current = groups.get(key) ?? { title: label, slos: [] as SLO[] };
+                              current.slos.push(slo);
+                              groups.set(key, current);
+                              return groups;
+                            }, new Map<string, { title: string; slos: SLO[] }>())
+                          ).map(([topicKey, group]) => (
+                            <div key={topicKey} className="rounded-xl border border-slate-200 p-4">
+                              <h4 className="text-base font-bold text-slate-800">{group.title}</h4>
+                              <div className="mt-3 space-y-3">
+                                {group.slos.map((slo) => (
+                                  <div key={slo.slo_code} className="rounded-lg border border-slate-200 bg-slate-50 p-3">
+                                    <div className="flex flex-wrap items-center gap-2">
+                                      <span className="rounded bg-blue-100 px-2 py-1 text-[11px] font-semibold text-blue-700">
+                                        SLO {slo.slo_code}
+                                      </span>
+                                      {slo.page != null && (
+                                        <span className="text-[11px] text-slate-500">Page {slo.page}</span>
+                                      )}
+                                    </div>
+                                    <p className="mt-2 text-sm leading-6 text-slate-700">{slo.statement}</p>
+                                    <button
+                                      type="button"
+                                      onClick={() => practiceSLO(
+                                        slo,
+                                        STUDY_SUBJECTS.find((subject) => subject.id === studySubject)?.name
+                                      )}
+                                      disabled={loading || !historyLoaded}
+                                      className="mt-3 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+                                    >
+                                      Practice with AI
+                                    </button>
+                                  </div>
+                                ))}
+                              </div>
                             </div>
+                          ))}
+                        </div>
+                      )}
 
-                            <p className="mt-3 text-sm leading-6 text-slate-700">
-                              {slo.statement}
-                            </p>
-
-                            <button
-                              onClick={() => practiceSLO(slo)}
-                              disabled={loading || !historyLoaded}
-                              className="mt-4 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
-                            >
-                              ✦ Practice with AI →
-                            </button>
-                          </div>
-                        ))}
-                      </div>
+                      {studySubject === "computer-science" && (
+                        <div className="mt-5 space-y-3">
+                          {studyCurrentChapter.slos.map((slo) => (
+                            <div key={slo.slo_code} className="rounded-xl border border-slate-200 p-4">
+                              <div className="flex flex-wrap items-center gap-2">
+                                <span className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">
+                                  SLO {slo.slo_code}
+                                </span>
+                                <span className="text-xs text-slate-500">Topic {slo.topic}</span>
+                                {slo.page != null && (
+                                  <span className="text-xs text-slate-500">• SLO document page {slo.page}</span>
+                                )}
+                              </div>
+                              <p className="mt-3 text-sm leading-6 text-slate-700">{slo.statement}</p>
+                              <button
+                                type="button"
+                                onClick={() => practiceSLO(slo, "Computer Science")}
+                                disabled={loading || !historyLoaded}
+                                className="mt-4 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+                              >
+                                Practice with AI
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </section>
                   )}
                 </>
@@ -1021,29 +1322,28 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
           </div>
         ) : (
           <>
-            {/* Chat messages */}
-            <div className="min-h-0 flex-1 overflow-y-auto px-4 py-8">
-              <div className="mx-auto max-w-3xl space-y-7">
+            <div className="babul-feed min-h-0 flex-1 overflow-y-auto">
+              <div className="babul-conversation mx-auto">
                 {messages.length === 0 && (
-                  <div className="flex min-h-[45vh] flex-col items-center justify-center text-center">
-                    <div className="mb-5 rounded-2xl bg-blue-50 p-5 text-3xl">
-                      🎓
+                  <div className="babul-welcome">
+                    <div className="babul-welcome-icon">
+                      <MessageSquare size={24} />
                     </div>
 
-                    <h2 className="text-3xl font-bold">
+                    <h2>
                       How can I help you learn?
                     </h2>
 
-                    <p className="mt-3 max-w-md text-slate-500">
-                      Ask Computer Science questions or explore
-                      learning outcomes chapter by chapter.
+                    <p>
+                      Ask your AKU-EB Grade 12 Computer Science question, or explore the syllabus chapter by chapter.
                     </p>
 
                     <button
                       onClick={openStudy}
-                      className="mt-6 rounded-xl border border-blue-200 px-5 py-3 font-medium text-blue-700 hover:bg-blue-50"
+                      className="babul-study-link"
                     >
-                      📚 Study by Chapter
+                      <BookOpen size={17} />
+                      Study by chapter
                     </button>
                   </div>
                 )}
@@ -1051,75 +1351,69 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                 {messages.map((message) => (
                   <div
                     key={message.id}
-                    className={`flex ${
+                    className={`babul-message babul-message--${message.role} flex ${
                       message.role === "user"
                         ? "justify-end"
                         : "justify-start"
                     }`}
                   >
                     <div
-                      className={`max-w-[90%] rounded-2xl px-5 py-4 text-sm leading-7 md:max-w-[80%] ${
-                        message.role === "user"
-                          ? "bg-blue-600 text-white"
-                          : "bg-slate-100 text-slate-800"
-                      }`}
+                      className={`babul-bubble babul-bubble--${message.role}`}
                     >
                       {message.role === "assistant" && (
-                        <p className="mb-2 font-bold text-blue-700">
-                          ✦ AKU Learn
-                        </p>
+                        <span className="babul-answer-label">Babul Learn answer</span>
                       )}
 
-                     <div
-  className={`whitespace-pre-wrap break-words leading-8 ${
-    message.role === "assistant" ? "text-lg" : "text-base"
-  }`}
->
-  {message.content}
-</div>
+                      <div className="babul-message-content">
+                        {message.role === "assistant" ? (
+                          <ReactMarkdown>{message.content}</ReactMarkdown>
+                        ) : (
+                          message.content
+                        )}
+                      </div>
+
+                      {message.role === "assistant" &&
+                        (message.paper2_questions?.length ?? 0) > 0 && (
+                          <section className="babul-related-questions">
+                            <h3>Related AKU-EB model paper questions</h3>
+                            {message.paper2_questions?.map((q, index) => (
+                              <article
+                                key={`${q.question_number}-${q.question_part ?? index}`}
+                                className="babul-paper-question"
+                              >
+                                <div className="babul-paper-heading">
+                                  <strong>
+                                    Question {q.question_number}
+                                    {q.question_part ? `(${q.question_part})` : ""}
+                                  </strong>
+                                  <span>{q.marks} marks</span>
+                                </div>
+                                <p>{q.question_text}</p>
+                                <small>
+                                  AKU-EB Model Paper II (2027 onwards)
+                                  {q.source_page ? ` · Page ${q.source_page}` : ""}
+                                </small>
+                                <button
+                                  type="button"
+                                  onClick={() => void askAI(q.question_text)}
+                                  disabled={loading || !historyLoaded}
+                                  className="babul-practice-question"
+                                >
+                                  Practice this question
+                                </button>
+                              </article>
+                            ))}
+                          </section>
+                        )}
 
                       {message.role === "assistant" && (
                         <button
+                          type="button"
                           onClick={() => copyAnswer(message)}
-                          className="mt-3 text-xs font-medium text-slate-500 hover:text-blue-700"
+                          className="babul-copy"
                         >
-                          {message.role === "assistant" &&
-  (message.paper2_questions?.length ?? 0) > 0 && (
-    <div className="mt-4 space-y-3 border-t border-slate-200 pt-4">
-      <p className="text-lg font-bold text-blue-700">
-        📘 Related AKU-EB Model Paper II Questions
-      </p>
-
-      {message.paper2_questions?.map((q, index) => (
-        <div
-          key={`${q.question_number}-${q.question_part ?? index}`}
-          className="rounded-xl border border-blue-200 bg-white p-4"
-        >
-          <p className="text-base font-bold text-slate-800">
-            Question {q.question_number}
-            {q.question_part ? `(${q.question_part})` : ""}
-            {" — "}
-            {q.marks} Marks
-          </p>
-
-          <p className="mt-3 whitespace-pre-wrap text-lg leading-8 text-slate-900">
-            {q.question_text}
-          </p>
-
-          <p className="mt-3 text-sm text-slate-500">
-            AKU-EB Model Paper II (2027 onwards) · Page {q.source_page}
-          </p>
-
-          <p className="mt-3 text-sm font-medium text-blue-700">
-            Would you like to practice this question?
-          </p>
-        </div>
-      ))}
-    </div>
-  )}
-                          {copiedId === message.id
-                            ? "✓ Copied!"
-                            : "⧉ Copy Answer"}
+                          <Copy size={14} />
+                          {copiedId === message.id ? "Copied" : "Copy answer"}
                         </button>
                       )}
                     </div>
@@ -1132,8 +1426,13 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                     role="status"
                     aria-live="polite"
                   >
-                    <div className="rounded-2xl bg-slate-100 px-5 py-4 text-sm text-slate-500">
-                      ✦ AKU Learn is thinking...
+                    <div className="babul-thinking">
+                      <span>Babul Learn is thinking</span>
+                      <span className="babul-typing-dots" aria-hidden="true">
+                        <i />
+                        <i />
+                        <i />
+                      </span>
                     </div>
                   </div>
                 )}
@@ -1142,56 +1441,70 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
               </div>
             </div>
 
-            {/* Question composer */}
-            <div className="shrink-0 border-t border-slate-100 bg-white px-4 py-4">
-              <div className="mx-auto max-w-3xl">
-                <div className="rounded-2xl border border-slate-300 p-3 shadow-sm focus-within:border-blue-500">
+            <div className="babul-composer shrink-0">
+              <div className="mx-auto max-w-[760px]">
+                <div className="babul-composer-box">
                   <textarea
                     ref={textareaRef}
                     value={question}
-                    onChange={(e) => setQuestion(e.target.value)}
+                    onChange={(e) => {
+                      setQuestion(e.target.value);
+                      e.currentTarget.style.height = "auto";
+                      e.currentTarget.style.height = `${e.currentTarget.scrollHeight}px`;
+                    }}
                     onKeyDown={handleQuestionKeyDown}
                     placeholder="Ask your Computer Science question..."
-                    rows={2}
-                    className="w-full resize-none bg-transparent px-2 py-2 text-sm outline-none"
+                    rows={1}
+                    className="babul-textarea"
                     aria-label="Your question"
                   />
 
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs text-slate-500">
-                        Marks:
-                      </span>
-
+                  <div className="babul-composer-controls">
+                    <div className="babul-composer-options">
+                      <label className="babul-marks-label" htmlFor="answer-marks">
+                        Marks
+                      </label>
                       <select
+                        id="answer-marks"
                         value={marks}
                         onChange={(e) => setMarks(e.target.value)}
-                        className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm"
+                        className="babul-marks-select"
                         aria-label="Answer marks"
                       >
-                        <option value="2">2 Marks</option>
-                        <option value="3">3 Marks</option>
-                        <option value="5">5 Marks</option>
+                        <option value="2">2 marks</option>
+                        <option value="3">3 marks</option>
+                        <option value="5">5 marks</option>
+                        <option value="8">8 marks</option>
                       </select>
+                      <button
+                        type="button"
+                        className="babul-suggestion"
+                        onClick={() => setQuestion("Explain the main concepts in this topic.")}
+                      >
+                        Explain a concept
+                      </button>
+                      <button
+                        type="button"
+                        className="babul-suggestion"
+                        onClick={() => setQuestion("Give me an exam-style practice question.")}
+                      >
+                        Exam practice
+                      </button>
                     </div>
 
                     <button
                       onClick={() => void askAI()}
                       disabled={loading || !question.trim() || !historyLoaded}
-                      className="rounded-xl bg-blue-600 px-5 py-2 font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+                      className="babul-send"
                     >
-                      {loading ? "..." : "Send ↑"}
+                      <span>{loading ? "Sending" : "Send"}</span>
+                      <Send size={16} />
                     </button>
                   </div>
                 </div>
 
-                <p className="mt-3 text-center text-xs text-slate-400">
-                  Enter to send • Shift+Enter for a new line
-                </p>
-
-                <p className="mt-1 text-center text-xs text-slate-400">
-                  AI answers may contain mistakes. Check textbook
-                  verification labels before relying on an answer.
+                <p className="babul-chat-disclaimer">
+                  AI answers can contain mistakes. Check the textbook label before relying on one.
                 </p>
               </div>
             </div>
