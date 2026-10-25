@@ -2,11 +2,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
+type Paper2Question = {
+  question_number: number;
+  question_part: string | null;
+  question_text: string;
+  marks: number;
+  source_page: number;
+};
 type Message = {
   id: string;
   role: "user" | "assistant";
   content: string;
+  paper2_questions?: Paper2Question[];
 };
 
 type Chat = {
@@ -130,7 +137,7 @@ const sloSubjects = [
   const [historyLoaded, setHistoryLoaded] = useState(false);
   const [loading, setLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-const [view, setView] = useState<"chat" | "study" | "slos">("chat");
+const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">("chat");
   const [selectedSloSubject, setSelectedSloSubject] = useState<string | null>(null);
   const [selectedSloGrade, setSelectedSloGrade] =
   useState<11 | 12 | null>(null);
@@ -294,15 +301,29 @@ const [view, setView] = useState<"chat" | "study" | "slos">("chat");
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-  question: text,
-  marks,
-  history: (
-    chats.find((chat) => chat.id === chatId)?.messages ?? []
-  ).slice(-10).map((message) => ({
-    role: message.role,
-    content: message.content,
-  })),
-}),
+          question: text,
+          marks,
+          history: (
+            chats.find((chat) => chat.id === chatId)?.messages ?? []
+          )
+            .slice(-10)
+            .map((message) => ({
+              role: message.role,
+              content:
+                message.role === "assistant" &&
+                message.paper2_questions?.length
+                  ? `${message.content}
+
+RELATED OFFICIAL MODEL PAPER II QUESTIONS:
+${message.paper2_questions
+  .map(
+    (q) =>
+      `Question ${q.question_number}${q.question_part ? `(${q.question_part})` : ""} (${q.marks} marks): ${q.question_text}`
+  )
+  .join("\n")}`
+                  : message.content,
+            })),
+        }),
       });
 
       if (!response.ok) {
@@ -312,10 +333,13 @@ const [view, setView] = useState<"chat" | "study" | "slos">("chat");
       const data = await response.json();
 
       const aiMessage: Message = {
-        id: crypto.randomUUID(),
-        role: "assistant",
-        content: data.answer || "No answer received.",
-      };
+  id: crypto.randomUUID(),
+  role: "assistant",
+  content: data.answer || "No answer received.",
+  paper2_questions: Array.isArray(data.paper2_questions)
+    ? data.paper2_questions
+    : [],
+};
 
       setChats((prev) =>
         prev.map((chat) =>
@@ -540,6 +564,20 @@ function closeSLOs() {
 >
   📋 View SLOs
 </button>
+<button
+  type="button"
+  onClick={() => {
+    setView("quiz");
+    setSidebarOpen(false);
+  }}
+  className={`mt-3 rounded-xl px-4 py-3 text-left font-medium ${
+    view === "quiz"
+      ? "bg-blue-100 text-blue-700"
+      : "hover:bg-slate-200"
+  }`}
+>
+  📝 Model Paper Quiz
+</button>
         <div className="mt-8 min-h-0 flex-1 overflow-y-auto">
           <p className="mb-3 text-xs font-semibold uppercase text-slate-400">
             Recent Chats
@@ -667,8 +705,14 @@ function closeSLOs() {
             Computer Science • Grade 12
           </span>
         </header>
-
-   {view === "slos" ? (
+{view === "quiz" ? (
+  <iframe
+    src="/quiz"
+    title="MCQ Practice "
+    className="min-h-0 w-full flex-1 border-0"
+  />
+) : view === "slos" ? (
+  
   <div className="flex min-h-0 flex-1 flex-col bg-slate-50">
 
     <div className="flex items-center justify-between border-b bg-white px-5 py-4">
@@ -1039,6 +1083,40 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                           onClick={() => copyAnswer(message)}
                           className="mt-3 text-xs font-medium text-slate-500 hover:text-blue-700"
                         >
+                          {message.role === "assistant" &&
+  (message.paper2_questions?.length ?? 0) > 0 && (
+    <div className="mt-4 space-y-3 border-t border-slate-200 pt-4">
+      <p className="text-lg font-bold text-blue-700">
+        📘 Related AKU-EB Model Paper II Questions
+      </p>
+
+      {message.paper2_questions?.map((q, index) => (
+        <div
+          key={`${q.question_number}-${q.question_part ?? index}`}
+          className="rounded-xl border border-blue-200 bg-white p-4"
+        >
+          <p className="text-base font-bold text-slate-800">
+            Question {q.question_number}
+            {q.question_part ? `(${q.question_part})` : ""}
+            {" — "}
+            {q.marks} Marks
+          </p>
+
+          <p className="mt-3 whitespace-pre-wrap text-lg leading-8 text-slate-900">
+            {q.question_text}
+          </p>
+
+          <p className="mt-3 text-sm text-slate-500">
+            AKU-EB Model Paper II (2027 onwards) · Page {q.source_page}
+          </p>
+
+          <p className="mt-3 text-sm font-medium text-blue-700">
+            Would you like to practice this question?
+          </p>
+        </div>
+      ))}
+    </div>
+  )}
                           {copiedId === message.id
                             ? "✓ Copied!"
                             : "⧉ Copy Answer"}

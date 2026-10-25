@@ -1,0 +1,826 @@
+[
+    {
+        "grade": "XII",
+        "chapter": 9,
+        "topic": "9.1",
+        "slo_code": "9.1.1",
+        "statement": "describe the use of digital device in terms of ease of use and efficiency;",
+        "page": 27
+    },
+    {
+        "grade": "XII",
+        "chapter": 9,
+        "topic": "9.1",
+        "slo_code": "9.1.2",
+        "statement": "describe the security features of devices and best practices for data protection;",
+        "page": 27
+    },
+    {
+        "grade": "XII",
+        "chapter": 9,
+        "topic": "9.1",
+        "slo_code": "9.1.3",
+        "statement": "explain the ways in which accessibility features in devices support users with disabilities;",
+        "page": 27
+    },
+    {
+        "grade": "XII",
+        "chapter": 9,
+        "topic": "9.2",
+        "slo_code": "9.2.1",
+        "statement": "describe Human-Computer Interaction (HCI) and its importance;",
+        "page": 27
+    },
+    {
+        "grade": "XII",
+        "chapter": 9,
+        "topic": "9.2",
+        "slo_code": "9.2.2",
+        "statement": "analyse the influence of Human-Computer Interaction (HCI) on user efficiency and task effectiveness;",
+        "page": 27
+    },
+    {
+        "grade": "XII",
+        "chapter": 9,
+        "topic": "9.3",
+        "slo_code": "9.3.1",
+        "statement": "describe HCI design considerations and their effects on usability and system performance;",
+        "page": 27
+    },
+    {
+        "grade": "XII",
+        "chapter": 9,
+        "topic": "9.3",
+        "slo_code": "9.3.2",
+        "statement": "analyse the trade-offs involved in designing HCI in the context of: a. security, b. user-friendliness, c. cost-effectiveness.",
+        "page": 27
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.1",
+        "slo_code": "10.1.1",
+        "statement": "define data structure;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.1",
+        "slo_code": "10.1.2",
+        "statement": "describe the following types of data structures: a. list, b. array, c. tree, d. stack, e. queue;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.2",
+        "slo_code": "10.2.1",
+        "statement": "describe the traversal operation on an array;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.2",
+        "slo_code": "10.2.2",
+        "statement": "describe the enqueue and dequeue operations in a queue;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.2",
+        "slo_code": "10.2.3",
+        "statement": "explain the push and pop operations in a stack;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.2",
+        "slo_code": "10.2.4",
+        "statement": "explain the following operations on a tree: a. traversing, I. in order, II. pre-order, III. post order, b. binary search;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.3",
+        "slo_code": "10.3.1",
+        "statement": "explain the application of tree data structures;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.3",
+        "slo_code": "10.3.2",
+        "statement": "explain the application of the binary search algorithms;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.3",
+        "slo_code": "10.3.3",
+        "statement": "apply tree data structures to represent hierarchical data models such as file systems or organisational charts;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.3",
+        "slo_code": "10.3.4",
+        "statement": "use the binary search algorithm to locate elements in sorted data efficiently;",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 10,
+        "topic": "10.3",
+        "slo_code": "10.3.5",
+        "statement": "illustrate the use of tree traversal techniques in data retrieval and manipulation tasks.",
+        "page": 28
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.1",
+        "slo_code": "11.1.1",
+        "statement": "describe predefined and user-defined functions;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.1",
+        "slo_code": "11.1.2",
+        "statement": "describe the advantages of user-defined functions;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.1",
+        "slo_code": "11.1.3",
+        "statement": "describe the signature of the functions, i.e., function name, arguments, and return value;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.1",
+        "slo_code": "11.1.4",
+        "statement": "explain the process of creating a user-defined function, i.e., function declaration, function definition, and function call;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.1",
+        "slo_code": "11.1.5",
+        "statement": "differentiate among the following variable types used in functions: a. local, b. global;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.1",
+        "slo_code": "11.1.6",
+        "statement": "write a program involving a user-defined function;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.2",
+        "slo_code": "11.2.1",
+        "statement": "define default argument;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.2",
+        "slo_code": "11.2.2",
+        "statement": "describe the purpose of the return statement;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.2",
+        "slo_code": "11.2.3",
+        "statement": "write a program that demonstrates the return statement;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.2",
+        "slo_code": "11.2.4",
+        "statement": "write a program to invoke a user-defined function and pass arguments by constant, value, and reference;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.3",
+        "slo_code": "11.3.1",
+        "statement": "describe Object-Oriented Programming (OOP) and functional programming;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.3",
+        "slo_code": "11.3.2",
+        "statement": "compare the advantages and disadvantages of Object-Oriented Programming (OOP) and functional programming;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.3",
+        "slo_code": "11.3.3",
+        "statement": "explain class and object in terms of OOP;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.3",
+        "slo_code": "11.3.4",
+        "statement": "write a Python program to a. declare a class with data members and member functions defined within its body, b. create objects of the class in the main() function and call its member functions using those objects;",
+        "page": 29
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.4",
+        "slo_code": "11.4.1",
+        "statement": "differentiate between private and public access specifiers in Object-Oriented Programming (OOP);",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.4",
+        "slo_code": "11.4.2",
+        "statement": "write a Python program that demonstrates private access to class members using name mangling;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.4",
+        "slo_code": "11.4.3",
+        "statement": "write a Python program that demonstrates public access to class members;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.4",
+        "slo_code": "11.4.4",
+        "statement": "write a Python program that defines a class with both public and private members and demonstrates their usage;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.1",
+        "statement": "describe inheritance and its access specifiers in Python programming;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.2",
+        "statement": "explain the types of inheritance in Python programming using different classes;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.3",
+        "statement": "explain encapsulation in Python programming;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.4",
+        "statement": "explain polymorphism in Python programming;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.5",
+        "statement": "explain the function of constructors and destructors in Object- Oriented Programming (OOP);",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.6",
+        "statement": "differentiate among the types of constructors, i.e., default constructor, user-defined constructor, and constructor overloading;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.7",
+        "statement": "differentiate between overloading and overriding in OOP;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.8",
+        "statement": "write a program of inheritance using the base class and the derived class;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.5",
+        "slo_code": "11.5.9",
+        "statement": "write a program of inheritance for three access specifiers;",
+        "page": 30
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.6",
+        "slo_code": "11.6.1",
+        "statement": "explain the concept of a list in Python programming including its name, size, index number, and arrangement of elements in the memory;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.6",
+        "slo_code": "11.6.2",
+        "statement": "explain the purpose of storing elements in an ordered list;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.6",
+        "slo_code": "11.6.3",
+        "statement": "write a Python program to use a one-dimensional list with different sizes and data types;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.6",
+        "slo_code": "11.6.4",
+        "statement": "write a Python program to create, add, modify, and remove items in a list;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.6",
+        "slo_code": "11.6.5",
+        "statement": "write a Python program that stores numeric values in a one- dimensional list using a for loop and find the highest, lowest, average, and search for a value;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.7",
+        "slo_code": "11.7.1",
+        "statement": "describe dictionary and its uses in Python programming;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.7",
+        "slo_code": "11.7.2",
+        "statement": "write a Python program to construct and retrieve values from a dictionary in Python programming;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.7",
+        "slo_code": "11.7.3",
+        "statement": "write a Python program to find a value in a dictionary using the key value;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.8",
+        "slo_code": "11.8.1",
+        "statement": "describe the importance of disk I/O;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.8",
+        "slo_code": "11.8.2",
+        "statement": "explain file handling methods and the following file operations in Python programming: a. create, b. read, c. write, d. append;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.8",
+        "slo_code": "11.8.3",
+        "statement": "write a Python program that performs the following file operations: a. create and write data to a file, b. read from and append data to the file, c. write new data and then read it from the file;",
+        "page": 31
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.9",
+        "slo_code": "11.9.1",
+        "statement": "describe database and its importance;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.9",
+        "slo_code": "11.9.2",
+        "statement": "differentiate between Database Management System (DBMS) and Relational Database Management System (RDBMS);",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.9",
+        "slo_code": "11.9.3",
+        "statement": "describe the MS SQL database;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.9",
+        "slo_code": "11.9.4",
+        "statement": "describe the following keys: a. primary key, b. foreign key, c. candidate key, d. alternate key e. secondary key;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.9",
+        "slo_code": "11.9.5",
+        "statement": "construct a database and tables using MS SQL;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.10",
+        "slo_code": "11.10.1",
+        "statement": "describe data normalisation and its importance in a database;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.10",
+        "slo_code": "11.10.2",
+        "statement": "explain 1NF, 2NF and 3NF forms of data normalisation;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.11",
+        "slo_code": "11.11.1",
+        "statement": "describe the Structured Query Language (SQL) and its importance;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.11",
+        "slo_code": "11.11.2",
+        "statement": "explain the following types of SQL statements: a. Data Manipulation Language (DML), b. Data Definition Language (DDL), c. Data Control Language (DCL), d. Transaction Control Language (TCL), e. Data Query Language (DQL);",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.11",
+        "slo_code": "11.11.3",
+        "statement": "explain data manipulation language (DML) statements ;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.11",
+        "slo_code": "11.11.4",
+        "statement": "apply SELECT statement with clauses: a. WHERE, b. Order by;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.12",
+        "slo_code": "11.12.1",
+        "statement": "explain the process of connecting a database with Python;",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 11,
+        "topic": "11.12",
+        "slo_code": "11.12.2",
+        "statement": "write a program to connect a database with Python.",
+        "page": 32
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.1",
+        "slo_code": "12.1.1",
+        "statement": "define Machine Learning (ML);",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.1",
+        "slo_code": "12.1.2",
+        "statement": "differentiate between Machine Learning (ML) and rule-based algorithm;",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.1",
+        "slo_code": "12.1.3",
+        "statement": "explain the following basics of Machine Learning (ML) model building: a. feature engineering, b. train test split, c. model assessment;",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.1",
+        "slo_code": "12.1.4",
+        "statement": "explain the following Machine Learning (ML) algorithms: a. regression, b. clustering, c. classification;",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.2",
+        "slo_code": "12.2.1",
+        "statement": "describe hypothesis and its role in statistical analysis;",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.2",
+        "slo_code": "12.2.2",
+        "statement": "describe the null hypothesis and the alternative hypothesis;",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.2",
+        "slo_code": "12.2.3",
+        "statement": "explain P value and significance testing;",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.2",
+        "slo_code": "12.2.4",
+        "statement": "explain the following tests: a. f-test, b. chi-square test, c. ANOVA;",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 12,
+        "topic": "12.3",
+        "slo_code": "12.3.1",
+        "statement": "explain the following performance evaluation techniques; a. accuracy, b. precision, c. recall, d. f1 score, e. rand index, f. ROC (Receiver Operating Characteristic), g. RMSE (Root Mean Square Error).",
+        "page": 33
+    },
+    {
+        "grade": "XII",
+        "chapter": 13,
+        "topic": "13.1",
+        "slo_code": "13.1.1",
+        "statement": "describe the following key applications of IoT in Pakistan: a. smart homes, b. agriculture, c. smart cities, d. healthcare monitoring systems;",
+        "page": 34
+    },
+    {
+        "grade": "XII",
+        "chapter": 13,
+        "topic": "13.1",
+        "slo_code": "13.1.2",
+        "statement": "explain the importance of cloud computing in Pakistan for data storage;",
+        "page": 34
+    },
+    {
+        "grade": "XII",
+        "chapter": 13,
+        "topic": "13.1",
+        "slo_code": "13.1.3",
+        "statement": "evaluate the benefits and challenges of cloud computing for data management in Pakistan;",
+        "page": 34
+    },
+    {
+        "grade": "XII",
+        "chapter": 13,
+        "topic": "13.2",
+        "slo_code": "13.2.1",
+        "statement": "explain the relationship between deep learning networks and neural networks;",
+        "page": 34
+    },
+    {
+        "grade": "XII",
+        "chapter": 13,
+        "topic": "13.2",
+        "slo_code": "13.2.2",
+        "statement": "analyse the applications of neural networks, including deep learning models, in fields such as healthcare, finance, and autonomous vehicles.",
+        "page": 34
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.1",
+        "slo_code": "14.1.1",
+        "statement": "define the terms, privacy and security;",
+        "page": 35
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.1",
+        "slo_code": "14.1.2",
+        "statement": "describe the following common types of cyberattacks: a. Denial of Service (DoS) and Distributed Denial of Service (DDoS) attack, b. ransomware, c. spyware, d. viruses, e. phishing, f. Domain Name System (DNS) spoofing, g. waterhole attack, h. fake Wireless Access Point (WAP), i. eavesdropping;",
+        "page": 35
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.1",
+        "slo_code": "14.1.3",
+        "statement": "explain the following basic security methods: a. strong passwords, b. Two-Factor Authentication (2FA), c. antivirus and anti-malware software, d. checking logs, e. firewall, f. Intrusion Detection System (IDS); g. encryption;",
+        "page": 35
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.2",
+        "slo_code": "14.2.1",
+        "statement": "explain the following network security protocols: a. Secure Socket Layer (SSL) b. Transport Layer Security (TLS), c. Internet Protocol Security (IPsec), d. Secure Shell (SSH), e. Hypertext Transfer Protocol (HTTP), f. Hypertext Transfer Protocol Secure (HTTPS), g. Wireless Protected Access (WPA/ WPA2/ WPA3), h. File Transfer Protocol Secure (FTPS), i. Simple Network Management Protocol (SNMP);",
+        "page": 36
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.2",
+        "slo_code": "14.2.2",
+        "statement": "differentiate between HTTP and HTTPS;",
+        "page": 36
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.3",
+        "slo_code": "14.3.1",
+        "statement": "define cryptography;",
+        "page": 36
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.3",
+        "slo_code": "14.3.2",
+        "statement": "differentiate between cybersecurity and cryptography;",
+        "page": 36
+    },
+    {
+        "grade": "XII",
+        "chapter": 14,
+        "topic": "14.3",
+        "slo_code": "14.3.3",
+        "statement": "explain the following different types of ciphers: a. plain, b. ceaser, c. shift, d. substitution, e. transposition, f. stream cipher, g. block cipher.",
+        "page": 36
+    },
+    {
+        "grade": "XII",
+        "chapter": 15,
+        "topic": "15.1",
+        "slo_code": "15.1.1",
+        "statement": "define research questions/ problems;",
+        "page": 37
+    },
+    {
+        "grade": "XII",
+        "chapter": 15,
+        "topic": "15.1",
+        "slo_code": "15.1.2",
+        "statement": "describe a case study in research;",
+        "page": 37
+    },
+    {
+        "grade": "XII",
+        "chapter": 15,
+        "topic": "15.1",
+        "slo_code": "15.1.3",
+        "statement": "analyse the effectiveness of digital tools in communicating research results and conclusions;",
+        "page": 37
+    },
+    {
+        "grade": "XII",
+        "chapter": 15,
+        "topic": "15.1",
+        "slo_code": "15.1.4",
+        "statement": "evaluate the effectiveness of advanced search techniques in locating information on a research topic;",
+        "page": 37
+    },
+    {
+        "grade": "XII",
+        "chapter": 15,
+        "topic": "15.2",
+        "slo_code": "15.2.1",
+        "statement": "design a data collection plan to answer a research question and present the data using appropriate digital tools.",
+        "page": 37
+    },
+    {
+        "grade": "XII",
+        "chapter": 16,
+        "topic": "16.1",
+        "slo_code": "16.1.1",
+        "statement": "define Minimum Viable Product (MVP);",
+        "page": 38
+    },
+    {
+        "grade": "XII",
+        "chapter": 16,
+        "topic": "16.1",
+        "slo_code": "16.1.2",
+        "statement": "explain the key characteristics of a successful MVP;",
+        "page": 38
+    },
+    {
+        "grade": "XII",
+        "chapter": 16,
+        "topic": "16.1",
+        "slo_code": "16.1.3",
+        "statement": "differentiate between MVP and prototype;",
+        "page": 38
+    },
+    {
+        "grade": "XII",
+        "chapter": 16,
+        "topic": "16.1",
+        "slo_code": "16.1.4",
+        "statement": "explain the riskiest assumption (Business Model);",
+        "page": 38
+    },
+    {
+        "grade": "XII",
+        "chapter": 16,
+        "topic": "16.1",
+        "slo_code": "16.1.5",
+        "statement": "apply the principles of MVP development to design a simple prototype for a specific user need;",
+        "page": 38
+    },
+    {
+        "grade": "XII",
+        "chapter": 16,
+        "topic": "16.1",
+        "slo_code": "16.1.6",
+        "statement": "analyse the process of designing a test using an MVP;",
+        "page": 38
+    },
+    {
+        "grade": "XII",
+        "chapter": 16,
+        "topic": "16.1",
+        "slo_code": "16.1.7",
+        "statement": "analyse case studies of successful businesses that created their MVPs.",
+        "page": 38
+    }
+]

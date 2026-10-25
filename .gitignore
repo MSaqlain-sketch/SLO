@@ -39,3 +39,5 @@ data/full_pipeline_checkpoint/
 !frontend/public/mathematics-syllabus.pdf
 !frontend/public/physics-syllabus.pdf
 !frontend/public/statistics-syllabus.pdf
+.vercel
+.env*

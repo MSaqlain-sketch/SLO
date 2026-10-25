@@ -1,0 +1,104 @@
+grade,subject,chapter,slo_code,statement
+12,computer-science,9,9.1.1,describe the use of digital device in terms of ease of use and efficiency;
+12,computer-science,9,9.1.2,describe the security features of devices and best practices for data protection;
+12,computer-science,9,9.1.3,explain the ways in which accessibility features in devices support users with disabilities;
+12,computer-science,9,9.2.1,describe Human-Computer Interaction (HCI) and its importance;
+12,computer-science,9,9.2.2,analyse the influence of Human-Computer Interaction (HCI) on user efficiency and task effectiveness;
+12,computer-science,9,9.3.1,describe HCI design considerations and their effects on usability and system performance;
+12,computer-science,9,9.3.2,"analyse the trade-offs involved in designing HCI in the context of: a. security, b. user-friendliness, c. cost-effectiveness."
+12,computer-science,10,10.1.1,define data structure;
+12,computer-science,10,10.1.2,"describe the following types of data structures: a. list, b. array, c. tree, d. stack, e. queue;"
+12,computer-science,10,10.2.1,describe the traversal operation on an array;
+12,computer-science,10,10.2.2,describe the enqueue and dequeue operations in a queue;
+12,computer-science,10,10.2.3,explain the push and pop operations in a stack;
+12,computer-science,10,10.2.4,"explain the following operations on a tree: a. traversing, I. in order, II. pre-order, III. post order, b. binary search;"
+12,computer-science,10,10.3.1,explain the application of tree data structures;
+12,computer-science,10,10.3.2,explain the application of the binary search algorithms;
+12,computer-science,10,10.3.3,apply tree data structures to represent hierarchical data models such as file systems or organisational charts;
+12,computer-science,10,10.3.4,use the binary search algorithm to locate elements in sorted data efficiently;
+12,computer-science,10,10.3.5,illustrate the use of tree traversal techniques in data retrieval and manipulation tasks.
+12,computer-science,11,11.1.1,describe predefined and user-defined functions;
+12,computer-science,11,11.1.2,describe the advantages of user-defined functions;
+12,computer-science,11,11.1.3,"describe the signature of the functions, i.e., function name, arguments, and return value;"
+12,computer-science,11,11.1.4,"explain the process of creating a user-defined function, i.e., function declaration, function definition, and function call;"
+12,computer-science,11,11.1.5,"differentiate among the following variable types used in functions: a. local, b. global;"
+12,computer-science,11,11.1.6,write a program involving a user-defined function;
+12,computer-science,11,11.2.1,define default argument;
+12,computer-science,11,11.2.2,describe the purpose of the return statement;
+12,computer-science,11,11.2.3,write a program that demonstrates the return statement;
+12,computer-science,11,11.2.4,"write a program to invoke a user-defined function and pass arguments by constant, value, and reference;"
+12,computer-science,11,11.3.1,describe Object-Oriented Programming (OOP) and functional programming;
+12,computer-science,11,11.3.2,compare the advantages and disadvantages of Object-Oriented Programming (OOP) and functional programming;
+12,computer-science,11,11.3.3,explain class and object in terms of OOP;
+12,computer-science,11,11.3.4,"write a Python program to a. declare a class with data members and member functions defined within its body, b. create objects of the class in the main() function and call its member functions using those objects;"
+12,computer-science,11,11.4.1,differentiate between private and public access specifiers in Object-Oriented Programming (OOP);
+12,computer-science,11,11.4.2,write a Python program that demonstrates private access to class members using name mangling;
+12,computer-science,11,11.4.3,write a Python program that demonstrates public access to class members;
+12,computer-science,11,11.4.4,write a Python program that defines a class with both public and private members and demonstrates their usage;
+12,computer-science,11,11.5.1,describe inheritance and its access specifiers in Python programming;
+12,computer-science,11,11.5.2,explain the types of inheritance in Python programming using different classes;
+12,computer-science,11,11.5.3,explain encapsulation in Python programming;
+12,computer-science,11,11.5.4,explain polymorphism in Python programming;
+12,computer-science,11,11.5.5,explain the function of constructors and destructors in Object- Oriented Programming (OOP);
+12,computer-science,11,11.5.6,"differentiate among the types of constructors, i.e., default constructor, user-defined constructor, and constructor overloading;"
+12,computer-science,11,11.5.7,differentiate between overloading and overriding in OOP;
+12,computer-science,11,11.5.8,write a program of inheritance using the base class and the derived class;
+12,computer-science,11,11.5.9,write a program of inheritance for three access specifiers;
+12,computer-science,11,11.6.1,"explain the concept of a list in Python programming including its name, size, index number, and arrangement of elements in the memory;"
+12,computer-science,11,11.6.2,explain the purpose of storing elements in an ordered list;
+12,computer-science,11,11.6.3,write a Python program to use a one-dimensional list with different sizes and data types;
+12,computer-science,11,11.6.4,"write a Python program to create, add, modify, and remove items in a list;"
+12,computer-science,11,11.6.5,"write a Python program that stores numeric values in a one- dimensional list using a for loop and find the highest, lowest, average, and search for a value;"
+12,computer-science,11,11.7.1,describe dictionary and its uses in Python programming;
+12,computer-science,11,11.7.2,write a Python program to construct and retrieve values from a dictionary in Python programming;
+12,computer-science,11,11.7.3,write a Python program to find a value in a dictionary using the key value;
+12,computer-science,11,11.8.1,describe the importance of disk I/O;
+12,computer-science,11,11.8.2,"explain file handling methods and the following file operations in Python programming: a. create, b. read, c. write, d. append;"
+12,computer-science,11,11.8.3,"write a Python program that performs the following file operations: a. create and write data to a file, b. read from and append data to the file, c. write new data and then read it from the file;"
+12,computer-science,11,11.9.1,describe database and its importance;
+12,computer-science,11,11.9.2,differentiate between Database Management System (DBMS) and Relational Database Management System (RDBMS);
+12,computer-science,11,11.9.3,describe the MS SQL database;
+12,computer-science,11,11.9.4,"describe the following keys: a. primary key, b. foreign key, c. candidate key, d. alternate key e. secondary key;"
+12,computer-science,11,11.9.5,construct a database and tables using MS SQL;
+12,computer-science,11,11.10.1,describe data normalisation and its importance in a database;
+12,computer-science,11,11.10.2,"explain 1NF, 2NF and 3NF forms of data normalisation;"
+12,computer-science,11,11.11.1,describe the Structured Query Language (SQL) and its importance;
+12,computer-science,11,11.11.2,"explain the following types of SQL statements: a. Data Manipulation Language (DML), b. Data Definition Language (DDL), c. Data Control Language (DCL), d. Transaction Control Language (TCL), e. Data Query Language (DQL);"
+12,computer-science,11,11.11.3,explain data manipulation language (DML) statements ;
+12,computer-science,11,11.11.4,"apply SELECT statement with clauses: a. WHERE, b. Order by;"
+12,computer-science,11,11.12.1,explain the process of connecting a database with Python;
+12,computer-science,11,11.12.2,write a program to connect a database with Python.
+12,computer-science,12,12.1.1,define Machine Learning (ML);
+12,computer-science,12,12.1.2,differentiate between Machine Learning (ML) and rule-based algorithm;
+12,computer-science,12,12.1.3,"explain the following basics of Machine Learning (ML) model building: a. feature engineering, b. train test split, c. model assessment;"
+12,computer-science,12,12.1.4,"explain the following Machine Learning (ML) algorithms: a. regression, b. clustering, c. classification;"
+12,computer-science,12,12.2.1,describe hypothesis and its role in statistical analysis;
+12,computer-science,12,12.2.2,describe the null hypothesis and the alternative hypothesis;
+12,computer-science,12,12.2.3,explain P value and significance testing;
+12,computer-science,12,12.2.4,"explain the following tests: a. f-test, b. chi-square test, c. ANOVA;"
+12,computer-science,12,12.3.1,"explain the following performance evaluation techniques; a. accuracy, b. precision, c. recall, d. f1 score, e. rand index, f. ROC (Receiver Operating Characteristic), g. RMSE (Root Mean Square Error)."
+12,computer-science,13,13.1.1,"describe the following key applications of IoT in Pakistan: a. smart homes, b. agriculture, c. smart cities, d. healthcare monitoring systems;"
+12,computer-science,13,13.1.2,explain the importance of cloud computing in Pakistan for data storage;
+12,computer-science,13,13.1.3,evaluate the benefits and challenges of cloud computing for data management in Pakistan;
+12,computer-science,13,13.2.1,explain the relationship between deep learning networks and neural networks;
+12,computer-science,13,13.2.2,"analyse the applications of neural networks, including deep learning models, in fields such as healthcare, finance, and autonomous vehicles."
+12,computer-science,14,14.1.1,"define the terms, privacy and security;"
+12,computer-science,14,14.1.2,"describe the following common types of cyberattacks: a. Denial of Service (DoS) and Distributed Denial of Service (DDoS) attack, b. ransomware, c. spyware, d. viruses, e. phishing, f. Domain Name System (DNS) spoofing, g. waterhole attack, h. fake Wireless Access Point (WAP), i. eavesdropping;"
+12,computer-science,14,14.1.3,"explain the following basic security methods: a. strong passwords, b. Two-Factor Authentication (2FA), c. antivirus and anti-malware software, d. checking logs, e. firewall, f. Intrusion Detection System (IDS); g. encryption;"
+12,computer-science,14,14.2.1,"explain the following network security protocols: a. Secure Socket Layer (SSL) b. Transport Layer Security (TLS), c. Internet Protocol Security (IPsec), d. Secure Shell (SSH), e. Hypertext Transfer Protocol (HTTP), f. Hypertext Transfer Protocol Secure (HTTPS), g. Wireless Protected Access (WPA/ WPA2/ WPA3), h. File Transfer Protocol Secure (FTPS), i. Simple Network Management Protocol (SNMP);"
+12,computer-science,14,14.2.2,differentiate between HTTP and HTTPS;
+12,computer-science,14,14.3.1,define cryptography;
+12,computer-science,14,14.3.2,differentiate between cybersecurity and cryptography;
+12,computer-science,14,14.3.3,"explain the following different types of ciphers: a. plain, b. ceaser, c. shift, d. substitution, e. transposition, f. stream cipher, g. block cipher."
+12,computer-science,15,15.1.1,define research questions/ problems;
+12,computer-science,15,15.1.2,describe a case study in research;
+12,computer-science,15,15.1.3,analyse the effectiveness of digital tools in communicating research results and conclusions;
+12,computer-science,15,15.1.4,evaluate the effectiveness of advanced search techniques in locating information on a research topic;
+12,computer-science,15,15.2.1,design a data collection plan to answer a research question and present the data using appropriate digital tools.
+12,computer-science,16,16.1.1,define Minimum Viable Product (MVP);
+12,computer-science,16,16.1.2,explain the key characteristics of a successful MVP;
+12,computer-science,16,16.1.3,differentiate between MVP and prototype;
+12,computer-science,16,16.1.4,explain the riskiest assumption (Business Model);
+12,computer-science,16,16.1.5,apply the principles of MVP development to design a simple prototype for a specific user need;
+12,computer-science,16,16.1.6,analyse the process of designing a test using an MVP;
+12,computer-science,16,16.1.7,analyse case studies of successful businesses that created their MVPs.
