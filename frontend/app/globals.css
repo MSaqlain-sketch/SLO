@@ -391,6 +391,7 @@ body {
 
 .babul-message-content p {
   margin: 0.65em 0;
+  white-space: pre-wrap;
 }
 
 .babul-message-content ul,

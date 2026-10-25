@@ -29,7 +29,9 @@ type Paper2Question = {
   question_part: string | null;
   question_text: string;
   marks: number;
-  source_page: number;
+  source_page: number | null;
+  paper: string;
+  source_type: string;
 };
 type Message = {
   id: string;
@@ -37,6 +39,37 @@ type Message = {
   content: string;
   paper2_questions?: Paper2Question[];
 };
+
+const ANSWER_VERIFICATION_LABEL =
+  /^(Textbook-Based Answer|AI Knowledge\s*[-—]\s*Not Verified in Textbook)\s*:?[ \t]*(?:\r?\n)?/i;
+
+function splitAnswerVerification(content: string) {
+  const match = ANSWER_VERIFICATION_LABEL.exec(content);
+
+  return match
+    ? {
+        label: /^AI Knowledge/i.test(match[1])
+          ? "AI Knowledge — Not Verified in Textbook"
+          : match[1],
+        answer: content.slice(match[0].length),
+      }
+    : { label: null, answer: content };
+}
+
+function renderAssistantAnswer(content: string) {
+  const { label, answer } = splitAnswerVerification(content);
+
+  return (
+    <>
+      {label && (
+        <span className="mb-2 block font-semibold">
+          {label}
+        </span>
+      )}
+      <ReactMarkdown>{answer}</ReactMarkdown>
+    </>
+  );
+}
 
 type Chat = {
   id: string;
@@ -1442,7 +1475,7 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
 
                       <div className="babul-message-content">
                         {message.role === "assistant" ? (
-                          <ReactMarkdown>{message.content}</ReactMarkdown>
+                          renderAssistantAnswer(message.content)
                         ) : (
                           message.content
                         )}
@@ -1466,8 +1499,18 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                                 </div>
                                 <p>{q.question_text}</p>
                                 <small>
-                                  AKU-EB Model Paper II (2027 onwards)
-                                  {q.source_page ? ` · Page ${q.source_page}` : ""}
+                                {q.source_type === "official_model_paper"
+                                  ? `AKU-EB Official Model ${
+                                      q.paper === "paper-1"
+                                        ? "Paper I"
+                                        : q.paper === "paper-2"
+                                          ? "Paper II"
+                                          : q.paper === "paper-3"
+                                            ? "Paper III"
+                                            : "Paper"
+                                    }`
+                                  : "AKU-EB question source"}
+                                {q.source_page ? ` · Page ${q.source_page}` : ""}
                                 </small>
                                 <button
                                   type="button"

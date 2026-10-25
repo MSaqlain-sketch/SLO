@@ -9,6 +9,11 @@ import {
   overlap,
   tokens,
 } from "./scope.ts";
+import {
+  removeUnverifiedPaperClaims,
+  verifiedPaperReferenceContext,
+  type VerifiedPaperReference,
+} from "./paper-references.ts";
 type ChatMessage = {
   role: "user" | "assistant";
   content: string;
@@ -24,13 +29,13 @@ type Passage = {
   text: string;
 };
 
-type PaperQuestion = {
+type PaperQuestionCandidate = {
   question_number: number;
   question_part: string | null;
   question_text: string;
-  marks: number;
-  source_page: number;
 };
+
+type PaperQuestion = PaperQuestionCandidate & VerifiedPaperReference;
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
@@ -48,7 +53,7 @@ function respond(data: unknown, status = 200): Response {
 
 function paperQuestionFromHistory(
   history: ChatMessage[],
-): PaperQuestion | null {
+): PaperQuestionCandidate | null {
   const lastAssistant = [...history]
     .reverse()
     .find((m) => m.role === "assistant");
@@ -74,9 +79,7 @@ function paperQuestionFromHistory(
   return {
     question_number: Number(match[1]),
     question_part: match[2] ?? null,
-    marks: Number(match[3]),
     question_text: match[4].trim(),
-    source_page: 0,
   };
 }
 
@@ -126,6 +129,14 @@ TEACHING:
 - Check calculations and worked examples before claiming results.
 - Do not invent textbook facts, official question numbers,
   chapter mappings, SLO mappings, or citations.
+- Never invent a model-paper year, paper/question number, source page, or
+  claim that a question appeared in an actual past examination.
+- Cite model papers only from the supplied VERIFIED PAPER REFERENCES metadata.
+  Model papers are not actual past examination papers. No past-examination
+  records are retrieved by this function, so never claim past-paper appearance.
+- If asked for a model/past paper reference and no verified source is supplied,
+  say exactly: "No verified model/past paper reference found."
+- Do not infer a year from the current year, syllabus edition, or question text.
 - If uncertain, say so rather than guessing.
 - If the question is ambiguous, ask one concise question.
 
@@ -242,17 +253,38 @@ Deno.serve(async (req: Request): Promise<Response> => {
 
     const paperCandidate = paperQuestionFromHistory(history);
 
-    const selectedPaper2Question = isAffirmative(question)
-      ? paperCandidate
-      : null;
+    let selectedPaper2Question: PaperQuestion | null = null;
 
     const followUpHint = history.length > 0 && isBriefFollowUp(question);
+
+    const db = createClient(supabaseUrl, serviceKey);
+
+    if (isAffirmative(question) && paperCandidate) {
+      let selectedQuestionQuery = db
+        .from("paper2_questions")
+        .select(
+          "question_number,question_part,question_text,marks,source_page,paper,source_type",
+        )
+        .eq("question_number", paperCandidate.question_number)
+        .eq("question_text", paperCandidate.question_text)
+        .eq("paper", "paper-2")
+        .eq("source_type", "official_model_paper");
+
+      selectedQuestionQuery = paperCandidate.question_part
+        ? selectedQuestionQuery.eq(
+          "question_part",
+          paperCandidate.question_part,
+        )
+        : selectedQuestionQuery.is("question_part", null);
+
+      const { data, error } = await selectedQuestionQuery.maybeSingle();
+      if (error) throw error;
+      selectedPaper2Question = data as PaperQuestion | null;
+    }
 
     const retrievalQuestion = selectedPaper2Question?.question_text ??
       (followUpHint && latestUser ? `${latestUser} ${question}` : question);
     const scopeQuestion = retrievalQuestion;
-
-    const db = createClient(supabaseUrl, serviceKey);
 
     const { data: syllabusData, error: syllabusError } = await db
       .from("slos")
@@ -339,7 +371,9 @@ if (sloCode) {
       });
     }
 
-    let paper2Questions: PaperQuestion[] = [];
+    let paper2Questions: PaperQuestion[] = selectedPaper2Question
+      ? [selectedPaper2Question]
+      : [];
 
     if (
       slo &&
@@ -349,10 +383,11 @@ if (sloCode) {
       const { data, error } = await db
         .from("paper2_questions")
         .select(
-          "question_number,question_part,question_text,marks,source_page",
+          "question_number,question_part,question_text,marks,source_page,paper,source_type",
         )
         .eq("slo_code", slo.slo_code)
         .eq("paper", "paper-2")
+        .eq("source_type", "official_model_paper")
         .order("question_number", {
           ascending: true,
         });
@@ -452,6 +487,9 @@ Do not merely define the topic.`
 Relevant SLO (only if applicable):
 ${slo ? `${slo.slo_code}: ${slo.statement}` : "No reliably matched SLO"}
 
+VERIFIED PAPER REFERENCES:
+${verifiedPaperReferenceContext(paper2Questions)}
+
 Requested answer length:
 ${answerMarks} marks, target maximum ${
       wordLimits[answerMarks]
@@ -527,7 +565,7 @@ ${textbookContext}`
       );
     }
 
-    const answerBody = rawAnswer
+    const generatedAnswer = rawAnswer
       .trim()
       .replace(
         /^(?:Textbook-Based Answer|AI Knowledge - Not Verified in Textbook)\s*:?\s*/i,
@@ -536,6 +574,10 @@ ${textbookContext}`
       .replace(/\*\*(.*?)\*\*/gs, "$1")
       .replace(/```(?:[a-z]+)?\n?/gi, "")
       .replace(/`([^`\n]+)`/g, "$1");
+    const answerBody = removeUnverifiedPaperClaims(
+      generatedAnswer,
+      paper2Questions,
+    );
 
     let isTextbookAnswer = false;
     if (relevantPassages.length > 0) {
