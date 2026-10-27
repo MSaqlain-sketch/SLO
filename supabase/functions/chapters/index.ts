@@ -189,9 +189,27 @@ deno.serve(async (req) => {
       });
     }
 
-    const result = Object.values(chapters).sort(
-      (a, b) => Number(a.chapter) - Number(b.chapter),
-    );
+    // Sort SLO codes numerically, e.g. 11.2.1 before 11.10.1
+const compareSloCodes = (a: string, b: string): number => {
+  const partsA = a.split(".").map(Number);
+  const partsB = b.split(".").map(Number);
+
+  for (let i = 0; i < Math.max(partsA.length, partsB.length); i++) {
+    const difference = (partsA[i] ?? 0) - (partsB[i] ?? 0);
+    if (difference !== 0) return difference;
+  }
+
+  return 0;
+};
+
+const result = Object.values(chapters)
+  .sort((a, b) => a.chapter - b.chapter)
+  .map((chapter) => ({
+    ...chapter,
+    slos: chapter.slos.sort((a, b) =>
+      compareSloCodes(a.slo_code, b.slo_code)
+    ),
+  }));
 
     return new Response(
       JSON.stringify({
