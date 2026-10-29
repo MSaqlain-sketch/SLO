@@ -136,12 +136,8 @@ const LOCAL_BACKEND_URL =
     ? process.env.NEXT_PUBLIC_LOCAL_API_URL
     : undefined;
 const CHAPTERS_API_URL =
-  process.env.NODE_ENV === "development"
-    ? process.env.NEXT_PUBLIC_CHAPTERS_API_URL ||
-      (LOCAL_BACKEND_URL
-        ? `${LOCAL_BACKEND_URL}/api/chapters`
-        : `${SUPABASE_FUNCTIONS_URL}/chapters`)
-    : `${SUPABASE_FUNCTIONS_URL}/chapters`;
+  process.env.NEXT_PUBLIC_CHAPTERS_API_URL ||
+  `${SUPABASE_FUNCTIONS_URL}/chapters`;
 const AI_CHAT_API_URL = `${SUPABASE_FUNCTIONS_URL}/ai-chat`;
 const QUIZ_API_URL = `${SUPABASE_FUNCTIONS_URL}/quiz`;
 const CS_CHAPTERS = {
@@ -876,18 +872,18 @@ function closeSLOs() {
         <button
           type="button"
           onClick={() => setSidebarOpen(false)}
-          className="fixed inset-0 z-20 bg-black/30 md:hidden"
+          className="fixed inset-0 z-20 bg-black/30"
           aria-label="Close sidebar"
         />
       )}
 
-      {/* Sidebar */}
-      <aside
-        aria-label="Main navigation"
-        className={`${
-          sidebarOpen ? "flex" : "hidden"
-        } babul-sidebar fixed inset-y-0 left-0 z-30 flex-col md:static md:flex`}
-      >
+{/* Sidebar */}
+<aside
+  aria-label="Main navigation"
+  className={`${
+    sidebarOpen ? "flex" : "hidden"
+  } babul-sidebar fixed inset-y-0 left-0 z-30 flex-col`}
+>
         <div className="babul-brand flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
@@ -1086,13 +1082,15 @@ function closeSLOs() {
       <main className="flex min-w-0 flex-1 flex-col">
         <header className="babul-header flex h-16 shrink-0 items-center justify-between">
           <div className="flex items-center gap-3">
-            <button
-              onClick={() => setSidebarOpen(true)}
-              className="babul-mobile-menu md:hidden"
-              aria-label="Open sidebar"
-            >
-              <Menu size={20} />
-            </button>
+           <button
+  type="button"
+  onClick={() => setSidebarOpen((open) => !open)}
+  className="babul-mobile-menu"
+  aria-label={sidebarOpen ? "Close navigation menu" : "Open navigation menu"}
+  aria-expanded={sidebarOpen}
+>
+  <Menu size={20} />
+</button>
 
             <h2 className="font-semibold">
              {view === "study"
@@ -1317,53 +1315,7 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
 ) : view === "study" ? (
           <div className="min-h-0 flex-1 overflow-y-auto bg-slate-50 px-4 py-8">
             <div className="mx-auto max-w-5xl">
-              <h2 className="text-2xl font-bold">Explore Your Syllabus</h2>
-              <p className="mt-2 text-sm text-slate-500">
-                Select a subject and grade, then explore chapters and learning outcomes.
-              </p>
-
-              <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div className="flex flex-wrap gap-2">
-                  {STUDY_SUBJECTS.map((subject) => (
-                    <button
-                      key={subject.id}
-                      type="button"
-                      onClick={() => {
-                        setSelectionSubjectSlug(subject.id);
-                        setSelectedStudyChapter(null);
-                      }}
-                      className={`babul-subject-button rounded-xl border px-4 py-2 text-sm font-medium transition ${
-                        studySubject === subject.id
-                          ? "is-selected border-blue-500 bg-blue-50 text-blue-700"
-                          : "border-slate-200 bg-white text-slate-700 hover:bg-slate-100"
-                      }`}
-                    >
-                      <span className="babul-icon-tile mr-2 inline-flex"><subject.icon size={18} /></span>
-                      {subject.name}
-                    </button>
-                  ))}
-                </div>
-
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {[11, 12].map((grade) => (
-                    <button
-                      key={grade}
-                      type="button"
-                      onClick={() => {
-                        setClassLevel(grade === 11 ? "XI" : "XII");
-                        setSelectedStudyChapter(null);
-                      }}
-                      className={`rounded-xl border px-4 py-2 text-sm font-medium transition ${
-                        studyGrade === grade
-                          ? "border-blue-500 bg-blue-50 text-blue-700"
-                          : "border-slate-200 bg-white text-slate-700 hover:bg-slate-100"
-                      }`}
-                    >
-                      Grade {grade}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              
 
               {studyChaptersLoading ? (
                 <p className="mt-8 text-slate-500">Loading study chapters...</p>
@@ -1476,7 +1428,13 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
 
                       {studySubject === "computer-science" && (
                         <div className="mt-5 space-y-3">
-                          {studyCurrentChapter.slos.map((slo) => (
+                          {[...studyCurrentChapter.slos]
+  .sort((a, b) =>
+    a.slo_code.localeCompare(b.slo_code, undefined, {
+      numeric: true,
+    })
+  )
+  .map((slo) => (
                             <div key={slo.slo_code} className="rounded-xl border border-slate-200 p-4">
                               <div className="flex flex-wrap items-center gap-2">
                                 <span className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">
