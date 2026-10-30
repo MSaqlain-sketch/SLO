@@ -1,0 +1,1595 @@
+[
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Complex Numbers",
+    "slo_code": "1.1.1",
+    "statement": "describe the complex number z, represented by an expression of the form z=a+ib into the form (a, b) and vice versa, where a and b are real numbers and i= −1;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Complex Numbers",
+    "slo_code": "1.1.2",
+    "statement": "describe complex plane and the representation of a complex number on a complex plane;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Complex Numbers",
+    "slo_code": "1.1.3",
+    "statement": "identify a as real part and b as imaginary part of z=a+ib;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Complex Numbers",
+    "slo_code": "1.1.4",
+    "statement": "apply the condition of equality of complex numbers to solve problems;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Complex Numbers",
+    "slo_code": "1.1.5",
+    "statement": "apply fundamental operations such as addition, subtraction, multiplication and division on complex numbers;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Complex Numbers",
+    "slo_code": "1.1.6",
+    "statement": "state z=a−ib, the complex conjugate of z=a+ib;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Complex Numbers",
+    "slo_code": "1.1.7",
+    "statement": "calculate |z| = √(a² + b²), the absolute value or modulus of a complex number z = a + ib;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Triangular Inequality",
+    "slo_code": "1.2.1",
+    "statement": "define triangular inequality of a complex number;¹;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Factorisation and Solution of Equations",
+    "slo_code": "1.3.1",
+    "statement": "factorise quadratic and cubic polynomials of the form: a. z² + a² = (z + ia)(z − ia), where a ∈ R and a ≠ 0; b. z³ − 3z² + z + 5 = (z + 1)(z − 2 − i)(z − 2 + i);",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Factorisation and Solution of Equations",
+    "slo_code": "1.3.2",
+    "statement": "solve simultaneous linear equations with complex coefficients such as, 5x – (3 + i)y = 7 – i, and (2 – i)x +2iy = –1+ i;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Factorisation and Solution of Equations",
+    "slo_code": "1.3.3",
+    "statement": "solve quadratic equations of the form pz² + qz + r = 0 by completing the square, where p, q and r are real numbers with p ≠ 0 and z is a complex number;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Complex Numbers in Polar Coordinates",
+    "slo_code": "1.4.1",
+    "statement": "define the polar coordinate system;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Complex Numbers in Polar Coordinates",
+    "slo_code": "1.4.2",
+    "statement": "describe the polar representation of a complex number;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Complex Numbers in Polar Coordinates",
+    "slo_code": "1.4.3",
+    "statement": "convert complex numbers in polar representation and vice versa;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Complex Numbers in Polar Coordinates",
+    "slo_code": "1.4.4",
+    "statement": "describe De-Moivre’s theorem;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Complex Numbers in Polar Coordinates",
+    "slo_code": "1.4.5",
+    "statement": "describe the following properties: a. z₁z₂ = r₁r₂{cos(θ₁ + θ₂) + i sin(θ₁ + θ₂)}; b. z₁/z₂ = (r₁/r₂){cos(θ₁ − θ₂) + i sin(θ₁ − θ₂)};",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Complex Numbers in Polar Coordinates",
+    "slo_code": "1.4.6",
+    "statement": "solve problems of multiplication and division of a complex number in polar form;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.5",
+    "topic_title": "Real World Application of Complex Numbers",
+    "slo_code": "1.5.1",
+    "statement": "apply the concepts of complex numbers to the real world problems.",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Matrices",
+    "slo_code": "2.1.1",
+    "statement": "apply matrix operations such as addition, subtraction and multiplication of matrices with real and complex entries;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Matrices",
+    "slo_code": "2.1.2",
+    "statement": "describe the following terms: a. upper triangular matrix, b. lower triangular matrix, c. transpose of a matrix, d. symmetric and skew-symmetric matrices, e. hermitian and skew-hermitian matrices, f. involutory matrix, g. nilpotent matrix, h. idempotent matrix, i. periodic matrix, j. orthogonal matrix;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.1",
+    "statement": "explain the properties of determinants;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.2",
+    "statement": "find the determinant of a square matrix;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.3",
+    "statement": "find the minor and cofactor of elements of a square matrix;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.4",
+    "statement": "find the adjoint of a square matrix;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.5",
+    "statement": "solve problems related to singular and non-singular matrices;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.6",
+    "statement": "evaluate the determinant without expansion (using properties of determinants);",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.7",
+    "statement": "define: a. elementary row operations, b. echelon and reduced echelon forms;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.8",
+    "statement": "find the inverse of a matrix using row operation;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Determinants of Matrices of order 3",
+    "slo_code": "2.2.9",
+    "statement": "find the rank of a matrix using row operation;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.3",
+    "topic_title": "Solution of Linear Equations using Matrices",
+    "slo_code": "2.3.1",
+    "statement": "explain homogeneous and non-homogeneous linear equations in two and three unknowns;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.3",
+    "topic_title": "Solution of Linear Equations using Matrices",
+    "slo_code": "2.3.2",
+    "statement": "explain solution of system of linear equations as: a. consistent and inconsistent, b. trivial and non-trivial;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.3",
+    "topic_title": "Solution of Linear Equations using Matrices",
+    "slo_code": "2.3.3",
+    "statement": "solve a system of three non-homogeneous linear equations using: a. matrix inversion method i.e., X = A⁻¹B, b. Cramer’s rule;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.3",
+    "topic_title": "Solution of Linear Equations using Matrices",
+    "slo_code": "2.3.4",
+    "statement": "solve a system of three linear equations in three unknowns using Gauss elimination method (echelon form); (Note: For consistent unique solution only.);",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.3",
+    "topic_title": "Solution of Linear Equations using Matrices",
+    "slo_code": "2.3.5",
+    "statement": "solve a system of three linear equations in three unknowns using Gauss Jordan method (reduced echelon form); (Note: For consistent unique solution only.);",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.3",
+    "topic_title": "Solution of Linear Equations using Matrices",
+    "slo_code": "2.3.6",
+    "statement": "apply the concepts of matrices to the following real world problems: a. graphic design, b. data encryption, c. seismic analysis, d. cryptography, e. transformation of geometric shapes, f. social network analysis.",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Sequence (progression)",
+    "slo_code": "3.1.1",
+    "statement": "describe a sequence (progression);",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Sequence (progression)",
+    "slo_code": "3.1.2",
+    "statement": "find the general term when a sequence is given;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Sequence (progression)",
+    "slo_code": "3.1.3",
+    "statement": "find a particular term of a sequence using the general term;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Sequence",
+    "slo_code": "3.2.1",
+    "statement": "describe an arithmetic sequence;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Sequence",
+    "slo_code": "3.2.2",
+    "statement": "derive the formula of nth or general term of an arithmetic sequence;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Sequence",
+    "slo_code": "3.2.3",
+    "statement": "solve problems involving arithmetic sequence;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.3.1",
+    "statement": "find the arithmetic mean between two terms;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.3.2",
+    "statement": "find ‘n’ arithmetic means between two terms;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Arithmetic Series",
+    "slo_code": "3.4.1",
+    "statement": "describe an arithmetic series;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Arithmetic Series",
+    "slo_code": "3.4.2",
+    "statement": "derive the formula of sum of an arithmetic series up to n terms;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Arithmetic Series",
+    "slo_code": "3.4.3",
+    "statement": "solve problems involving arithmetic series;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Geometric Sequence",
+    "slo_code": "3.5.1",
+    "statement": "describe a geometric sequence;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Geometric Sequence",
+    "slo_code": "3.5.2",
+    "statement": "derive the formula of nth or general term of a geometric sequence;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Geometric Sequence",
+    "slo_code": "3.5.3",
+    "statement": "solve problems involving geometric sequence;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Geometric Mean",
+    "slo_code": "3.6.1",
+    "statement": "find the geometric mean between two terms;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Geometric Mean",
+    "slo_code": "3.6.2",
+    "statement": "find ‘n’ geometric means between two terms;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Geometric Series",
+    "slo_code": "3.7.1",
+    "statement": "describe a geometric series;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Geometric Series",
+    "slo_code": "3.7.2",
+    "statement": "find the sum to ‘n’ terms of a geometric series;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Geometric Series",
+    "slo_code": "3.7.3",
+    "statement": "find the sum of an infinite geometric series;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Geometric Series",
+    "slo_code": "3.7.4",
+    "statement": "convert the recurring decimal into an equivalent common fraction;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Geometric Series",
+    "slo_code": "3.7.5",
+    "statement": "solve problems involving geometric series;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Harmonic Sequence",
+    "slo_code": "3.8.1",
+    "statement": "describe the harmonic sequence;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Harmonic Sequence",
+    "slo_code": "3.8.2",
+    "statement": "find the nth term of harmonic sequence;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Harmonic Sequence",
+    "slo_code": "3.8.3",
+    "statement": "solve problems involving harmonic sequence;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Harmonic Mean",
+    "slo_code": "3.9.1",
+    "statement": "find the harmonic mean between two terms;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Harmonic Mean",
+    "slo_code": "3.9.2",
+    "statement": "find ‘n’ harmonic means between two terms;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Harmonic Mean",
+    "slo_code": "3.9.3",
+    "statement": "find the relationship among arithmetic, geometric and harmonic means;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Harmonic Mean",
+    "slo_code": "3.9.4",
+    "statement": "solve problems by analysing harmonic sequences up to n terms;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.10",
+    "topic_title": "Real World Application of Sequences",
+    "slo_code": "3.10.1",
+    "statement": "explain the leasing of motor vehicles, down payment, motor vehicle insurance, processing charges, repayment in monthly instalments as the applications of sequences;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.10",
+    "topic_title": "Real World Application of Sequences",
+    "slo_code": "3.10.2",
+    "statement": "apply the concepts from sequence and series to the real world problems involving calculating simple interest on loan, investment, depreciation, investment planning on compound interest and leasing of motor vehicle under different conditions.",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Evaluation of ∑n, ∑n² and ∑n³",
+    "slo_code": "4.1.1",
+    "statement": "identify the sigma notation (∑) to express the sum of values of a variable concisely;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Evaluation of ∑n, ∑n² and ∑n³",
+    "slo_code": "4.1.2",
+    "statement": "find the sum of the: a. first n natural numbers ∑n; b. squares of the first n natural numbers ∑n²; c. cubes of the first n natural numbers ∑n³;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Evaluation of ∑n, ∑n² and ∑n³",
+    "slo_code": "4.1.3",
+    "statement": "solve problems involving ∑n, ∑n² and ∑n³.",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Factorial of a Natural Number",
+    "slo_code": "5.1.1",
+    "statement": "explain the concept of factorial and the fact that 0! = 1;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.1",
+    "statement": "apply the fundamental principle of counting in different situations;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.2",
+    "statement": "construct tree diagram using the fundamental principle of counting;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.3",
+    "statement": "explain the meaning of permutation (nP ) of ‘n’ different r objects taken ‘r’ at a time;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.4",
+    "statement": "solve problems involving permutation;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.5",
+    "statement": "find the arrangement of different objects around a circle;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.6",
+    "statement": "explain the meaning of combination (nC ) of ‘n’ different r objects taken r at a time;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.7",
+    "statement": "solve problems involving combination;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Counting Techniques (Fundamental Principle of Counting, Permutation and Combination)",
+    "slo_code": "5.2.8",
+    "statement": "verify the following for any positive integers n and r, where n > r: a. C(n, n) = C(n, 0) = 1; b. C(n, r) = C(n, n − r), C(n, 1) = C(n, n − 1) = n; c. C(n, r) + C(n, r + 1) = C(n + 1, r + 1);",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.3",
+    "topic_title": "Application of Counting Techniques in Real Life Situations",
+    "slo_code": "5.3.1",
+    "statement": "apply the concepts of permutation and combination to the real world problems.",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Mathematical Induction",
+    "slo_code": "6.1.1",
+    "statement": "describe the principle of mathematical induction as a mathematical argument;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Mathematical Induction",
+    "slo_code": "6.1.2",
+    "statement": "identify the base case (induction hypothesis and precise conclusion);",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Mathematical Induction",
+    "slo_code": "6.1.3",
+    "statement": "prove statements, identities, divisibility of numbers and summation formulae by the principle of mathematical induction;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Mathematical Induction",
+    "slo_code": "6.1.4",
+    "statement": "draw conclusions based on the SLO 6.1.2;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Binomial Theorem",
+    "slo_code": "6.2.1",
+    "statement": "expand (x + y)n using Pascal’s triangle for positive integral values where n ≤ 5;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Binomial Theorem",
+    "slo_code": "6.2.2",
+    "statement": "derive binomial theorem for positive integral index;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Binomial Theorem",
+    "slo_code": "6.2.3",
+    "statement": "find the general term while expanding (x + y)n using binomial theorem, where (x + y) is a binomial expression;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Binomial Theorem",
+    "slo_code": "6.2.4",
+    "statement": "find the remainder when a number raised to a large exponent is divided by another number using binomial theorem;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Binomial Theorem",
+    "slo_code": "6.2.5",
+    "statement": "find the specified term in the expansion of (x + y)n;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Binomial Theorem",
+    "slo_code": "6.2.6",
+    "statement": "determine the last digit of a number using binomial theorem, to test its divisibility by another number;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Binomial Theorem",
+    "slo_code": "6.2.7",
+    "statement": "apply the concepts of binomial theorem to the real world problems;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Binomial Series",
+    "slo_code": "6.3.1",
+    "statement": "expand (1 + x)n in ascending powers of x, where n is a rational number (except a natural number) and |x| < 1;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Binomial Series",
+    "slo_code": "6.3.2",
+    "statement": "explain the convergence of (1 + x)n for |x| < 1, where n is a rational number (except a natural number);",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Binomial Series",
+    "slo_code": "6.3.3",
+    "statement": "determine the approximate values of binomial expansions with fraction indices;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Binomial Series",
+    "slo_code": "6.3.4",
+    "statement": "simplify the product and ratio of binomial expressions.",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Remainder Theorem",
+    "slo_code": "7.1.1",
+    "statement": "explain the remainder theorem;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Remainder Theorem",
+    "slo_code": "7.1.2",
+    "statement": "solve by dividing a polynomial (up to degree 4) by linear and quadratic polynomials and identify the quotient and remainder;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Remainder Theorem",
+    "slo_code": "7.1.3",
+    "statement": "solve problems involving remainder theorem;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Factor Theorem",
+    "slo_code": "7.2.1",
+    "statement": "explain the factor theorem;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Factor Theorem",
+    "slo_code": "7.2.2",
+    "statement": "identify the quotient and factor;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Factor Theorem",
+    "slo_code": "7.2.3",
+    "statement": "solve problems related to factor theorem;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Factor Theorem",
+    "slo_code": "7.2.4",
+    "statement": "solve by dividing a cubic polynomial by linear and quadratic polynomials;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Real World Application of Remainder and Factor Theorems",
+    "slo_code": "7.3.1",
+    "statement": "apply the concepts of remainder and factor theorem to the real world problems such as polynomial regression, signal processing, and coding theory.",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Law of Trigonometry",
+    "slo_code": "8.1.1",
+    "statement": "define the following fundamental trigonometric identities: a. sin²ɵ + cos²ɵ =1, b. 1 + tan²ɵ = sec²ɵ, c. 1 + cot²ɵ = cosec²ɵ;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Law of Trigonometry",
+    "slo_code": "8.1.2",
+    "statement": "explain the fundamental law of trigonometry using distance formula, [cos(α – β) = cosαcosβ + sinα sinβ];",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Law of Trigonometry",
+    "slo_code": "8.1.3",
+    "statement": "explain the following laws using the fundamental law of trigonometry: a. cos(α + β) = cosαcosβ – sinαsinβ, b. sin(α ± β) = sinαcosβ ± cosαsinβ, tanα±tanβ c. tan(α±β) =; 1±tanαtanβ;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Law of Trigonometry",
+    "slo_code": "8.1.4",
+    "statement": "solve problems related to a fundamental law of trigonometry and its deductions;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.2",
+    "topic_title": "Trigonometric Ratios of Allied Angles",
+    "slo_code": "8.2.1",
+    "statement": "define allied angles;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.2",
+    "topic_title": "Trigonometric Ratios of Allied Angles",
+    "slo_code": "8.2.2",
+    "statement": "derive trigonometric ratios of allied angles using a fundamental law and its deductions;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.2",
+    "topic_title": "Trigonometric Ratios of Allied Angles",
+    "slo_code": "8.2.3",
+    "statement": "convert a sinɵ ± b cosɵ in the form rsin(ɵ ± ɸ), where a = rcosɵ and b = rsin ɸ;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.3",
+    "topic_title": "Double, Half and Triple Angle Identities",
+    "slo_code": "8.3.1",
+    "statement": "derive double angle, half angle and triple angle identities from a fundamental law of trigonometry and its deductions;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.3",
+    "topic_title": "Double, Half and Triple Angle Identities",
+    "slo_code": "8.3.2",
+    "statement": "prove different trigonometric relations using the identities mentioned in SLO 8.3.1;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.4",
+    "topic_title": "Sum, Difference and Product of Sine and Cosine",
+    "slo_code": "8.4.1",
+    "statement": "convert the product of sine and cosine into sum or difference and vice versa;",
+    "page": 22
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.4",
+    "topic_title": "Sum, Difference and Product of Sine and Cosine",
+    "slo_code": "8.4.2",
+    "statement": "apply the sum or difference of sine and cosine as products of sine and cosine, and vice versa.",
+    "page": 22
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Trigonometric Functions",
+    "slo_code": "9.1.1",
+    "statement": "describe trigonometric functions;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Trigonometric Functions",
+    "slo_code": "9.1.2",
+    "statement": "find the domain and range of trigonometric functions;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Trigonometric Functions",
+    "slo_code": "9.1.3",
+    "statement": "distinguish between even and odd trigonometric functions;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Trigonometric Functions",
+    "slo_code": "9.1.4",
+    "statement": "describe the periodicity of trigonometric functions numerically;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Trigonometric Functions",
+    "slo_code": "9.1.5",
+    "statement": "find the maximum value, minimum value and amplitude of a given function of the following types: a. a + b sinɵ, b. a + b cosɵ, c. a + b sin(cɵ + d), d. a + bcos(cɵ + d), where a, b, c and d are real numbers;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Graphs of Trigonometric Functions",
+    "slo_code": "9.2.1",
+    "statement": "describe the following properties for sinθ, cosθ and tanθ: a. periodic property, e.g., sin(θ ± 2π) = sinθ, b. odd property, e.g., sin(−θ ) = − sinθ, c. translation property, e.g., sin(θ − π) = − sinθ and sin(π −θ ) = sinθ;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Graphs of Trigonometric Functions",
+    "slo_code": "9.2.2",
+    "statement": "draw the graph of trigonometric functions of sine, cosine, tangent, secant and cosecant, cotangent within the domain − 2π to 2π;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Graphs of Trigonometric Functions",
+    "slo_code": "9.2.3",
+    "statement": "sketch the trigonometric functions of the form asin(bɵ), acos(bɵ), and atan(bɵ), where a and b are integers;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Graphs of Trigonometric Functions",
+    "slo_code": "9.2.4",
+    "statement": "interpret the graphs of trigonometric functions and their reciprocals focusing on periodicity, even/ odd nature and extreme values;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Graphs of Trigonometric Functions",
+    "slo_code": "9.2.5",
+    "statement": "apply the concepts of trigonometric functions, identities, graphs, periodicity, even/ odd functions, and extreme values to the real world problems.",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.1",
+    "topic_title": "Inverse Trigonometric Functions",
+    "slo_code": "10.1.1",
+    "statement": "describe principal trigonometric functions and inverse trigonometric functions;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.1",
+    "topic_title": "Inverse Trigonometric Functions",
+    "slo_code": "10.1.2",
+    "statement": "find the domain and range of principal trigonometric functions and inverse trigonometric functions;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.1",
+    "topic_title": "Inverse Trigonometric Functions",
+    "slo_code": "10.1.3",
+    "statement": "draw the graph of inverse trigonometric functions of cosine, sine, tangent, secant, cosecant and cotangent;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Inverse Trigonometric Identities",
+    "slo_code": "10.2.1",
+    "statement": "prove addition and subtraction formulae of inverse trigonometric functions;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Inverse Trigonometric Identities",
+    "slo_code": "10.2.2",
+    "statement": "prove inverse trigonometric identities using the addition and subtraction formulae of inverse trigonometric functions;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Trigonometric Equations",
+    "slo_code": "10.3.1",
+    "statement": "solve trigonometric equations of the type sinθ = k, cosθ = k and tan θ = k where k is constant;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Trigonometric Equations",
+    "slo_code": "10.3.2",
+    "statement": "find the general solution or principal solution of a trigonometric equation, and discard extraneous roots by considering the period of the trigonometric function;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Trigonometric Equations",
+    "slo_code": "10.3.3",
+    "statement": "solve the following types of trigonometric equations graphically: θ a. sinθ =, 2 b. cosθ = θ, c. tanθ = 2θ, π π where − < θ <; 2 2;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Trigonometric Equations",
+    "slo_code": "10.3.4",
+    "statement": "apply the concepts of inverse trigonometric functions and equations to the real world problems.",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Vectors in a Plane",
+    "slo_code": "11.1.1",
+    "statement": "explain scalar and vector quantities;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Vectors in a Plane",
+    "slo_code": "11.1.2",
+    "statement": "describe magnitude of the following vectors: a. equal vectors, b. negative of a vector, c. unit vector, d. zero / null vector, e. position vector, f. parallel vectors;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Vectors in a Plane",
+    "slo_code": "11.1.3",
+    "statement": "represent a vector graphically;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Vectors in a Plane",
+    "slo_code": "11.1.4",
+    "statement": "apply the concepts of multiplying a vector by a scalar, and addition and subtraction of two vectors, graphically;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Vectors in a Plane",
+    "slo_code": "11.1.5",
+    "statement": "represent a vector in a Cartesian plane by describing the fundamental unit vectors î and ĵ;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Vectors in a Plane",
+    "slo_code": "11.1.6",
+    "statement": "find the unit vector in the direction of a given vector;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Vectors in a Plane",
+    "slo_code": "11.1.7",
+    "statement": "find the position vector of a point which divides the line segment joining two points in a given ratio;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.1",
+    "statement": "describe rectangular coordinates in space;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.2",
+    "statement": "represent a vector in space by using the fundamental unit vectors î, ĵ and k̂;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.3",
+    "statement": "find the distance between two points in space;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.4",
+    "statement": "apply the concepts of multiplying a vector by a scalar, and addition and subtraction of two vectors in three dimensions;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.5",
+    "statement": "find the magnitude of a vector;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.6",
+    "statement": "find the unit vector in the direction of a given vector;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.7",
+    "statement": "prove the following laws: a. commutative law for vector addition, b. associative law for vector addition, c. 0 as additive identity, d. −z as additive inverse of z;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Vectors in Space",
+    "slo_code": "11.2.8",
+    "statement": "apply concepts of vectors in space to the real world problems;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.1",
+    "statement": "explain the dot or scalar product of two vectors;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.2",
+    "statement": "interpret the dot or scalar product graphically;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.3",
+    "statement": "prove that: a. î. î = ĵ. ĵ = k̂. k̂ = 1, b. î. ĵ = ĵ.k̂ = k̂. î = 0;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.4",
+    "statement": "find the dot product of two vectors;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.5",
+    "statement": "solve problems based on the condition of orthogonality of two vectors;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.6",
+    "statement": "find the angle between two vectors using dot product;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.7",
+    "statement": "describe the direction cosines of a vector;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.8",
+    "statement": "find the direction cosines of a vector;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.9",
+    "statement": "prove that the sum of the squares of direction cosines is unity;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.10",
+    "statement": "find the projection of a vector along another vector;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.11",
+    "statement": "solve problems related to SLO 11.3.4, 11.3.7 and 11.3.9;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Dot or Scalar Product",
+    "slo_code": "11.3.12",
+    "statement": "apply the concepts of dot product of vectors to the real world problems;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.1",
+    "statement": "describe cross or vector product of two vectors with its geometrical illustration;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.2",
+    "statement": "describe the properties of cross or vector product;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.3",
+    "statement": "prove that: a. î × î = ĵ × ĵ = k̂ × k̂ = 0, b. î × ĵ = − ĵ × î = k̂, c. ĵ × k̂ = − k̂ × ĵ =î,;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.4",
+    "statement": "find the cross product of two vectors;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.5",
+    "statement": "prove that the magnitude of A × B represents the area of a parallelogram with adjacent sides A and B;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.6",
+    "statement": "determine the condition of parallel vectors of two non-zero vectors;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.7",
+    "statement": "solve problems using condition of parallel vectors of two non- zero vectors;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.8",
+    "statement": "prove A × B = −(B × A) with the help of given vectors;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.9",
+    "statement": "solve problems related to SLO 11.4.4 and 11.4.8;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Cross or Vector Product",
+    "slo_code": "11.4.10",
+    "statement": "apply the concepts of cross product of vectors to the real world problems;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.1",
+    "statement": "describe the scalar triple product of vectors in terms of components or determinant form;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.2",
+    "statement": "find the scalar triple product of vectors;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.3",
+    "statement": "prove that: iˆ ˆj ˆ ˆj.k ˆ iˆ ˆ iˆ ˆj a. × k = × = k. × = 1, iˆ ˆ ˆj ˆj. iˆ ˆ ˆ ˆj iˆ b.k × = × k = k. × = – 1;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.4",
+    "statement": "state that the dot and cross are interchangeable in the scalar triple product;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.5",
+    "statement": "solve problems related to SLO 11.5.2 and 11.5.4;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.6",
+    "statement": "find the volume of the following solids determined by three given vectors: a. parallelepiped, b. tetrahedron;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.7",
+    "statement": "describe coplanar vectors;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.8",
+    "statement": "determine the condition for co-planarity of three vectors;",
+    "page": 27
+  },
+  {
+    "grade": 11,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Scalar Triple Product",
+    "slo_code": "11.5.9",
+    "statement": "solve problems using the condition of co-planarity of three vectors.",
+    "page": 27
+  }
+]

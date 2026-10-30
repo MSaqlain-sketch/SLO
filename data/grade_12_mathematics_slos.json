@@ -1,0 +1,1838 @@
+[
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.1",
+    "statement": "describe the equation of straight line parallel to coordinate axes;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.2",
+    "statement": "describe the following forms of equation of a straight line: a. point – slope form, b. slope – intercept form, c. two points form, d. two intercepts form, e. normal form, f. symmetric form;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.3",
+    "statement": "convert the general form of the equation of a straight line into the forms mentioned in SLO 12.1.2;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.4",
+    "statement": "find the distance between: a. a point and a line, b. two parallel lines;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.5",
+    "statement": "describe concurrent lines and the point of concurrency;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.6",
+    "statement": "find the equations of the medians, altitudes and perpendicular bisectors of a triangle for the given vertices of a triangle;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.7",
+    "statement": "determine the condition of concurrency of three straight lines; (Note: When equations or vertices are given.);",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Equation of Straight Line",
+    "slo_code": "12.1.8",
+    "statement": "prove that in a triangle, the three: a. perpendicular bisectors are concurrent (circum-centre), b. medians are concurrent (centroid), c. altitudes are concurrent (orthocentre); ₍A₎, Analyse ₍An₎, Evaluate ₍E₎, Create ₍C₎];",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Angle Between Lines",
+    "slo_code": "12.2.1",
+    "statement": "find the angle between two intersecting lines;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Angle Between Lines",
+    "slo_code": "12.2.2",
+    "statement": "find the equation of the family of lines passing through the point of intersection of two given lines;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Angle Between Lines",
+    "slo_code": "12.2.3",
+    "statement": "calculate the angles of a triangle when the slopes of the sides are given;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Area of Polygon",
+    "slo_code": "12.3.1",
+    "statement": "find the area of a triangular region whose vertices are given;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Area of Polygon",
+    "slo_code": "12.3.2",
+    "statement": "find the area of a quadrilateral region whose vertices are given;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.4",
+    "topic_title": "Homogeneous Linear and Quadratic Equations in Two Variables",
+    "slo_code": "12.4.1",
+    "statement": "define the second degree homogeneous equations in two variables;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.4",
+    "topic_title": "Homogeneous Linear and Quadratic Equations in Two Variables",
+    "slo_code": "12.4.2",
+    "statement": "find the equation of the pair of lines represented jointly by the second degree homogeneous equation ax² + 2hxy + by² = 0;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.4",
+    "topic_title": "Homogeneous Linear and Quadratic Equations in Two Variables",
+    "slo_code": "12.4.3",
+    "statement": "determine the nature of the lines of ax² + 2hxy + by² = 0, using the discriminant D= h² −ab;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.4",
+    "topic_title": "Homogeneous Linear and Quadratic Equations in Two Variables",
+    "slo_code": "12.4.4",
+    "statement": "find the acute angle between a pair of straight lines passing through the origin;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.4",
+    "topic_title": "Homogeneous Linear and Quadratic Equations in Two Variables",
+    "slo_code": "12.4.5",
+    "statement": "solve the real world problems using the concepts of analytical geometry.",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.1",
+    "statement": "describe the following types of intervals: a. open interval, b. closed interval, c. semi-open and semi-closed intervals;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.2",
+    "statement": "represent the intervals mentioned in SLO 13.1.1 on a number line;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.3",
+    "statement": "describe a function as a rule of correspondence and notation of a function, its domain, codomain and range, including one-one and onto functions;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.4",
+    "statement": "find the value of a function for given values of dependent and independent variables;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.5",
+    "statement": "identify functions as: a. algebraic functions, b. transcendental functions;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.6",
+    "statement": "describe various transcendental functions such as trigonometric functions, inverse trigonometric functions, logarithmic functions, exponential functions and modulus functions;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.7",
+    "statement": "describe quadratic and square root functions;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.8",
+    "statement": "describe: a. explicit and implicit functions; b. even and odd functions; c. parametric equations of functions such as x = at², y = 2at, x = a sec θ, and y = b tan θ; d. piecewise functions, such as y = {x when 0 ≤ x < 1; x − 1 when 1 ≤ x ≤ 2}.",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.9",
+    "statement": "find the domain and range of algebraic functions;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.10",
+    "statement": "find the domain and range of transcendental functions;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.11",
+    "statement": "solve problems related to exponential and logarithmic functions;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Functions and Types of Functions",
+    "slo_code": "13.1.12",
+    "statement": "solve compound interest problems using exponential function;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Inverse Functions",
+    "slo_code": "13.2.1",
+    "statement": "describe inverse of a function and its notation;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Inverse Functions",
+    "slo_code": "13.2.2",
+    "statement": "find the inverse of a function and its domain and range;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.1",
+    "statement": "plot the graph of the function y = xn (n ≠ 0), where n is a rational number;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.2",
+    "statement": "find the equation of a quadratic function f(x)=ax²+bx+c based on the given graph y=a(x−p)(x−q), where the curve intersects the x-axis at (p, 0) and (q, 0), and passing through the point (x,y); ₁ ₁;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.3",
+    "statement": "sketch the graph of a quadratic function using its factors;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.4",
+    "statement": "distinguish among linear, quadratic and square root functions graphically;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.5",
+    "statement": "interpret the graph of exponential and logarithmic function;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.6",
+    "statement": "draw the graph of the modulus function of the form y = |x| and y=c× x±a ±b, where a and b are rational numbers;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.7",
+    "statement": "find the domain and range of a function using its graph;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.8",
+    "statement": "interpret the relation between a one-one function and its inverse through a graph;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.9",
+    "statement": "illustrate the transformations of a graph through: a. horizontal shift, b. vertical shift, c. scaling (using scale factor) (FA);",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Graph of Functions",
+    "slo_code": "13.3.10",
+    "statement": "interpret the graph or sketch of piecewise functions, such as y = {x when 0 ≤ x < 1; x − 1 when 1 ≤ x ≤ 2}.",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.1",
+    "statement": "describe the following phrases: a. x→0, b. x→a, c. x→∞;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.2",
+    "statement": "describe the limit of a sequence;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.3",
+    "statement": "find the limit of a sequence;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.4",
+    "statement": "describe the limit of a function;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.5",
+    "statement": "state theorems of limits for the sum, difference, power, product, and quotient of functions;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.6",
+    "statement": "find the limit of a function using the theorems of limits;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.7",
+    "statement": "evaluate the limits of functions of the following forms: xn −an x−a a. when x→a,, x−a x− a x b. ( 1( when x→∞, (1+ ( ) x) x+a − a ax −1 (1+x)n sin x c. (1+x)¹, −1 and, x,,, x x x x when x is in radian and x→0;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Limit of a Function",
+    "slo_code": "13.4.8",
+    "statement": "evaluate the limits of different algebraic, exponential, logarithmic and trigonometric functions;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Continuous and Discontinuous Functions",
+    "slo_code": "13.5.1",
+    "statement": "determine the existence and non-existence of limit of a function by illustrating the left hand and right hand limits;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Continuous and Discontinuous Functions",
+    "slo_code": "13.5.2",
+    "statement": "describe the continuity of a function at a point and in an interval;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Continuous and Discontinuous Functions",
+    "slo_code": "13.5.3",
+    "statement": "determine the continuity and discontinuity of a function at a point and in an interval;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Continuous and Discontinuous Functions",
+    "slo_code": "13.5.4",
+    "statement": "apply the concepts of logarithm and exponential functions, limit of a function and its continuity to the following real world problems: a. growth and decay, b. finance, c. economics, d. surveying, e. navigation, f. astronomy, g. growth rate of sales, h. rate of change in sales, i. predicting long-term stock prices.",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.1",
+    "statement": "distinguish between independent and dependent variables;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.2",
+    "statement": "determine the approximate value of the corresponding change in the dependent variable when the independent variable is increased or decreased;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.3",
+    "statement": "explain the concept of rate of change;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.4",
+    "statement": "distinguish between the average rate of change and the instantaneous rate of change;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.5",
+    "statement": "solve problems based on the average rate of change and the instantaneous rate of change;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.6",
+    "statement": "describe the derivative or differential coefficient of a function as the instantaneous rate of change of the dependent variable with respect to the independent variable and its notation for derivatives;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.7",
+    "statement": "find the derivative of the function using the definition of the derivative, or by first principles or by ab-initio: a. y = xn where n∈Q, represents the set of rational numbers, ( )n, p b. y= ax+b where n = and p, q are integers such q that q≠0;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Derivative of a Function",
+    "slo_code": "14.1.8",
+    "statement": "find the derivative of algebraic functions using the direct method (power rule);",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Theorems on Differentiation and their Applications",
+    "slo_code": "14.2.1",
+    "statement": "find the derivative of: a. any constant multiple of a function, b. sum (or difference) of two functions, c. product of two functions,;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Theorems on Differentiation and their Applications",
+    "slo_code": "14.2.2",
+    "statement": "determine the derivative of a polynomial or rational functions with reference to the combination of differentiation rules mentioned in SLO 14.2.1;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Chain Rule",
+    "slo_code": "14.3.1",
+    "statement": "describe the chain rule e.g., dy dy du, when y = f (u), u = g(x) ₌ × dx du dx and dy 1; = dx dx dy;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Chain Rule",
+    "slo_code": "14.3.2",
+    "statement": "solve problems related to the chain rule;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Chain Rule",
+    "slo_code": "14.3.3",
+    "statement": "find the derivative of implicit functions;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Differentiation of Trigonometric and Inverse Trigonometric Functions",
+    "slo_code": "14.4.1",
+    "statement": "find the derivative of trigonometric functions by first principles;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Differentiation of Trigonometric and Inverse Trigonometric Functions",
+    "slo_code": "14.4.2",
+    "statement": "find the derivative of trigonometric functions using the direct method;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Differentiation of Trigonometric and Inverse Trigonometric Functions",
+    "slo_code": "14.4.3",
+    "statement": "find the derivative of inverse trigonometric functions using formulae;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Differentiation of Exponential and Logarithmic Functions",
+    "slo_code": "14.5.1",
+    "statement": "exand axby find the derivative of first principles;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Differentiation of Exponential and Logarithmic Functions",
+    "slo_code": "14.5.2",
+    "statement": "find the derivative of lnx and log x by first principles; a;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Differentiation of Exponential and Logarithmic Functions",
+    "slo_code": "14.5.3",
+    "statement": "find the derivative of exponential and logarithmic functions using the direct method;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Differentiation of Exponential and Logarithmic Functions",
+    "slo_code": "14.5.4",
+    "statement": "determine the derivative of algebraic expressions involving product, quotient and power using the laws of logarithms;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.6",
+    "topic_title": "Differentiation of Hyperbolic and Inverse Hyperbolic Functions",
+    "slo_code": "14.6.1",
+    "statement": "find the derivative of an: a. hyperbolic functions (sinh x, cosh x, tanh x, cosech x, sech x and coth x), b. inverse hyperbolic functions (sinh−¹x, cosh−¹x, tanh−¹x, cosech−¹x, sech−¹x, and coth−¹x);",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.7",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "14.7.1",
+    "statement": "find the velocity and acceleration of an object moving along a straight line using differentiation when displacement is given;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.7",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "14.7.2",
+    "statement": "apply the concepts of differentiation to the following real world problems: a. profits on diminishing returns, b. financial investments, c. population growth, d. spread of diseases, e. movement of particles, f. time-speed in transportation;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.8",
+    "topic_title": "Partial Derivations",
+    "slo_code": "14.8.1",
+    "statement": "define a function of two independent variables e.g., z = f (x, y);",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.8",
+    "topic_title": "Partial Derivations",
+    "slo_code": "14.8.2",
+    "statement": "explain partial derivatives of the first order;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.8",
+    "topic_title": "Partial Derivations",
+    "slo_code": "14.8.3",
+    "statement": "solve problems related to partial derivatives of the first order.",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Higher Order Derivatives",
+    "slo_code": "15.1.1",
+    "statement": "find the higher order derivatives of algebraic, trigonometric, exponential and logarithmic functions;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Higher Order Derivatives",
+    "slo_code": "15.1.2",
+    "statement": "find the second derivative of implicit, inverse trigonometric and parametric functions;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.1",
+    "statement": "explain differentials to approximate the change in a quantity;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.2",
+    "statement": "interpret derivatives geometrically;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.3",
+    "statement": "calculate the relative error and percentage error in using a differential approximation (volume of a cube and sphere);",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.4",
+    "statement": "find the gradient of a curve at a point;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.5",
+    "statement": "find the angle of intersection of two curves;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.6",
+    "statement": "find the equation of the tangent and normal to the curve at a point;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.7",
+    "statement": "state Maclaurin’s and Taylor’s theorems;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Application of Derivatives",
+    "slo_code": "15.2.8",
+    "statement": "expand sinx, cosx, tanx, ax, ex, log (1+ x) and ln(1+ x) using a Maclaurin’s and Taylor’s theorems to;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Extreme Values of a Function",
+    "slo_code": "15.3.1",
+    "statement": "find the point on a curve where the tangent is parallel to the given line;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Extreme Values of a Function",
+    "slo_code": "15.3.2",
+    "statement": "apply the first derivative rule to identify increasing and decreasing functions;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Extreme Values of a Function",
+    "slo_code": "15.3.3",
+    "statement": "define critical and stationary points;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Extreme Values of a Function",
+    "slo_code": "15.3.4",
+    "statement": "illustrate Global extrema (absolute extrema) and local extrema (relative extrema);",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Extreme Values of a Function",
+    "slo_code": "15.3.5",
+    "statement": "apply the second derivative rule to examine a given function for extreme values;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Extreme Values of a Function",
+    "slo_code": "15.3.6",
+    "statement": "apply the concepts of higher order derivatives to the real world;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Vector Valued Functions",
+    "slo_code": "16.1.1",
+    "statement": "describe vector valued functions;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Vector Valued Functions",
+    "slo_code": "16.1.2",
+    "statement": "identify domain and range of vector valued functions;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Vector Valued Functions",
+    "slo_code": "16.1.3",
+    "statement": "describe scaler valued functions;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Vector Valued Functions",
+    "slo_code": "16.1.4",
+    "statement": "differentiate between scalar and vector valued functions;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Vector Valued Functions",
+    "slo_code": "16.1.5",
+    "statement": "construct vector valued functions;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.2",
+    "topic_title": "Derivative of Vector Valued Functions",
+    "slo_code": "16.2.1",
+    "statement": "explain the derivative of vector function f (t) = f (t )i + f (t )j + f (t)k, where f (t ), f (t ) and f (t) ₁ ₂ ₃ ₁ ₂ ₃ are differentiable functions of a scalar variable t, and the derivative is given by df df df df ₌ ¹i₊ ₂ j₊ ³k; dt dt dt dt;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.2",
+    "topic_title": "Derivative of Vector Valued Functions",
+    "slo_code": "16.2.2",
+    "statement": "calculate the velocity and acceleration of a position vector f (t) = x(t )i + y(t )j + z(t)k, using vector differentiation;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.2",
+    "topic_title": "Derivative of Vector Valued Functions",
+    "slo_code": "16.2.3",
+    "statement": "apply the concepts of vector valued functions to the real world problems in engineering and transportation.",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.1",
+    "topic_title": "Introduction",
+    "slo_code": "17.1.1",
+    "statement": "describe the general antiderivative of a function;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.1",
+    "topic_title": "Introduction",
+    "slo_code": "17.1.2",
+    "statement": "identify the terms and notations for antiderivatives;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.1",
+    "topic_title": "Introduction",
+    "slo_code": "17.1.3",
+    "statement": "find the indefinite integrals to establish a relationship between basic standard integral formulae and their corresponding differentiation formulae;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.2",
+    "topic_title": "Rules of Integration",
+    "slo_code": "17.2.1",
+    "statement": "describe the following rules of integration: a. d/dx [∫ f(x) dx] = f(x), and ∫ [df(x)/dx] dx = f(x) + c, where c is the constant of integration; b. the integral of a constant multiplied by a function is the constant multiplied by the integral of that function; c. the integral of a finite sum of functions equals the sum of their integrals.",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.2",
+    "topic_title": "Rules of Integration",
+    "slo_code": "17.2.2",
+    "statement": "prove the results for the following integrals using the standard differentiation formulae: [ ]n₊₁ f(x) [ ( )]n ( ) a. ∫ f x f ' x dx = +c, n+1 f ' ( x ) b. ∫ dx =ln | f(x)|+c, f ( x ) ∫eax[ ( ) ( )] f(x)eax, c. af x + f ' x dx = where ‘a’ is a constant;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.2",
+    "topic_title": "Rules of Integration",
+    "slo_code": "17.2.3",
+    "statement": "evaluate indefinite integrals;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Integration by Substitution",
+    "slo_code": "17.3.1",
+    "statement": "explain the following methods of integration:",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Integration by Substitution",
+    "slo_code": "17.3.2",
+    "statement": "evaluate the integrals using the appropriate method of substitution;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Integration by Parts",
+    "slo_code": "17.4.1",
+    "statement": "explain the formula of integration by parts;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Integration by Parts",
+    "slo_code": "17.4.2",
+    "statement": "evaluate the integrals using the integration by parts;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.5",
+    "topic_title": "Integration using Partial Fractions",
+    "slo_code": "17.5.1",
+    "statement": "find ∫ dx using partial fractions where f x and g x are g(x) ( ) algebraic functions andg x ≠0;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Definite Integrals",
+    "slo_code": "17.6.1",
+    "statement": "define definite integral;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Definite Integrals",
+    "slo_code": "17.6.2",
+    "statement": "explain the terms integrand, limits of integration and variable of integration;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Definite Integrals",
+    "slo_code": "17.6.3",
+    "statement": "describe the trapezium rule to estimate the value of a definite integral;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Definite Integrals",
+    "slo_code": "17.6.4",
+    "statement": "describe the fundamental theorem of integral calculus and recognise: a. ∫ₐᵃ f(x) dx = 0; b. ∫ₐᵇ f(x) dx = −∫ᵦᵃ f(x) dx; c. ∫ₐᵇ f(x) dx = ∫ₐᶜ f(x) dx + ∫𝑐ᵇ f(x) dx, where a < c < b; d. ∫₋ₐᵃ f(x) dx = {2∫₀ᵃ f(x) dx when f(−x) = f(x); 0 when f(−x) = −f(x)}.",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Definite Integrals",
+    "slo_code": "17.6.5",
+    "statement": "evaluate definite integrals;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Definite Integrals",
+    "slo_code": "17.6.6",
+    "statement": "describe the definite integral as the area under the curve with respect to the x-axis;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Definite Integrals",
+    "slo_code": "17.6.7",
+    "statement": "calculate the area under the curve using definite integrals;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.7",
+    "topic_title": "Application of Definite Integrals",
+    "slo_code": "17.7.1",
+    "statement": "identify distance and speed as scalar quantities, and displacement, velocity, and acceleration as vector quantities;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.7",
+    "topic_title": "Application of Definite Integrals",
+    "slo_code": "17.7.2",
+    "statement": "determine the volume of revolution about one of the axes;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.7",
+    "topic_title": "Application of Definite Integrals",
+    "slo_code": "17.7.3",
+    "statement": "interpret displacement–time graphs and velocity– time graphs;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.7",
+    "topic_title": "Application of Definite Integrals",
+    "slo_code": "17.7.4",
+    "statement": "apply the concepts of integration to the real world problems involving the volume of a container and the growth rate of a population;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.8",
+    "topic_title": "Differential Equations",
+    "slo_code": "17.8.1",
+    "statement": "explain the concept of ordinary differential equation (ODE), order and degree of a differential equation;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.8",
+    "topic_title": "Differential Equations",
+    "slo_code": "17.8.2",
+    "statement": "construct first order differential equations from practical situations;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.8",
+    "topic_title": "Differential Equations",
+    "slo_code": "17.8.3",
+    "statement": "solve differential equations of the first order and first degree by separating the variables;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.8",
+    "topic_title": "Differential Equations",
+    "slo_code": "17.8.4",
+    "statement": "explain homogeneous function and homogeneous differential equations;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.8",
+    "topic_title": "Differential Equations",
+    "slo_code": "17.8.5",
+    "statement": "solve homogeneous differential equations of first order and first degree using suitable substitution;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.8",
+    "topic_title": "Differential Equations",
+    "slo_code": "17.8.6",
+    "statement": "solve word problems related to differentiation and integration, e.g., finding displacement from velocity and velocity from acceleration, population growth and decay;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.8",
+    "topic_title": "Differential Equations",
+    "slo_code": "17.8.7",
+    "statement": "apply the concepts of mechanics to the real world problems involving motion of vehicles on roads and projectile motion.",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.1",
+    "topic_title": "Introduction",
+    "slo_code": "18.1.1",
+    "statement": "describe non-linear equations;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.1",
+    "topic_title": "Introduction",
+    "slo_code": "18.1.2",
+    "statement": "differentiate between linear and non-linear equations;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Solution of Nonlinear Equations",
+    "slo_code": "18.2.1",
+    "statement": "explain the basic principles of selection of initial roots for solving a non-linear equation in one variable;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Solution of Nonlinear Equations",
+    "slo_code": "18.2.2",
+    "statement": "explain the following three iterative methods of solving non-linear equations: a. bisection method, b. regular-falsi method, c. Newton Raphson method;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Solution of Nonlinear Equations",
+    "slo_code": "18.2.3",
+    "statement": "solve non-linear equations up to three iterations using the methods in SLO 18.2.3;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Solution of Nonlinear Equations",
+    "slo_code": "18.2.4",
+    "statement": "apply the concepts of non-linear equations to the real world problems in chemical reactions and cryptography;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Solution of Nonlinear Equations",
+    "slo_code": "18.2.5",
+    "statement": "estimate a root of an equation either graphically or by identifying a sign change;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Solution of Nonlinear Equations",
+    "slo_code": "18.2.6",
+    "statement": "describe the order of accuracy;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Solution of Nonlinear Equations",
+    "slo_code": "18.2.7",
+    "statement": "analyse the order of accuracy of the methods mentioned in SLO;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Introduction to Conics",
+    "slo_code": "19.1.1",
+    "statement": "describe conics and members of its family, i.e., circle, parabola, ellipse and hyperbola;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Circle and its Equation",
+    "slo_code": "19.2.1",
+    "statement": "explain the circle and its elements;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Circle and its Equation",
+    "slo_code": "19.2.2",
+    "statement": "derive the equation of a circle in standard form (x−h)² +(y−k)² =r²;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Circle and its Equation",
+    "slo_code": "19.2.3",
+    "statement": "describe the general equation of a circle x² + y² +2gx+2fy+c=0;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Circle and its Equation",
+    "slo_code": "19.2.4",
+    "statement": "find the centre and radius of a circle using the general and standard forms of the equation;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Circle and its Equation",
+    "slo_code": "19.2.5",
+    "statement": "sketch a circle when its elements are given;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Circle and its Equation",
+    "slo_code": "19.2.6",
+    "statement": "find the equation of a circle passing through: a. three non-collinear points, b. two points and having its centre on a given line, c. two points and equation of tangent at one of these points is known, d. two points and touching a given line, etc.;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Circle and its Equation",
+    "slo_code": "19.2.7",
+    "statement": "solve word problems related to circles;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "Tangents and Normals to a Circle",
+    "slo_code": "19.3.1",
+    "statement": "determine the condition when a line intersects a circle;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "Tangents and Normals to a Circle",
+    "slo_code": "19.3.2",
+    "statement": "determine the condition when a line touches a circle;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "Tangents and Normals to a Circle",
+    "slo_code": "19.3.3",
+    "statement": "find the equation of a tangent to a circle in the slope-intercept form;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "Tangents and Normals to a Circle",
+    "slo_code": "19.3.4",
+    "statement": "find the equations of a tangent and a normal to a circle: a. at a given point on the circle, b. parallel to a given line, c. perpendicular to a given line;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "Tangents and Normals to a Circle",
+    "slo_code": "19.3.5",
+    "statement": "determine whether a point lies inside, on or outside a circle;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "Tangents and Normals to a Circle",
+    "slo_code": "19.3.6",
+    "statement": "determine the nature of tangents through the points: a. inside the circle (no real tangent), b. on the circle (one real tangent), c. outside the circle (two real tangents);",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "Tangents and Normals to a Circle",
+    "slo_code": "19.3.7",
+    "statement": "calculate the length of the tangent to a circle from an external point to a circle.",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.1",
+    "topic_title": "Introduction to a Parabola",
+    "slo_code": "20.1.1",
+    "statement": "describe parabola and its elements;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.2",
+    "topic_title": "Equation of a Parabola",
+    "slo_code": "20.2.1",
+    "statement": "derive the general form and standard form of the equation of a parabola;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.2",
+    "topic_title": "Equation of a Parabola",
+    "slo_code": "20.2.2",
+    "statement": "find the elements of a parabola when its equation is given;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.2",
+    "topic_title": "Equation of a Parabola",
+    "slo_code": "20.2.3",
+    "statement": "sketch a parabola using its given elements;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.2",
+    "topic_title": "Equation of a Parabola",
+    "slo_code": "20.2.4",
+    "statement": "find the equation of a parabola using its given elements;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.2",
+    "topic_title": "Equation of a Parabola",
+    "slo_code": "20.2.5",
+    "statement": "solve problems related to parabolas;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.3",
+    "topic_title": "Tangents and Normals to a Parabola",
+    "slo_code": "20.3.1",
+    "statement": "determine the condition for a line to be tangent to a parabola at a point;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.3",
+    "topic_title": "Tangents and Normals to a Parabola",
+    "slo_code": "20.3.2",
+    "statement": "find the equations of a tangent and a normal to a parabola: a. at a given point on the parabola, b. parallel to a given line, c. perpendicular to a given line;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.3",
+    "topic_title": "Tangents and Normals to a Parabola",
+    "slo_code": "20.3.3",
+    "statement": "solve problems related to the tangents and normals to a parabola;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.4",
+    "topic_title": "Application of Parabola",
+    "slo_code": "20.4.1",
+    "statement": "apply the concepts of parabola to the real world problems involving: a. suspension (such as the shape of suspension bridge), b. reflection problems (such as the focus of parabolic reflectors).",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.1",
+    "topic_title": "Introduction to an Ellipse",
+    "slo_code": "21.1.1",
+    "statement": "describe ellipse and its elements;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.1",
+    "topic_title": "Introduction to an Ellipse",
+    "slo_code": "21.1.2",
+    "statement": "explain the concept that a circle is a special case of an ellipse, when the two foci coincide at the centre, and the major and minor axes are equal in length;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.2",
+    "topic_title": "Equation of an Ellipse",
+    "slo_code": "21.2.1",
+    "statement": "derive the standard form of the equation of an ellipse;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.2",
+    "topic_title": "Equation of an Ellipse",
+    "slo_code": "21.2.2",
+    "statement": "find the equation of an ellipse using its given elements;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.2",
+    "topic_title": "Equation of an Ellipse",
+    "slo_code": "21.2.3",
+    "statement": "find the elements of an ellipse by converting a given equation to its standard form;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.2",
+    "topic_title": "Equation of an Ellipse",
+    "slo_code": "21.2.4",
+    "statement": "sketch an ellipse using the given elements;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.2",
+    "topic_title": "Equation of an Ellipse",
+    "slo_code": "21.2.5",
+    "statement": "solve problems related to ellipse;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.3",
+    "topic_title": "Tangents and Normals to an Ellipse",
+    "slo_code": "21.3.1",
+    "statement": "determine the points of intersection of an ellipse with a line and the condition of tangency;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.3",
+    "topic_title": "Tangents and Normals to an Ellipse",
+    "slo_code": "21.3.2",
+    "statement": "find the equation of the tangent and normal to an ellipse: a. at a given point on the ellipse, b. which is parallel to a given line, c. which is perpendicular to a given line;",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 21,
+    "topic": "21.4",
+    "topic_title": "Application of an Ellipse",
+    "slo_code": "21.4.1",
+    "statement": "apply the concepts of an ellipse to the real world problems: a. satellite orbit in space, b. elliptic motion of electrons in an atom around the nucleus.",
+    "page": 47
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.1",
+    "topic_title": "Introduction to a Hyperbola",
+    "slo_code": "22.1.1",
+    "statement": "describe hyperbola and its elements;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.2",
+    "topic_title": "Equation of Hyperbola",
+    "slo_code": "22.2.1",
+    "statement": "derive the standard form of equation of a hyperbola;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.2",
+    "topic_title": "Equation of Hyperbola",
+    "slo_code": "22.2.2",
+    "statement": "find the equation of a hyperbola using its given elements;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.2",
+    "topic_title": "Equation of Hyperbola",
+    "slo_code": "22.2.3",
+    "statement": "find the elements of hyperbola given in SLO 22.2.1 by converting a given equation to its standard form;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.2",
+    "topic_title": "Equation of Hyperbola",
+    "slo_code": "22.2.4",
+    "statement": "sketch a hyperbola using the given elements;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.2",
+    "topic_title": "Equation of Hyperbola",
+    "slo_code": "22.2.5",
+    "statement": "solve problems related to hyperbola;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.3",
+    "topic_title": "Tangents and Normals to a Hyperbola",
+    "slo_code": "22.3.1",
+    "statement": "determine the points of intersection of a hyperbola with a line, including the condition of tangency;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.3",
+    "topic_title": "Tangents and Normals to a Hyperbola",
+    "slo_code": "22.3.2",
+    "statement": "find the equation of the tangent and normal to a hyperbola: a. at a given point on the hyperbola, b. parallel to a given line, c. perpendicular to a given line;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.3",
+    "topic_title": "Tangents and Normals to a Hyperbola",
+    "slo_code": "22.3.3",
+    "statement": "solve problems related to tangents and normal to hyperbolas;",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 22,
+    "topic": "22.4",
+    "topic_title": "Application of Hyperbola",
+    "slo_code": "22.4.1",
+    "statement": "apply the concepts of hyperbola to the real world problems such as radio system used for hyperbolic functions.",
+    "page": 48
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.1",
+    "topic_title": "Introduction",
+    "slo_code": "23.1.1",
+    "statement": "explain MAPLE integrated development environment;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.1",
+    "topic_title": "Introduction",
+    "slo_code": "23.1.2",
+    "statement": "identify basic MAPLE commands;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.1",
+    "topic_title": "Introduction",
+    "slo_code": "23.1.3",
+    "statement": "apply MAPLE as a calculator;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.1",
+    "topic_title": "Introduction",
+    "slo_code": "23.1.4",
+    "statement": "use online MAPLE help;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.2",
+    "topic_title": "Polynomials",
+    "slo_code": "23.2.1",
+    "statement": "apply MAPLE commands to: a. find the factors of a polynomial, b. expand an expression, c. simplify an expression, d. simplify a rational expression, e. find the value of an expression by substituting value;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.3",
+    "topic_title": "Graphics",
+    "slo_code": "23.3.1",
+    "statement": "apply MAPLE commands to: a. plot a two-dimensional graph, b. demonstrate domain and range of a plot, c. sketch parametric equations, d. use plotting options;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.4",
+    "topic_title": "Matrices",
+    "slo_code": "23.4.1",
+    "statement": "identify matrix and vector entry arrangement through MAPLE;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.4",
+    "topic_title": "Matrices",
+    "slo_code": "23.4.2",
+    "statement": "apply matrix operations;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.4",
+    "topic_title": "Matrices",
+    "slo_code": "23.4.3",
+    "statement": "find the inverse and transpose of a matrix;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.5",
+    "topic_title": "Straight Lines",
+    "slo_code": "23.5.1",
+    "statement": "apply MAPLE graphic commands for two-dimensional plot of an expression (or a function);",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.5",
+    "topic_title": "Straight Lines",
+    "slo_code": "23.5.2",
+    "statement": "apply MAPLE package plots for plotting different types of functions;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.6",
+    "topic_title": "Limits and Functions",
+    "slo_code": "23.6.1",
+    "statement": "evaluate the limit of a function using MAPLE command limit;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.6",
+    "topic_title": "Limits and Functions",
+    "slo_code": "23.6.2",
+    "statement": "apply MAPLE command iscont to test continuity of a function at a point and in a given interval;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.7",
+    "topic_title": "Differentiation",
+    "slo_code": "23.7.1",
+    "statement": "differentiate a function using MAPLE command diff;",
+    "page": 49
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.8",
+    "topic_title": "Higher Order Derivatives and their Applications",
+    "slo_code": "23.8.1",
+    "statement": "determine higher order derivative of a function using MAPLE command diff repeatedly;",
+    "page": 50
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.8",
+    "topic_title": "Higher Order Derivatives and their Applications",
+    "slo_code": "23.8.2",
+    "statement": "apply MAPLE command maximize and minimize to compute; the maximum and minimum value of a function;",
+    "page": 50
+  },
+  {
+    "grade": 12,
+    "chapter": 23,
+    "topic": "23.9",
+    "topic_title": "Integrations",
+    "slo_code": "23.9.1",
+    "statement": "evaluate definite and indefinite integrals using MAPLE command int.",
+    "page": 50
+  }
+]

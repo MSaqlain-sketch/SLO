@@ -628,9 +628,11 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          question: text,
-          marks,
-          history: (
+  question: text,
+  marks,
+  grade: classLevel === "XI" ? 11 : 12,
+  subject: selectionSubjectSlug,
+  history: (
             chats.find((chat) => chat.id === chatId)?.messages ?? []
           )
             .slice(-10)

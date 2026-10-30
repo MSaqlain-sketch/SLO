@@ -1,0 +1,533 @@
+[
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Subtopic 9.1",
+    "slo_code": "9.1.1",
+    "statement": "describe the use of digital device in terms of ease of use and efficiency;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Subtopic 9.1",
+    "slo_code": "9.1.2",
+    "statement": "describe the security features of devices and best practices for data protection;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Subtopic 9.1",
+    "slo_code": "9.1.3",
+    "statement": "explain the ways in which accessibility features in devices support users with disabilities;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Subtopic 9.2",
+    "slo_code": "9.2.1",
+    "statement": "describe Human-Computer Interaction (HCI) and its importance;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Subtopic 9.2",
+    "slo_code": "9.2.2",
+    "statement": "analyse the influence of Human-Computer Interaction (HCI) on user efficiency and task effectiveness;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.3",
+    "topic_title": "Subtopic 9.3",
+    "slo_code": "9.3.1",
+    "statement": "describe HCI design considerations and their effects on usability and system performance;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.3",
+    "topic_title": "Subtopic 9.3",
+    "slo_code": "9.3.2",
+    "statement": "analyse the trade-offs involved in designing HCI in the context of: a. security, b. user-friendliness, c. cost-effectiveness.",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.1",
+    "topic_title": "Subtopic 10.1",
+    "slo_code": "10.1.1",
+    "statement": "define data structure; *",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.1",
+    "topic_title": "Subtopic 10.1",
+    "slo_code": "10.1.2",
+    "statement": "describe the following types of data structures: a. list, b. array, c. tree, d. stack, e. queue;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Subtopic 10.2",
+    "slo_code": "10.2.1",
+    "statement": "describe the traversal operation on an array;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Subtopic 10.2",
+    "slo_code": "10.2.2",
+    "statement": "describe the enqueue and dequeue operations in a queue;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Subtopic 10.2",
+    "slo_code": "10.2.3",
+    "statement": "explain the push and pop operations in a stack;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Subtopic 10.2",
+    "slo_code": "10.2.4",
+    "statement": "explain the following operations on a tree: a. traversing, I. in order, II. pre-order, III. post order, b. binary search;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Subtopic 10.3",
+    "slo_code": "10.3.1",
+    "statement": "explain the application of tree data structures;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Subtopic 10.3",
+    "slo_code": "10.3.2",
+    "statement": "explain the application of the binary search algorithms;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Subtopic 10.3",
+    "slo_code": "10.3.3",
+    "statement": "apply tree data structures to represent hierarchical data models such as file systems or organisational charts;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Subtopic 10.3",
+    "slo_code": "10.3.4",
+    "statement": "use the binary search algorithm to locate elements in sorted data efficiently;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Subtopic 10.3",
+    "slo_code": "10.3.5",
+    "statement": "illustrate the use of tree traversal techniques in data retrieval and manipulation tasks.",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Subtopic 11.1",
+    "slo_code": "11.1.1",
+    "statement": "describe predefined and user-defined functions;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Subtopic 11.1",
+    "slo_code": "11.1.2",
+    "statement": "describe the advantages of user-defined functions;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Subtopic 11.1",
+    "slo_code": "11.1.3",
+    "statement": "describe the signature of the functions, i.e., function name, arguments, and return value;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Subtopic 11.1",
+    "slo_code": "11.1.4",
+    "statement": "explain the process of creating a user-defined function, i.e., function declaration, function definition, and function call;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Subtopic 11.1",
+    "slo_code": "11.1.5",
+    "statement": "differentiate among the following variable types used in functions: a. local, b. global;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Subtopic 11.1",
+    "slo_code": "11.1.6",
+    "statement": "write a program involving a user-defined function;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Subtopic 11.2",
+    "slo_code": "11.2.1",
+    "statement": "define default argument; *",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Subtopic 11.2",
+    "slo_code": "11.2.2",
+    "statement": "describe the purpose of the return statement;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Subtopic 11.2",
+    "slo_code": "11.2.3",
+    "statement": "write a program that demonstrates the return statement;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Subtopic 11.2",
+    "slo_code": "11.2.4",
+    "statement": "write a program to invoke a user-defined function and pass arguments by constant, value, and reference;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Subtopic 11.3",
+    "slo_code": "11.3.1",
+    "statement": "describe Object-Oriented Programming (OOP) and functional programming;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Subtopic 11.3",
+    "slo_code": "11.3.2",
+    "statement": "compare the advantages and disadvantages of Object-Oriented Programming (OOP) and functional programming;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Subtopic 11.3",
+    "slo_code": "11.3.3",
+    "statement": "explain class and object in terms of OOP;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Subtopic 11.3",
+    "slo_code": "11.3.4",
+    "statement": "write a Python program to a. declare a class with data members and member functions defined within its body, b. create objects of the class in the main() function and call its",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Subtopic 12.1",
+    "slo_code": "12.1.1",
+    "statement": "define Machine Learning (ML);",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Subtopic 12.1",
+    "slo_code": "12.1.2",
+    "statement": "differentiate between Machine Learning (ML) and rule-based algorithm;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Subtopic 12.1",
+    "slo_code": "12.1.3",
+    "statement": "explain the following basics of Machine Learning (ML) model building: a. feature engineering, b. train test split, c. model assessment;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Subtopic 12.1",
+    "slo_code": "12.1.4",
+    "statement": "explain the following Machine Learning (ML) algorithms: a. regression, b. clustering, c. classification;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Subtopic 12.2",
+    "slo_code": "12.2.1",
+    "statement": "describe hypothesis and its role in statistical analysis;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Subtopic 12.2",
+    "slo_code": "12.2.2",
+    "statement": "describe the null hypothesis and the alternative hypothesis;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Subtopic 12.2",
+    "slo_code": "12.2.3",
+    "statement": "explain P value and significance testing;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Subtopic 12.2",
+    "slo_code": "12.2.4",
+    "statement": "explain the following tests: a. f-test, b. chi-square test, c. ANOVA;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Subtopic 12.3",
+    "slo_code": "12.3.1",
+    "statement": "explain the following performance evaluation techniques; a. accuracy, b. precision, c. recall, d. f1 score, e. rand index, f. ROC (Receiver Operating Characteristic),",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Subtopic 13.1",
+    "slo_code": "13.1.1",
+    "statement": "describe the following key applications of IoT in Pakistan: a. smart homes, b. agriculture, c. smart cities, d. healthcare monitoring systems;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Subtopic 13.1",
+    "slo_code": "13.1.2",
+    "statement": "explain the importance of cloud computing in Pakistan for data storage;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Subtopic 13.1",
+    "slo_code": "13.1.3",
+    "statement": "evaluate the benefits and challenges of cloud computing for data management in Pakistan;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Subtopic 13.2",
+    "slo_code": "13.2.1",
+    "statement": "explain the relationship between deep learning networks and neural networks;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Subtopic 13.2",
+    "slo_code": "13.2.2",
+    "statement": "analyse the applications of neural networks, including deep learning models, in fields such as healthcare, finance, and autonomous vehicles.",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Subtopic 14.1",
+    "slo_code": "14.1.1",
+    "statement": "define the terms, privacy and security;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Subtopic 14.1",
+    "slo_code": "14.1.2",
+    "statement": "describe the following common types of cyberattacks: a. Denial of Service (DoS) and Distributed Denial of Service (DDoS) attack, b. ransomware, c. spyware, d. viruses, e. phishing, f. Domain Name System (DNS) spoofing, g. waterhole attack, h. fake Wireless Access Point (WAP), i. eavesdropping;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Subtopic 14.1",
+    "slo_code": "14.1.3",
+    "statement": "explain the following basic security methods: a. strong passwords, b. Two-Factor Authentication (2FA), c. antivirus and anti-malware software, d. checking logs, e. firewall, f. Intrusion Detection System (IDS); g. encryption;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Subtopic 14.2",
+    "slo_code": "14.2.1",
+    "statement": "explain the following network security protocols: a. Secure Socket Layer (SSL) b. Transport Layer Security (TLS), c. Internet Protocol Security (IPsec), d. Secure Shell (SSH), e. Hypertext Transfer Protocol (HTTP), f. Hypertext Transfer Protocol Secure (HTTPS), g. Wireless Protected Access (WPA/ WPA2/ WPA3), h. File Transfer Protocol Secure (FTPS), i. Simple Network Management Protocol (SNMP);",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Subtopic 14.2",
+    "slo_code": "14.2.2",
+    "statement": "differentiate between HTTP and HTTPS;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Subtopic 14.3",
+    "slo_code": "14.3.1",
+    "statement": "define cryptography;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Subtopic 14.3",
+    "slo_code": "14.3.2",
+    "statement": "differentiate between cybersecurity and cryptography;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Subtopic 14.3",
+    "slo_code": "14.3.3",
+    "statement": "explain the following different types of ciphers: a. plain, b. ceaser, c. shift, d. substitution, e. transposition, f. stream cipher, g. block cipher.",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Subtopic 15.1",
+    "slo_code": "15.1.1",
+    "statement": "define research questions/ problems; *",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Subtopic 15.1",
+    "slo_code": "15.1.2",
+    "statement": "describe a case study in research;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Subtopic 15.1",
+    "slo_code": "15.1.3",
+    "statement": "analyse the effectiveness of digital tools in communicating research results and conclusions;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Subtopic 15.1",
+    "slo_code": "15.1.4",
+    "statement": "evaluate the effectiveness of advanced search techniques in locating information on a research topic;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Subtopic 15.2",
+    "slo_code": "15.2.1",
+    "statement": "design a data collection plan to answer a research question and present the data using appropriate digital tools. conditions",
+    "page": 37
+  }
+]

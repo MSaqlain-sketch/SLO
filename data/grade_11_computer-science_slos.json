@@ -1,0 +1,1172 @@
+[
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Data Representation in a Digital Computer",
+    "slo_code": "1.1.1",
+    "statement": "differentiate between analog and digital signals;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Data Representation in a Digital Computer",
+    "slo_code": "1.1.2",
+    "statement": "explain the binary data representation using binary pulses, i.e., 0/ low/ off and 1/ high/ on;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Logic Gates",
+    "slo_code": "1.2.1",
+    "statement": "define the following terms: * a. digital logic, b. logic gates and logic circuits, c. truth table;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Logic Gates",
+    "slo_code": "1.2.2",
+    "statement": "explain the following logic gates in terms of the number of inputs and outputs using truth tables: a. AND, b. OR, c. NOT, d. NAND, e. NOR, f. Exclusive OR (XOR), g. Exclusive NOR (XNOR);",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Logic Gates",
+    "slo_code": "1.2.3",
+    "statement": "identify logic gates from the truth table;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Logic Gates",
+    "slo_code": "1.2.4",
+    "statement": "explain the uses of logic gates in digital devices;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Logic Gates",
+    "slo_code": "1.2.5",
+    "statement": "represent the logic circuits in the form of a truth table;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Logic Gates",
+    "slo_code": "1.2.6",
+    "statement": "explain the following Boolean identities: a. Identity Law, b. Distributive Law, c. Associative Law, d. Commutative Law, e. Inverse (Complement) Law, f. De Morgan’s Theorem, g. Absorption Law;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Logic Gates",
+    "slo_code": "1.2.7",
+    "statement": "construct a logic circuit for a given real-life problem;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Karnaugh Map (K-Map)",
+    "slo_code": "1.3.1",
+    "statement": "simplify two-variable and three-variable Boolean functions using Karnaugh map;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Karnaugh Map (K-Map)",
+    "slo_code": "1.3.2",
+    "statement": "convert the given algebraic expression into its Sum of Products (SOP) and Product of Sums (POS) forms;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Software Development",
+    "slo_code": "1.4.1",
+    "statement": "explain Software Development Life Cycle (SDLC) and its different phases;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Software Development",
+    "slo_code": "1.4.2",
+    "statement": "compare the phases, advantages and disadvantages of the following software development models: a. waterfall model, b. agile model;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.5",
+    "topic_title": "Network Topology",
+    "slo_code": "1.5.1",
+    "statement": "define network topology; *",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.5",
+    "topic_title": "Network Topology",
+    "slo_code": "1.5.2",
+    "statement": "explain the following network topologies with diagrams: a. bus, b. ring, c. star, d. tree, e. mesh, f. hybrid;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.5",
+    "topic_title": "Network Topology",
+    "slo_code": "1.5.3",
+    "statement": "explain the advantages, disadvantages and applications of network topologies mentioned in SLO # 1.5.2;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.5",
+    "topic_title": "Network Topology",
+    "slo_code": "1.5.4",
+    "statement": "compare scalability and reliability of network topologies;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.6",
+    "topic_title": "Cloud Computing",
+    "slo_code": "1.6.1",
+    "statement": "explain cloud computing, its characteristics, and impact on modern IT infrastructure;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.6",
+    "topic_title": "Cloud Computing",
+    "slo_code": "1.6.2",
+    "statement": "explain the following cloud computing service models with examples: a. Software as a Service (SaaS), b. Platform as a Service (PaaS), c. Infrastructure as a Service (IaaS);",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.6",
+    "topic_title": "Cloud Computing",
+    "slo_code": "1.6.3",
+    "statement": "explain the following cloud computing types: a. public cloud, b. private cloud, c. community cloud, d. hybrid cloud;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.7",
+    "topic_title": "Understanding Cybersecurity Fundamentals",
+    "slo_code": "1.7.1",
+    "statement": "describe cybersecurity and its importance;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.7",
+    "topic_title": "Understanding Cybersecurity Fundamentals",
+    "slo_code": "1.7.2",
+    "statement": "explain the following cybersecurity fundamentals: a. confidentiality, b. integrity, c. availability;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.8",
+    "topic_title": "Common Cybersecurity Threats",
+    "slo_code": "1.8.1",
+    "statement": "explain the following cybersecurity threats and their impact: a. malware, b. phishing, c. pharming, d. Denial of Service (DoS), e. Distributed Denial of Service (DDoS), f. ransomware;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.8",
+    "topic_title": "Common Cybersecurity Threats",
+    "slo_code": "1.8.2",
+    "statement": "recommend effective measures to safeguard against cybersecurity threats to enhance digital security;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.8",
+    "topic_title": "Common Cybersecurity Threats",
+    "slo_code": "1.8.3",
+    "statement": "design a multi-layered security strategy for a given situation that integrates preventive, detective, and corrective measures to mitigate the risks associated with DoS, DDoS, and ransomware attacks;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.8",
+    "topic_title": "Common Cybersecurity Threats",
+    "slo_code": "1.8.4",
+    "statement": "create a cybersecurity awareness campaign highlighting common threats and effective prevention methods for your community;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.9",
+    "topic_title": "Data Encryption",
+    "slo_code": "1.9.1",
+    "statement": "describe encryption and its importance;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.9",
+    "topic_title": "Data Encryption",
+    "slo_code": "1.9.2",
+    "statement": "relate the terms cryptography and encryption;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.9",
+    "topic_title": "Data Encryption",
+    "slo_code": "1.9.3",
+    "statement": "compare the following types of encryption techniques in terms of speed, key management, and use cases: a. symmetric, b. asymmetric;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.9",
+    "topic_title": "Data Encryption",
+    "slo_code": "1.9.4",
+    "statement": "explain the advantages and disadvantages of symmetric and asymmetric encryption.",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Computational Thinking and Artefacts",
+    "slo_code": "2.1.1",
+    "statement": "define the term computational thinking; *",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Computational Thinking and Artefacts",
+    "slo_code": "2.1.2",
+    "statement": "describe different steps of computational thinking;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Computational Thinking and Artefacts",
+    "slo_code": "2.1.3",
+    "statement": "explain the following computational artefacts of software development process: a. computational solution design, b. planning and development of computational artefacts, c. testing computational artefacts;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Algorithm",
+    "slo_code": "2.2.1",
+    "statement": "apply basic computational algorithms to perform the following operations in programming: a. arithmetic, relational, and logical computations, b. conditional (selection) statements, c. iterative (loop-based) processes, d. sorting techniques (insertion sort, bubble sort), e. searching techniques (binary search, linear search).",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.1",
+    "statement": "define program and programming language; *",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.2",
+    "statement": "differentiate between program syntax and program semantics;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.3",
+    "statement": "explain the following types of programming languages: a. low-level languages: I. machine language, II. assembly language, b. high-level languages: I. procedural language, II. structured language, III. object-oriented language;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.4",
+    "statement": "explain the functions of an/a assembler, compiler, and interpreter;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.5",
+    "statement": "explain the Python language and its applications;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.6",
+    "statement": "explain the Python Integrated Development Environment (IDE);",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.7",
+    "statement": "describe comments in Python programming;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Programming Basics",
+    "slo_code": "3.1.8",
+    "statement": "write a Python program using single-line and multiple-line comments;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Turtle Graphics",
+    "slo_code": "3.2.1",
+    "statement": "define turtle graphics; *",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Turtle Graphics",
+    "slo_code": "3.2.2",
+    "statement": "use turtle library in Python program;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Turtle Graphics",
+    "slo_code": "3.2.3",
+    "statement": "draw different shapes using the following functions: a. Movement: get screen( ), right( ) / rt( ), left( )/ lt( ), forward( )/ fd( ), backward( )/ bk( ), b. Screen Functions: clear( ), reset( ), stamp( ), clearstamp( ), bgcolor( ), title( ), c. Changing Turtle Attributes: shapesize( ), pensize( ), fillcolor( ), pencolor( ), color( ), shape( ), speed( ), begin_fill( )….end_fill(), penup( ), pendown( ), d. Preset Shapes: circle( ), dot( );",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Libraries",
+    "slo_code": "3.3.1",
+    "statement": "describe the purpose of libraries;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Libraries",
+    "slo_code": "3.3.2",
+    "statement": "write the syntax of installing a library in Python language;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Libraries",
+    "slo_code": "3.3.3",
+    "statement": "write a Python program that imports the datetime module and uses the following arguments: a. %A, b. %B, c. %C, d. %D, e. %H, f. %I, g. %S,",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Constants and Variables in Python Programming",
+    "slo_code": "3.4.1",
+    "statement": "define the following basic data types in Python programming: * a. char, b. str, c. int, d. float, e. bool;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Constants and Variables in Python Programming",
+    "slo_code": "3.4.2",
+    "statement": "differentiate between variable and constant;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Constants and Variables in Python Programming",
+    "slo_code": "3.4.3",
+    "statement": "differentiate between local and global variables;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Constants and Variables in Python Programming",
+    "slo_code": "3.4.4",
+    "statement": "write valid variable names based on the variable naming rules;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Constants and Variables in Python Programming",
+    "slo_code": "3.4.5",
+    "statement": "write a Python program to a. utilise different data types, b. demonstrate implicit and explicit type casting of variables;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Input Output Handling",
+    "slo_code": "3.5.1",
+    "statement": "describe the purpose of using eval( ) in Python;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Input Output Handling",
+    "slo_code": "3.5.2",
+    "statement": "write a Python program to use the eval( ) function;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Input Output Handling",
+    "slo_code": "3.5.3",
+    "statement": "write a program to display a message and the value of the variable using the print( ) statement;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Input Output Handling",
+    "slo_code": "3.5.4",
+    "statement": "write a program for taking input during the execution of a program using the input( ) statement;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Operators in Python Programming",
+    "slo_code": "3.6.1",
+    "statement": "differentiate between operator and operand;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Operators in Python Programming",
+    "slo_code": "3.6.2",
+    "statement": "describe the following types of operators: a. assignment operator, b. membership operators, c. arithmetic operators, d. bitwise operators, e. comparison (relational) operators, f. logical operators;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Operators in Python Programming",
+    "slo_code": "3.6.3",
+    "statement": "write a Python program using the following operators; a. arithmetic operators, b. bitwise operators, c. comparison (relational) operators, d. logical operators;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Selection Statements in Python Programming",
+    "slo_code": "3.7.1",
+    "statement": "describe if, if-else, and elif statements;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Selection Statements in Python Programming",
+    "slo_code": "3.7.2",
+    "statement": "write a Python program using the following statements: a. if, b. if-else, c. if-elif-else, d. nested if, e. pass;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Repetition (Loop) in Python Programming",
+    "slo_code": "3.8.1",
+    "statement": "describe loop and its types in Python programming;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Repetition (Loop) in Python Programming",
+    "slo_code": "3.8.2",
+    "statement": "describe the structure of for and while loop;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Repetition (Loop) in Python Programming",
+    "slo_code": "3.8.3",
+    "statement": "write a Python program using the following loops: a. for, b. while, c. nested for;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Repetition (Loop) in Python Programming",
+    "slo_code": "3.8.4",
+    "statement": "describe the break, continue, and exit statements in Python;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Repetition (Loop) in Python Programming",
+    "slo_code": "3.8.5",
+    "statement": "write a Python program using the following statements: a. break, b. continue, c. exit( ) function;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Debugging in Python",
+    "slo_code": "3.9.1",
+    "statement": "describe the importance of debugging;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Debugging in Python",
+    "slo_code": "3.9.2",
+    "statement": "explain different types of bugs (errors) in Python code;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Debugging in Python",
+    "slo_code": "3.9.3",
+    "statement": "explain the process of finding bugs using an Integrated Development Environment (IDE);",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Debugging in Python",
+    "slo_code": "3.9.4",
+    "statement": "explain breakpoints to pause execution;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Debugging in Python",
+    "slo_code": "3.9.5",
+    "statement": "apply the process of debugging using the print statement and assert keyword in Python;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.9",
+    "topic_title": "Debugging in Python",
+    "slo_code": "3.9.6",
+    "statement": "apply the process of identifying and resolving bugs using the Python debugger (pdb).",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Statistical Modelling",
+    "slo_code": "4.1.1",
+    "statement": "define the following terms: * a. statistics, b. statistical modeling;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Statistical Modelling",
+    "slo_code": "4.1.2",
+    "statement": "explain the following statistical modeling techniques (supervised and unsupervised): a. regression, b. classification, c. k-means clustering;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Statistical Modelling",
+    "slo_code": "4.1.3",
+    "statement": "analyse the process of developing a statistical model in the context of data analysis;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Statistical Modelling",
+    "slo_code": "4.1.4",
+    "statement": "evaluate the effectiveness of statistical modeling in solving real-world problems in the fields of healthcare and finance;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Experimental Design in Data Science",
+    "slo_code": "4.2.1",
+    "statement": "define the following terms: * a. correlation, b. causation, c. population, d. parameters, e. random sample;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Experimental Design in Data Science",
+    "slo_code": "4.2.2",
+    "statement": "differentiate between observational studies and experimental studies in data science;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Experimental Design in Data Science",
+    "slo_code": "4.2.3",
+    "statement": "describe the principles of experimental design flow;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Experimental Design in Data Science",
+    "slo_code": "4.2.4",
+    "statement": "explain the steps involved in the experimental design flow;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.3",
+    "topic_title": "Statistics and Data Visuals",
+    "slo_code": "4.3.1",
+    "statement": "explain the data collection methods and its types;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.3",
+    "topic_title": "Statistics and Data Visuals",
+    "slo_code": "4.3.2",
+    "statement": "analyse the role of data science in addressing real-world problems, supported by practical examples.",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Introduction to Internet of Things (IoT)",
+    "slo_code": "5.1.1",
+    "statement": "describe Internet of Things (IoT) and its importance in connecting physical devices;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Introduction to Internet of Things (IoT)",
+    "slo_code": "5.1.2",
+    "statement": "explain the following components of an IoT system: a. sensors, b. processors, c. connectivity, d. user interface;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Introduction to Internet of Things (IoT)",
+    "slo_code": "5.1.3",
+    "statement": "examine IoT’s role in improving operations and addressing real-world challenges in manufacturing, agriculture, and healthcare sectors;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Core Technologies Powering IoT",
+    "slo_code": "5.2.1",
+    "statement": "describe key technologies that enable Internet of Things (IoT);",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Core Technologies Powering IoT",
+    "slo_code": "5.2.2",
+    "statement": "describe big data analytics (BDA) and its applications in different fields;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Core Technologies Powering IoT",
+    "slo_code": "5.2.3",
+    "statement": "describe communication protocols that facilitate data exchange between Internet of Things (IoT) devices;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Core Technologies Powering IoT",
+    "slo_code": "5.2.4",
+    "statement": "explain embedded systems and their application;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Core Technologies Powering IoT",
+    "slo_code": "5.2.5",
+    "statement": "explain Wireless Sensor Networks (WSN) and their applications in the Internet of Things (IoT);",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.3",
+    "topic_title": "Blockchain and Blockchain Networks",
+    "slo_code": "5.3.1",
+    "statement": "define blockchain technology; *",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.3",
+    "topic_title": "Blockchain and Blockchain Networks",
+    "slo_code": "5.3.2",
+    "statement": "list the technologies that enable blockchain; *",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.3",
+    "topic_title": "Blockchain and Blockchain Networks",
+    "slo_code": "5.3.3",
+    "statement": "explain blockchain networks and the following types: a. public blockchain network, b. private blockchain network, c. permissioned blockchain network, d. consortium blockchain network;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.3",
+    "topic_title": "Blockchain and Blockchain Networks",
+    "slo_code": "5.3.4",
+    "statement": "explain the integration of blockchain and IoT;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.4",
+    "topic_title": "Stakeholders in AI Systems",
+    "slo_code": "5.4.1",
+    "statement": "describe the stakeholders involved in an Artificial Intelligence (AI) system;",
+    "page": 22
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.4",
+    "topic_title": "Stakeholders in AI Systems",
+    "slo_code": "5.4.2",
+    "statement": "evaluate the benefits and challenges of Artificial Intelligence (AI) in healthcare, education, and industry.",
+    "page": 22
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Information Sources",
+    "slo_code": "6.1.1",
+    "statement": "define the following types of information sources: * a. books, b. articles, c. websites;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Information Sources",
+    "slo_code": "6.1.2",
+    "statement": "explain reliable and unreliable sources of information;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Information Sources",
+    "slo_code": "6.1.3",
+    "statement": "explain the use of search engines and databases to find reliable information;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Information Sources",
+    "slo_code": "6.1.4",
+    "statement": "discuss the responsible and critical use of social media to access and share information;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Information Privacy and Security",
+    "slo_code": "6.2.1",
+    "statement": "define privacy and security; *",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Information Privacy and Security",
+    "slo_code": "6.2.2",
+    "statement": "describe the importance of protecting personal information online;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Information Privacy and Security",
+    "slo_code": "6.2.3",
+    "statement": "suggest strategies for safeguarding personal data while accessing information sources;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Information Privacy and Security",
+    "slo_code": "6.2.4",
+    "statement": "evaluate the impact of data breaches and the misuse of information on individuals, organisations, and society;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Ethical Use of Information",
+    "slo_code": "6.3.1",
+    "statement": "explain the ethical use of information and intellectual property;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Ethical Use of Information",
+    "slo_code": "6.3.2",
+    "statement": "explain the consequences of misinformation and unethical information practices;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Ethical Use of Information",
+    "slo_code": "6.3.3",
+    "statement": "discuss real-world cases that involve ethical dilemmas related to the use of information and their effects on individuals, organisations, and society;",
+    "page": 23
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.4",
+    "topic_title": "Connectivity in Computing",
+    "slo_code": "6.4.1",
+    "statement": "define the term ‘connectivity’ in the context of computing; *",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.4",
+    "topic_title": "Connectivity in Computing",
+    "slo_code": "6.4.2",
+    "statement": "describe the following components involved in achieving connectivity: a. devices, b. networks, c. protocols, d. internet;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.4",
+    "topic_title": "Connectivity in Computing",
+    "slo_code": "6.4.3",
+    "statement": "describe the following communication technologies enabled by computing: a. social media platforms, b. email, c. instant messaging, d. video conferencing; 6 . 5.1 explain the concept of green computing;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.5",
+    "topic_title": "Environmental Impacts of Connectivity in Computing",
+    "slo_code": "6.5.1",
+    "statement": "explain the concept of green computing;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.5",
+    "topic_title": "Environmental Impacts of Connectivity in Computing",
+    "slo_code": "6.5.2",
+    "statement": "analyse the positive and negative environmental impacts of connectivity in computing across fields such as cloud computing and smart devices;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.5",
+    "topic_title": "Environmental Impacts of Connectivity in Computing",
+    "slo_code": "6.5.3",
+    "statement": "examine the environmental impact of data centres, considering factors such as energy consumption and e-waste;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.6",
+    "topic_title": "Cultural Impacts of Connectivity",
+    "slo_code": "6.6.1",
+    "statement": "analyse the role of enhanced connectivity in facilitating global cultural exchange;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.6",
+    "topic_title": "Cultural Impacts of Connectivity",
+    "slo_code": "6.6.2",
+    "statement": "discuss the preservation or loss of local cultures in the digital age;",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.7",
+    "topic_title": "Human Impact of Connectivity",
+    "slo_code": "6.7.1",
+    "statement": "discuss the positive and negative impacts of digital connectivity on human behaviour and society, including work",
+    "page": 24
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Introduction to Digital Literacy",
+    "slo_code": "7.1.1",
+    "statement": "describe digital literacy and its importance;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Introduction to Digital Literacy",
+    "slo_code": "7.1.2",
+    "statement": "explain the role of digital literacy in academic and everyday life;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Introduction to Advanced Search Techniques",
+    "slo_code": "7.2.1",
+    "statement": "describe advanced search techniques and their importance;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Introduction to Advanced Search Techniques",
+    "slo_code": "7.2.2",
+    "statement": "differentiate between basic and advanced searches;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Designing Data-Collection Approaches",
+    "slo_code": "7.3.1",
+    "statement": "describe the following data collection methods: a. qualitative, b. quantitative;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Designing Data-Collection Approaches",
+    "slo_code": "7.3.2",
+    "statement": "discuss the use of prototypes and simulations in data collection, including their purpose and advantages;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Designing Data-Collection Approaches",
+    "slo_code": "7.3.3",
+    "statement": "design a data-collection plan using qualitative interviews by: a. formulating research questions, b. developing interview guides and protocols;",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Designing Data-Collection Approaches",
+    "slo_code": "7.3.4",
+    "statement": "create surveys for quantitative data collection by: a. writing clear and unbiased survey questions, b. selecting appropriate survey platforms and tools.",
+    "page": 25
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Designing and Iterating User Centered Prototypes",
+    "slo_code": "8.1.1",
+    "statement": "apply basic design principles to develop a low-fidelity prototype that addresses a specific user problem;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Designing and Iterating User Centered Prototypes",
+    "slo_code": "8.1.2",
+    "statement": "illustrate the user journey and key features of the prototype using visual tools such as sketches or storyboards;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Designing and Iterating User Centered Prototypes",
+    "slo_code": "8.1.3",
+    "statement": "determine improvements in the prototype based on user testing and feedback;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Designing and Iterating User Centered Prototypes",
+    "slo_code": "8.1.4",
+    "statement": "analyse test results to identify whether the prototype meets user needs or validates a business assumption;",
+    "page": 26
+  },
+  {
+    "grade": 11,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Designing and Iterating User Centered Prototypes",
+    "slo_code": "8.1.5",
+    "statement": "evaluate the effectiveness of the final prototype in addressing user needs and suggest future improvements.",
+    "page": 26
+  }
+]

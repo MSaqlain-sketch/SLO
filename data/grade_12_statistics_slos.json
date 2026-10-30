@@ -1,0 +1,1064 @@
+[
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Principle of Counting Techniques",
+    "slo_code": "8.1.1",
+    "statement": "explain the concept of factorial (!);",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Principle of Counting Techniques",
+    "slo_code": "8.1.2",
+    "statement": "solve problems based on factorial (n!);",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Principle of Counting Techniques",
+    "slo_code": "8.1.3",
+    "statement": "describe fundamental principle of counting;",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Principle of Counting Techniques",
+    "slo_code": "8.1.4",
+    "statement": "construct a tree diagram using the fundamental principle of counting for: a. repeated values, b. non repeated values;",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.1",
+    "topic_title": "Fundamental Principle of Counting Techniques",
+    "slo_code": "8.1.5",
+    "statement": "solve problems related to fundamental principle of counting and tree diagram for: a. repeated values, b. non repeated values;",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.2",
+    "topic_title": "Permutation",
+    "slo_code": "8.2.1",
+    "statement": "describe permutation of n different objects taken r at a time and recognise the notation nP ; r",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.2",
+    "topic_title": "Permutation",
+    "slo_code": "8.2.2",
+    "statement": "solve problems based on permutation;",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.2",
+    "topic_title": "Permutation",
+    "slo_code": "8.2.3",
+    "statement": "solve problems related to permutation when: a. repetition is not allowed, b. repetition is allowed, c. elements are identical, d. arrangements are in a circle;",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.3",
+    "topic_title": "Combination",
+    "slo_code": "8.3.1",
+    "statement": "describe combination of n different objects taken r at a time and recognise the notation nC ; r",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 8,
+    "topic": "8.3",
+    "topic_title": "Combination",
+    "slo_code": "8.3.2",
+    "statement": "solve problems based on combination.",
+    "page": 22
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Introduction to Probability",
+    "slo_code": "9.1.1",
+    "statement": "describe the following terms: a. random experiment, b. sample space, sample point and an event, c. simple and compound events, d. impossible and sure events, e. complementary events, f. equally likely events, g. mutually exclusive and mutually inclusive (non- exclusive) events, h. exhaustive events, i. dependent and independent events;",
+    "page": 23
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Introduction to Probability",
+    "slo_code": "9.1.2",
+    "statement": "apply set theory concepts to random experiments, sample spaces, and events;",
+    "page": 23
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Introduction to Probability",
+    "slo_code": "9.1.3",
+    "statement": "calculate probability through the classical, relative frequency and axiomatic approaches;",
+    "page": 23
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.1",
+    "topic_title": "Introduction to Probability",
+    "slo_code": "9.1.4",
+    "statement": "find the probability of occurrence of an event using Venn and tree diagrams;",
+    "page": 23
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Laws of Probability",
+    "slo_code": "9.2.1",
+    "statement": "explain the law of addition of probability: a. P(A ∪ B) = P(A) + P(B) − P(A ∩ B), where A and B are two non-mutually exclusive events, b. P(A ∪ B) = P(A) + P(B), where A and B are mutually exclusive events;",
+    "page": 23
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Laws of Probability",
+    "slo_code": "9.2.2",
+    "statement": "explain the law of multiplication of probability: P(A ∩ B) = P(A) × P(B), where A and B are independent events;",
+    "page": 23
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Laws of Probability",
+    "slo_code": "9.2.3",
+    "statement": "define ‘conditional probability’;",
+    "page": 24
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Laws of Probability",
+    "slo_code": "9.2.4",
+    "statement": "explain the law of multiplication of conditional probability: P(A ∩ B) = P(A) × P(B | A) or P(A ∩ B) = P(B) × P(A | B), where P(B | A) and P(A | B) are conditional probabilities and A and B are dependent events;",
+    "page": 24
+  },
+  {
+    "grade": 12,
+    "chapter": 9,
+    "topic": "9.2",
+    "topic_title": "Laws of Probability",
+    "slo_code": "9.2.5",
+    "statement": "solve problems related to the SLO # 9.2.1 to 9.2.4. (Note: Problem involving Venn and tree diagrams are also included.)",
+    "page": 24
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.1",
+    "topic_title": "Concept of Random Variable",
+    "slo_code": "10.1.1",
+    "statement": "describe random, discrete random and continuous random variables;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.1",
+    "topic_title": "Concept of Random Variable",
+    "slo_code": "10.1.2",
+    "statement": "distinguish between discrete and continuous random variables;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.1",
+    "statement": "describe the probability distribution of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.2",
+    "statement": "draw a probability distribution table related to a given situation involving a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.3",
+    "statement": "describe the probability distribution function of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.4",
+    "statement": "solve problems related to probability distribution function of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.5",
+    "statement": "describe the expected value of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.6",
+    "statement": "find the expected value of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.7",
+    "statement": "describe the properties of the expected value of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.8",
+    "statement": "apply the properties of expected value of a discrete random variable to a given set of data;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.9",
+    "statement": "describe the variance and standard deviation of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.10",
+    "statement": "find the variance and standard deviation of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.2",
+    "topic_title": "Discrete Random Variable",
+    "slo_code": "10.2.11",
+    "statement": "describe the properties of variance and standard deviation of a discrete random variable;",
+    "page": 25
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Continuous Random Variable",
+    "slo_code": "10.3.1",
+    "statement": "describe the probability distribution and probability density function (p.d.f.) of a continuous random variable;",
+    "page": 26
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Continuous Random Variable",
+    "slo_code": "10.3.2",
+    "statement": "solve problems related to probability density function (p.d.f.) of a continuous random variable;",
+    "page": 26
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Continuous Random Variable",
+    "slo_code": "10.3.3",
+    "statement": "describe the expected value and variance of a continuous random variable;",
+    "page": 26
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.3",
+    "topic_title": "Continuous Random Variable",
+    "slo_code": "10.3.4",
+    "statement": "solve problems related to expectation, variance and standard deviation of a continuous random variables;",
+    "page": 26
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.4",
+    "topic_title": "Combinations of Random Variables",
+    "slo_code": "10.4.1",
+    "statement": "describe the following properties about the expected value and variance for the sum and difference of two independent random variables X and Y: a. E(X ± Y) = E(X) ± E(Y), b. E(aX ± bY) = aE(X) ± bE(Y), c. V(X ± Y) = V(X) + V(Y), d. V(aX ± bY) = a²V(X) + b²V(Y);",
+    "page": 26
+  },
+  {
+    "grade": 12,
+    "chapter": 10,
+    "topic": "10.4",
+    "topic_title": "Combinations of Random Variables",
+    "slo_code": "10.4.2",
+    "statement": "solve problems related to the properties mentioned in SLO # 10.4.1.",
+    "page": 26
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Uniform Distribution for discrete random variable",
+    "slo_code": "11.1.1",
+    "statement": "describe the discrete uniform probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Uniform Distribution for discrete random variable",
+    "slo_code": "11.1.2",
+    "statement": "solve problems related to the discrete uniform probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Uniform Distribution for discrete random variable",
+    "slo_code": "11.1.3",
+    "statement": "calculate the mean, variance and standard deviation of discrete uniform probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Binomial Distribution",
+    "slo_code": "11.2.1",
+    "statement": "define the following terms: a. bernoulli trial, b. binomial experiment, c. binomial random variable;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Binomial Distribution",
+    "slo_code": "11.2.2",
+    "statement": "write the properties of binomial experiment;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Binomial Distribution",
+    "slo_code": "11.2.3",
+    "statement": "describe the binomial probability distribution (Bernoulli distribution);",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Binomial Distribution",
+    "slo_code": "11.2.4",
+    "statement": "describe the binomial frequency distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Binomial Distribution",
+    "slo_code": "11.2.5",
+    "statement": "solve problems related to the binomial probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Binomial Distribution",
+    "slo_code": "11.2.6",
+    "statement": "calculate the mean, variance and standard deviation of binomial probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Hyper Geometric Distribution",
+    "slo_code": "11.3.1",
+    "statement": "define the terms: a. hyper geometric experiment, b. hyper geometric random variable;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Hyper Geometric Distribution",
+    "slo_code": "11.3.2",
+    "statement": "write the properties of hyper geometric experiment;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Hyper Geometric Distribution",
+    "slo_code": "11.3.3",
+    "statement": "describe the hyper geometric probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Hyper Geometric Distribution",
+    "slo_code": "11.3.4",
+    "statement": "solve problems related to the hyper geometric probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Hyper Geometric Distribution",
+    "slo_code": "11.3.5",
+    "statement": "calculate the mean, variance and standard deviation of hyper geometric probability distribution;",
+    "page": 27
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Uniform Distribution for Continuous Random Variable",
+    "slo_code": "11.4.1",
+    "statement": "describe the continuous uniform probability distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Uniform Distribution for Continuous Random Variable",
+    "slo_code": "11.4.2",
+    "statement": "solve problems related to the continuous uniform probability distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Uniform Distribution for Continuous Random Variable",
+    "slo_code": "11.4.3",
+    "statement": "calculate the mean, variance and standard deviation of continuous uniform probability distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Normal Distribution",
+    "slo_code": "11.5.1",
+    "statement": "define normal random and standard normal random variables;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Normal Distribution",
+    "slo_code": "11.5.2",
+    "statement": "describe the normal and the standard normal distribution and their probability density functions;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Normal Distribution",
+    "slo_code": "11.5.3",
+    "statement": "describe the properties of a normal distribution with the help of a diagram;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Normal Distribution",
+    "slo_code": "11.5.4",
+    "statement": "find the probabilities of the normal and standard normal random variable using the standard normal distribution table;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Normal Distribution",
+    "slo_code": "11.5.5",
+    "statement": "solve problems related to the normal distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.6",
+    "topic_title": "Poisson Distribution",
+    "slo_code": "11.6.1",
+    "statement": "describe poisson probability distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.6",
+    "topic_title": "Poisson Distribution",
+    "slo_code": "11.6.2",
+    "statement": "solve problem related to poisson probability distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.6",
+    "topic_title": "Poisson Distribution",
+    "slo_code": "11.6.3",
+    "statement": "calculate the mean, variance and standard deviation of poisson probability distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.6",
+    "topic_title": "Poisson Distribution",
+    "slo_code": "11.6.4",
+    "statement": "describe the conditions for using the Poisson distribution as an approximation to the Binomial distribution;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.6",
+    "topic_title": "Poisson Distribution",
+    "slo_code": "11.6.5",
+    "statement": "calculate probabilities of random variable using poisson approximation;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.6",
+    "topic_title": "Poisson Distribution",
+    "slo_code": "11.6.6",
+    "statement": "write the conditions for using the normal distribution with continuity correction as an approximation to the Poisson;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.6",
+    "topic_title": "Poisson Distribution",
+    "slo_code": "11.6.7",
+    "statement": "calculate probabilities of random variable using normal approximation.",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.7",
+    "topic_title": "Application of Statistical Software in Data Analysis",
+    "slo_code": "11.7.1",
+    "statement": "solve practical data problems using tools like minitab and excel.",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Concept of Sampling",
+    "slo_code": "12.1.1",
+    "statement": "define sampling, sampling units, sampling frame and sampling design;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Concept of Sampling",
+    "slo_code": "12.1.2",
+    "statement": "distinguish between: a. finite and infinite population, b. sample and population, c. parameter and statistics;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Concept of Sampling",
+    "slo_code": "12.1.3",
+    "statement": "describe advantages and disadvantages of sampling;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Concept of Sampling",
+    "slo_code": "12.1.4",
+    "statement": "distinguish between: a. probability and non-probability sampling, b. random sampling with and without replacement;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Concept of Sampling",
+    "slo_code": "12.1.5",
+    "statement": "explain simple random sampling, stratified random sampling, systematic random sampling, quota sampling and cluster random sampling;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Concept of Sampling",
+    "slo_code": "12.1.6",
+    "statement": "solve problems related to SLO # 12.1.5;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Sampling Distribution of Sample Mean",
+    "slo_code": "12.2.1",
+    "statement": "define the following terms: a. sampling distribution, b. sampling errors, c. non-sampling errors of statistics;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Sampling Distribution of Sample Mean",
+    "slo_code": "12.2.2",
+    "statement": "distinguish between sampling errors and non-sampling errors of statistics;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Sampling Distribution of Sample Mean",
+    "slo_code": "12.2.3",
+    "statement": "define the sampling distribution of sample mean;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Sampling Distribution of Sample Mean",
+    "slo_code": "12.2.4",
+    "statement": "describe the properties of a sampling distribution of sample mean;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Sampling Distribution of Sample Mean",
+    "slo_code": "12.2.5",
+    "statement": "construct the sampling distribution of sample mean;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Sampling Distribution of Sample Mean",
+    "slo_code": "12.2.6",
+    "statement": "determine the sampling distribution of the sample mean;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Sampling Distribution of Sample Mean",
+    "slo_code": "12.2.7",
+    "statement": "verify the properties of a sampling distribution of sample mean;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Sampling Distribution of Difference Between Two Sample Means",
+    "slo_code": "12.3.1",
+    "statement": "describe the sample distribution of difference between two sample means and its properties;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Sampling Distribution of Difference Between Two Sample Means",
+    "slo_code": "12.3.2",
+    "statement": "find the sample distribution of difference between two sample means;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Sampling Distribution of Difference Between Two Sample Means",
+    "slo_code": "12.3.3",
+    "statement": "verify the properties of a sample distribution of difference between two sample means.",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.4",
+    "topic_title": "Application of Statistical Software in Data Analysis",
+    "slo_code": "12.4.1",
+    "statement": "solve practical data problems using tools like minitab and excel.",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Point Estimation",
+    "slo_code": "13.1.1",
+    "statement": "define estimation of parameter, point estimation and point estimator;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Point Estimation",
+    "slo_code": "13.1.2",
+    "statement": "distinguish between biased and unbiased estimators;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Point Estimation",
+    "slo_code": "13.1.3",
+    "statement": "find the point estimates for population mean and population variance from the given random sample;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Interval Estimation",
+    "slo_code": "13.2.1",
+    "statement": "define interval estimation of a parameter and confidence interval;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Interval Estimation",
+    "slo_code": "13.2.2",
+    "statement": "estimate the confidence interval for the: a. mean of a normal population (known and unknown standard deviation), b. difference between means of two normal populations (known and unknown standard deviations), c. population proportion (large sample), d. difference between proportions of two populations (large samples).",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Introduction to Hypothesis",
+    "slo_code": "14.1.1",
+    "statement": "describe statistical hypothesis and hypothesis testing;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Introduction to Hypothesis",
+    "slo_code": "14.1.2",
+    "statement": "distinguish between the following types of hypotheses: a. null and alternative, b. simple and composite;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Introduction to Hypothesis",
+    "slo_code": "14.1.3",
+    "statement": "describe null and alternative hypothesis for a given situation;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Introduction to Hypothesis",
+    "slo_code": "14.1.4",
+    "statement": "describe the following elements of hypothesis testing: a. test statistic, b. rejection and acceptance region, c. critical value, d. one tailed test, e. two tailed test, f. Type I and Type II errors, g. level of significance, h. decision rule, i. conclusion;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Hypothesis Testing",
+    "slo_code": "14.2.1",
+    "statement": "apply the test of hypothesis in the following cases concerning: a. the population mean when population standard deviation is known or unknown, b. the difference between two means of two different populations when populations’ standard deviation are known;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.1",
+    "statement": "describe attribute;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.2",
+    "statement": "distinguish between variable and attribute;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.3",
+    "statement": "identify the categorical data of two attributes;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.4",
+    "statement": "describe the independence of two attributes;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.5",
+    "statement": "define the association of attributes;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.6",
+    "statement": "describe positive association, negative association, complete association and complete disassociation;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.7",
+    "statement": "distinguish between correlation and association;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.8",
+    "statement": "describe the coefficient of association;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Attribute",
+    "slo_code": "14.3.9",
+    "statement": "find the coefficient of association;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Contingency Table",
+    "slo_code": "14.4.1",
+    "statement": "describe a contingency table and its degree of freedom;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Contingency Table",
+    "slo_code": "14.4.2",
+    "statement": "describe the criterion of independence of two attributes in a contingency table;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Contingency Table",
+    "slo_code": "14.4.3",
+    "statement": "describe the chi-square (??) statistic;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Contingency Table",
+    "slo_code": "14.4.4",
+    "statement": "describe the test for independence;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Contingency Table",
+    "slo_code": "14.4.5",
+    "statement": "apply the chi-square (??) statistic to test the association between the attributes;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.1",
+    "statement": "describe analysis of variance;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.2",
+    "statement": "write the basic assumptions of the analysis of variance;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.3",
+    "statement": "define the following terms: a. total sum of squares, b. treatment sum of squares, c. error sum of squares;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.4",
+    "statement": "describe the relation of total sum of squares = treatment sum of squares + error sum of squares;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.5",
+    "statement": "calculate the total sum of squares, the treatment sum of squares and the error sum of squares;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.6",
+    "statement": "calculate the degree of freedom for total sum of squares, the treatment sum of squares and the error sum of squares;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.7",
+    "statement": "calculate the treatment mean square and the error mean square;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.5",
+    "topic_title": "Analysis of Variance (One way and Two way)",
+    "slo_code": "14.5.8",
+    "statement": "use a hypothesis to test the equality of means of normal populations.",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.6",
+    "topic_title": "Application of Statistical Software in Data Analysis",
+    "slo_code": "14.6.1",
+    "statement": "solve practical data problems using tools like minitab and excel.",
+    "page": 34
+  }
+]

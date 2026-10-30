@@ -1,0 +1,1919 @@
+[
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Newton’s Law of Gravitation",
+    "slo_code": "11.1.1",
+    "statement": "explain Newton’s law of gravitation;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.1",
+    "topic_title": "Newton’s Law of Gravitation",
+    "slo_code": "11.1.2",
+    "statement": "solve word problems using Newton’s law of gravitation;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Gravitational Field Strength",
+    "slo_code": "11.2.1",
+    "statement": "define gravitational field strength;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.2",
+    "topic_title": "Gravitational Field Strength",
+    "slo_code": "11.2.2",
+    "statement": "solve word problems using the relation 𝑔 = 𝐺𝑀/𝑟2;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Gravitational Force and Motion of Satellite",
+    "slo_code": "11.3.1",
+    "statement": "analyse circular orbits in gravitational fields;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Gravitational Force and Motion of Satellite",
+    "slo_code": "11.3.2",
+    "statement": "define geo-stationary satellite;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.3",
+    "topic_title": "Gravitational Force and Motion of Satellite",
+    "slo_code": "11.3.3",
+    "statement": "analyse the motion of geo-stationary satellites;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Variation in value of ‘g’",
+    "slo_code": "11.4.1",
+    "statement": "derive the relation for the variation of gravitational field strength with height and depth;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.4",
+    "topic_title": "Variation in value of ‘g’",
+    "slo_code": "11.4.2",
+    "statement": "analyse that ‘g’ is approximately constant for small changes in height near the Earth’s surface;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Gravitational Potential",
+    "slo_code": "11.5.1",
+    "statement": "calculate gravitational potential;",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 11,
+    "topic": "11.5",
+    "topic_title": "Gravitational Potential",
+    "slo_code": "11.5.2",
+    "statement": "justify that the concept of gravitational potential leads to the gravitational potential energy of two-point masses. [Apply (A), Analyse (An), Evaluate (E), Create (C)]",
+    "page": 28
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Charge",
+    "slo_code": "12.1.1",
+    "statement": "define charge and its types;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.1",
+    "topic_title": "Charge",
+    "slo_code": "12.1.2",
+    "statement": "calculate the total charge on a body as integral multiple of elementary charge (electron);",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Coulomb’s Law",
+    "slo_code": "12.2.1",
+    "statement": "state Coulomb’s law for static charges;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Coulomb’s Law",
+    "slo_code": "12.2.2",
+    "statement": "derive a relation for electrostatic force;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Coulomb’s Law",
+    "slo_code": "12.2.3",
+    "statement": "solve word problems related to the electrostatic force;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Coulomb’s Law",
+    "slo_code": "12.2.4",
+    "statement": "describe the effect of medium on Coulomb’s force;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Coulomb’s Law",
+    "slo_code": "12.2.5",
+    "statement": "explain the concept of electrostatic shielding;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.2",
+    "topic_title": "Coulomb’s Law",
+    "slo_code": "12.2.6",
+    "statement": "describe working of faraday cage;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Electric Field and Electric Field Intensity",
+    "slo_code": "12.3.1",
+    "statement": "describe electric field and electric field intensity around an isolated point charge;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Electric Field and Electric Field Intensity",
+    "slo_code": "12.3.2",
+    "statement": "compare the formation of electric field lines when: a. same charges are brought together, b. opposite charges are brought together;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Electric Field and Electric Field Intensity",
+    "slo_code": "12.3.3",
+    "statement": "derive an expression for the magnitude of electric field intensity of a point charge at a distance;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Electric Field and Electric Field Intensity",
+    "slo_code": "12.3.4",
+    "statement": "𝑘𝑞 solve word problems using the relation E = ; 𝑟2",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.3",
+    "topic_title": "Electric Field and Electric Field Intensity",
+    "slo_code": "12.3.5",
+    "statement": "illustrate electric field intensity as a function of position;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.4",
+    "topic_title": "Electric Flux",
+    "slo_code": "12.4.1",
+    "statement": "explain electric flux as a dot product of electric field intensity and area vector;",
+    "page": 29
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.5",
+    "topic_title": "Gauss’s Law",
+    "slo_code": "12.5.1",
+    "statement": "explain Gauss?s law;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.5",
+    "topic_title": "Gauss’s Law",
+    "slo_code": "12.5.2",
+    "statement": "apply Gauss’s law to find the electric field intensity produced between two oppositely charged parallel plates due to: a. a hollow charged spherical surface, b. an infinite sheet of charges;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.6",
+    "topic_title": "Electric Potential",
+    "slo_code": "12.6.1",
+    "statement": "describe electric potential at a point as the work done in bringing a unit charge from infinity to that point;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.6",
+    "topic_title": "Electric Potential",
+    "slo_code": "12.6.2",
+    "statement": "state unit of electric potential;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.6",
+    "topic_title": "Electric Potential",
+    "slo_code": "12.6.3",
+    "statement": "describe electric field as potential gradient;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.6",
+    "topic_title": "Electric Potential",
+    "slo_code": "12.6.4",
+    "statement": "derive an expression for electric potential at a point due to a point charge;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.6",
+    "topic_title": "Electric Potential",
+    "slo_code": "12.6.5",
+    "statement": "illustrate electric potential as a function of position;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.6",
+    "topic_title": "Electric Potential",
+    "slo_code": "12.6.6",
+    "statement": "define electron volt (eV);",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.7",
+    "topic_title": "Capacitor",
+    "slo_code": "12.7.1",
+    "statement": "derive capacitance of a parallel plate capacitor in terms of area, distance and permittivity of free space;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.7",
+    "topic_title": "Capacitor",
+    "slo_code": "12.7.2",
+    "statement": "calculate equivalent capacitance of different capacitors connected in series and parallel combinations;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.7",
+    "topic_title": "Capacitor",
+    "slo_code": "12.7.3",
+    "statement": "analyse graphs of potential difference, charge and current with reference to time for a capacitor charging and discharging through a resistor;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.7",
+    "topic_title": "Capacitor",
+    "slo_code": "12.7.4",
+    "statement": "describe time constant, show that the product of RC has the same unit as time; 𝑡 −( )",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.7",
+    "topic_title": "Capacitor",
+    "slo_code": "12.7.5",
+    "statement": "use equations of the form x = x 𝑒 𝑅 𝐶 where x could 0 represent current, charge or potential difference for a capacitor discharging through resistor;",
+    "page": 30
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.8",
+    "topic_title": "Energy Stored in a Capacitor",
+    "slo_code": "12.8.1",
+    "statement": "list the use of capacitors in various household appliances;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.8",
+    "topic_title": "Energy Stored in a Capacitor",
+    "slo_code": "12.8.2",
+    "statement": "explain polarisation of dielectric of a capacitor;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.8",
+    "topic_title": "Energy Stored in a Capacitor",
+    "slo_code": "12.8.3",
+    "statement": "show that energy stored in a capacitor is W = ½ QV and W = ½ CV2;",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 12,
+    "topic": "12.8",
+    "topic_title": "Energy Stored in a Capacitor",
+    "slo_code": "12.8.4",
+    "statement": "d etermine the electric potential energy stored in a capacitor from the area under the potential-charge graph.",
+    "page": 31
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Current Electricity",
+    "slo_code": "13.1.1",
+    "statement": "define electric current;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Current Electricity",
+    "slo_code": "13.1.2",
+    "statement": "describe the flow of current in a conductor;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.1",
+    "topic_title": "Current Electricity",
+    "slo_code": "13.1.3",
+    "statement": "solve word problems using the expression 𝐼 = 𝐴𝑛𝑣𝑞;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Resistance and Resistivity",
+    "slo_code": "13.2.1",
+    "statement": "define resistance and resistivity;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Resistance and Resistivity",
+    "slo_code": "13.2.2",
+    "statement": "derive a relation between resistance and resistivity; 𝜌𝑙",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Resistance and Resistivity",
+    "slo_code": "13.2.3",
+    "statement": "solve word problems using the relation R = ; 𝐴",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Resistance and Resistivity",
+    "slo_code": "13.2.4",
+    "statement": "describe the relationship between temperature and resistance of a conductor;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Resistance and Resistivity",
+    "slo_code": "13.2.5",
+    "statement": "state that the resistance of a light-dependent resistor (LDR) decreases as the light intensity increases;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.2",
+    "topic_title": "Resistance and Resistivity",
+    "slo_code": "13.2.6",
+    "statement": "calculate the value of carbon resistance by using the following colour codes includes: a. 3 band colour code, b. 4 band colour code, c. 5 band colour code, d. 6 band colour code;",
+    "page": 32
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Electromotive Force (e.m.f.) and Potential Difference",
+    "slo_code": "13.3.1",
+    "statement": "state Ohm?s law;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Electromotive Force (e.m.f.) and Potential Difference",
+    "slo_code": "13.3.2",
+    "statement": "illustrate the I-V characteristics of a metallic conductor at constant temperature, a semiconductor diode, thermistor and a filament lamp;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Electromotive Force (e.m.f.) and Potential Difference",
+    "slo_code": "13.3.3",
+    "statement": "define electromotive force (e.m.f.) and internal resistance;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Electromotive Force (e.m.f.) and Potential Difference",
+    "slo_code": "13.3.4",
+    "statement": "compare electromotive force with terminal potential difference;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.3",
+    "topic_title": "Electromotive Force (e.m.f.) and Potential Difference",
+    "slo_code": "13.3.5",
+    "statement": "derive a relation to understand the effects of the internal resistance of a source of e.m.f. on the terminal potential difference;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Electric Power",
+    "slo_code": "13.4.1",
+    "statement": "define electric power;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Electric Power",
+    "slo_code": "13.4.2",
+    "statement": "derive relations for electric power in terms of current (I), voltage (V) and resistance (R);",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.4",
+    "topic_title": "Electric Power",
+    "slo_code": "13.4.3",
+    "statement": "calculate the power dissipation due to the internal resistance of a circuit;",
+    "page": 33
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Kirchoff’s Laws",
+    "slo_code": "13.5.1",
+    "statement": "explain Kirchoff?s laws;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Kirchoff’s Laws",
+    "slo_code": "13.5.2",
+    "statement": "explain conservation of charge in a circuit with the help of Kirchoff’s first law;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Kirchoff’s Laws",
+    "slo_code": "13.5.3",
+    "statement": "explain conservation of energy in a circuit with the help of Kirchoff’s second law;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Kirchoff’s Laws",
+    "slo_code": "13.5.4",
+    "statement": "derive a formula for equivalent resistance of two or more resistors using Kirchhoff's law in: a. series, b. parallel;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.5",
+    "topic_title": "Kirchoff’s Laws",
+    "slo_code": "13.5.5",
+    "statement": "solve problems using Kirchhoff’s laws;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.6",
+    "topic_title": "Potential Divider",
+    "slo_code": "13.6.1",
+    "statement": "explain the principle and working of a potential divider circuit;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.6",
+    "topic_title": "Potential Divider",
+    "slo_code": "13.6.2",
+    "statement": "explain the use of thermistors and light-dependent resistors in potential dividers;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.6",
+    "topic_title": "Potential Divider",
+    "slo_code": "13.6.3",
+    "statement": "describe the potentiometer with the help of a diagram;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.7",
+    "topic_title": "D.C. Circuits",
+    "slo_code": "13.7.1",
+    "statement": "describe the Wheatstone bridge circuit with the help of a diagram;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.7",
+    "topic_title": "D.C. Circuits",
+    "slo_code": "13.7.2",
+    "statement": "calculate the unknown resistance by using a Whetstone bridge;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.7",
+    "topic_title": "D.C. Circuits",
+    "slo_code": "13.7.3",
+    "statement": "find (e.m.f.) of cell using null method;",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 13,
+    "topic": "13.7",
+    "topic_title": "D.C. Circuits",
+    "slo_code": "13.7.4",
+    "statement": "compare the (e.m.f.) of two cells by using a potentiometer.",
+    "page": 34
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Magnetic Field by a Current Carrying Conductor",
+    "slo_code": "14.1.1",
+    "statement": "describe magnetic field due to current in a straight wire and solenoid;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Magnetic Field by a Current Carrying Conductor",
+    "slo_code": "14.1.2",
+    "statement": "describe the direction of magnetic field produced by a current carrying conductor;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Magnetic Field by a Current Carrying Conductor",
+    "slo_code": "14.1.3",
+    "statement": "describe Biot-Savart’s law;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Magnetic Field by a Current Carrying Conductor",
+    "slo_code": "14.1.4",
+    "statement": "describe magnetic flux and magnetic flux density;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Magnetic Field by a Current Carrying Conductor",
+    "slo_code": "14.1.5",
+    "statement": "solve word problems using φ = B⃗ · A⃗;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Magnetic Field by a Current Carrying Conductor",
+    "slo_code": "14.1.6",
+    "statement": "explain Ampere’s law;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.1",
+    "topic_title": "Magnetic Field by a Current Carrying Conductor",
+    "slo_code": "14.1.7",
+    "statement": "discuss applications of Ampere’s law in: a. solenoid, b. toroid;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Magnetic Force",
+    "slo_code": "14.2.1",
+    "statement": "explain that force act on a current-carrying conductor placed in a magnetic field with directions as interpreted by Fleming’s left-hand rule;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Magnetic Force",
+    "slo_code": "14.2.2",
+    "statement": "derive an expression for force, i.e. F = ILB sin ?;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Magnetic Force",
+    "slo_code": "14.2.3",
+    "statement": "solve word problems using F = ILB sin ?;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Magnetic Force",
+    "slo_code": "14.2.4",
+    "statement": "derive an equation for force on a moving charge in a uniform magnetic field and beam of particles;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.2",
+    "topic_title": "Magnetic Force",
+    "slo_code": "14.2.5",
+    "statement": "solve word problems using an equation for force on a moving charge in a uniform magnetic field and beam of particles;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Magnetic Torque",
+    "slo_code": "14.3.1",
+    "statement": "derive an expression of torque due to a couple acting on a coil;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.3",
+    "topic_title": "Magnetic Torque",
+    "slo_code": "14.3.2",
+    "statement": "solve word problems using an expression of torque due to a couple acting on a coil;",
+    "page": 35
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Practical Application of Electromagnetism",
+    "slo_code": "14.4.1",
+    "statement": "list the essential steps to convert a galvanometer into voltmeter and ammeter;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Practical Application of Electromagnetism",
+    "slo_code": "14.4.2",
+    "statement": "describe Hall effect;",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Practical Application of Electromagnetism",
+    "slo_code": "14.4.3",
+    "statement": "derive the expression V = BI /(ntq); H",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Practical Application of Electromagnetism",
+    "slo_code": "14.4.4",
+    "statement": "solve word problems related to V = BI /(ntq); H",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 14,
+    "topic": "14.4",
+    "topic_title": "Practical Application of Electromagnetism",
+    "slo_code": "14.4.5",
+    "statement": "explain that electric and magnetic fields can be used in velocity selection in fields like mass spectrometry, charged particle accelerators and plasma physics.",
+    "page": 36
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Law of Electromagnetic Induction",
+    "slo_code": "15.1.1",
+    "statement": "describe electromagnetic induction;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Law of Electromagnetic Induction",
+    "slo_code": "15.1.2",
+    "statement": "explain Faraday’s law of electromagnetic induction;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Law of Electromagnetic Induction",
+    "slo_code": "15.1.3",
+    "statement": "determine the direction of induced e.m.f. using Lenz’s law;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.1",
+    "topic_title": "Law of Electromagnetic Induction",
+    "slo_code": "15.1.4",
+    "statement": "solve word problems using the Faraday’s and Lenz’s laws of electromagnetic induction;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Seismometer",
+    "slo_code": "15.2.1",
+    "statement": "describe the components and working mechanism of electromagnetic seismometer;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.2",
+    "topic_title": "Seismometer",
+    "slo_code": "15.2.2",
+    "statement": "explain that electromagnetic induction is applied in seismometer to detect earthquakes;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Inductance",
+    "slo_code": "15.3.1",
+    "statement": "explain self and mutual induction with formulae and units;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.3",
+    "topic_title": "Inductance",
+    "slo_code": "15.3.2",
+    "statement": "identify inductors as important components of A.C. circuits termed as chokes;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.4",
+    "topic_title": "Alternating Current (A.C.) as Sinusoidal Wave",
+    "slo_code": "15.4.1",
+    "statement": "define sinusoidal waves;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.4",
+    "topic_title": "Alternating Current (A.C.) as Sinusoidal Wave",
+    "slo_code": "15.4.2",
+    "statement": "define alternating current and alternating voltage;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.4",
+    "topic_title": "Alternating Current (A.C.) as Sinusoidal Wave",
+    "slo_code": "15.4.3",
+    "statement": "define the following terms: a. time period, b. frequency, c. peak value, d. peak to peak value;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.4",
+    "topic_title": "Alternating Current (A.C.) as Sinusoidal Wave",
+    "slo_code": "15.4.4",
+    "statement": "calculate a sinusoidal alternating current or voltage using equation x = x sin(ωt); 0",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.4",
+    "topic_title": "Alternating Current (A.C.) as Sinusoidal Wave",
+    "slo_code": "15.4.5",
+    "statement": "calculate the root mean square (r.m.s.) value of alternate current and alternate voltage;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.4",
+    "topic_title": "Alternating Current (A.C.) as Sinusoidal Wave",
+    "slo_code": "15.4.6",
+    "statement": "explain that the mean power in a resistive load is half of the maximum power of a sinusoidal alternating current;",
+    "page": 37
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.5",
+    "topic_title": "A.C. Circuits",
+    "slo_code": "15.5.1",
+    "statement": "explain the flow of A.C. through resistor, capacitor and inductor;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.5",
+    "topic_title": "A.C. Circuits",
+    "slo_code": "15.5.2",
+    "statement": "define reactance of capacitor and inductor;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.5",
+    "topic_title": "A.C. Circuits",
+    "slo_code": "15.5.3",
+    "statement": "explain the factors that affect reactance in A.C. circuits;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.5",
+    "topic_title": "A.C. Circuits",
+    "slo_code": "15.5.4",
+    "statement": "explain ‘phase lag’ and ‘phase lead’ in a circuit through graphs/ vector diagram;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.5",
+    "topic_title": "A.C. Circuits",
+    "slo_code": "15.5.5",
+    "statement": "derive the expression of impedance as vector summation of resistance in series (R-C and R-L) circuits;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.5",
+    "topic_title": "A.C. Circuits",
+    "slo_code": "15.5.6",
+    "statement": "solve word problems using the expression of impedance;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.6",
+    "topic_title": "Semiconductor Devices",
+    "slo_code": "15.6.1",
+    "statement": "describe intrinsic and extrinsic semiconductor materials;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.6",
+    "topic_title": "Semiconductor Devices",
+    "slo_code": "15.6.2",
+    "statement": "compare P-type and N-type semiconductor;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.6",
+    "topic_title": "Semiconductor Devices",
+    "slo_code": "15.6.3",
+    "statement": "describe formation of p-n junction in diode with labelled diagram;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.6",
+    "topic_title": "Semiconductor Devices",
+    "slo_code": "15.6.4",
+    "statement": "describe forward and reverse bias;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.7",
+    "topic_title": "Rectification and Smoothing",
+    "slo_code": "15.7.1",
+    "statement": "define rectification;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.7",
+    "topic_title": "Rectification and Smoothing",
+    "slo_code": "15.7.2",
+    "statement": "compare Half wave and Full wave rectification;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.7",
+    "topic_title": "Rectification and Smoothing",
+    "slo_code": "15.7.3",
+    "statement": "explain the use of four diodes (bridge rectifier) for the full wave rectification of an alternating current;",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 15,
+    "topic": "15.7",
+    "topic_title": "Rectification and Smoothing",
+    "slo_code": "15.7.4",
+    "statement": "analyse the effect of a single capacitor in smoothing the output of a rectifier circuit, including the impact of capacitance values and load resistance on ripple voltage and waveform characteristics.",
+    "page": 38
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Einstein Special Theory of Relativity",
+    "slo_code": "16.1.1",
+    "statement": "distinguish between inertial and non-inertial frames of reference;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Einstein Special Theory of Relativity",
+    "slo_code": "16.1.2",
+    "statement": "explain postulates of special theory of relativity;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Einstein Special Theory of Relativity",
+    "slo_code": "16.1.3",
+    "statement": "describe qualitatively and quantitatively the consequences of special theory of relativity;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Einstein Special Theory of Relativity",
+    "slo_code": "16.1.4",
+    "statement": "describe that if the speed of light (c) becomes constant, then the space and time become relative;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.1",
+    "topic_title": "Einstein Special Theory of Relativity",
+    "slo_code": "16.1.5",
+    "statement": "describe that spacetime is a mathematical model in relativity that treats time as a fourth dimension of the traditional three dimensions of space;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.2",
+    "topic_title": "Quantum Theory",
+    "slo_code": "16.2.1",
+    "statement": "explain Planck’s quantum theory of electromagnetic wave;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.2",
+    "topic_title": "Quantum Theory",
+    "slo_code": "16.2.2",
+    "statement": "discuss the extension of Planck’s theory given by Einstein;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.2",
+    "topic_title": "Quantum Theory",
+    "slo_code": "16.2.3",
+    "statement": "solve word problems using the relations: a. E = pc, ℎ𝑓 b. p = ; 𝑐",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.3",
+    "topic_title": "Photoelectric Effect",
+    "slo_code": "16.3.1",
+    "statement": "define the following terms: a. threshold frequency, b. cutoff wavelength, c. work function, d. stopping potential;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.3",
+    "topic_title": "Photoelectric Effect",
+    "slo_code": "16.3.2",
+    "statement": "describe photoelectric effect;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.3",
+    "topic_title": "Photoelectric Effect",
+    "slo_code": "16.3.3",
+    "statement": "explain different features of photoelectric effect using graphs;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.3",
+    "topic_title": "Photoelectric Effect",
+    "slo_code": "16.3.4",
+    "statement": "derive Einstein’s photoelectric equation;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.3",
+    "topic_title": "Photoelectric Effect",
+    "slo_code": "16.3.5",
+    "statement": "solve word problems using photoelectric equation;",
+    "page": 39
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.4",
+    "topic_title": "Compton’s Effect",
+    "slo_code": "16.4.1",
+    "statement": "describe Compton?s effect;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.4",
+    "topic_title": "Compton’s Effect",
+    "slo_code": "16.4.2",
+    "statement": "ℎ solve word problems using Δλ = (1−cosθ); 𝑚𝑜𝑐",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.5",
+    "topic_title": "Wave-Particle Duality",
+    "slo_code": "16.5.1",
+    "statement": "compare wave nature and particle nature of light;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.5",
+    "topic_title": "Wave-Particle Duality",
+    "slo_code": "16.5.2",
+    "statement": "state de-Broglie’s hypothesis;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.5",
+    "topic_title": "Wave-Particle Duality",
+    "slo_code": "16.5.3",
+    "statement": "explain the wave nature of particles with reference to de- Broglie’s hypothesis;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.5",
+    "topic_title": "Wave-Particle Duality",
+    "slo_code": "16.5.4",
+    "statement": "discuss the results of Davison and Germer experiment; ℎ",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.5",
+    "topic_title": "Wave-Particle Duality",
+    "slo_code": "16.5.5",
+    "statement": "solve word problems using the relations 𝜆 = and 𝑚𝑣 ℎ 𝜆 = ; √2𝑚𝑉𝑒",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.5",
+    "topic_title": "Wave-Particle Duality",
+    "slo_code": "16.5.6",
+    "statement": "compare the phenomenon of pair production and pair annihilation;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.6",
+    "topic_title": "Atomic Structure and Heisenberg’s Uncertainty Principle",
+    "slo_code": "16.6.1",
+    "statement": "describe Bohr’s atomic model of hydrogen atom;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.6",
+    "topic_title": "Atomic Structure and Heisenberg’s Uncertainty Principle",
+    "slo_code": "16.6.2",
+    "statement": "explain hydrogen spectrum in terms of energy levels;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.6",
+    "topic_title": "Atomic Structure and Heisenberg’s Uncertainty Principle",
+    "slo_code": "16.6.3",
+    "statement": "derive relation for the wavelength of radiation emitted out by an electron using 1/λ = R_H [1/p² − 1/n²];",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.6",
+    "topic_title": "Atomic Structure and Heisenberg’s Uncertainty Principle",
+    "slo_code": "16.6.4",
+    "statement": "solve word problems using 1/λ = R_H [1/p² − 1/n²];",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.6",
+    "topic_title": "Atomic Structure and Heisenberg’s Uncertainty Principle",
+    "slo_code": "16.6.5",
+    "statement": "explain the formation and significance of emission and absorption line spectra;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.6",
+    "topic_title": "Atomic Structure and Heisenberg’s Uncertainty Principle",
+    "slo_code": "16.6.6",
+    "statement": "explain Heisenberg’s Uncertainty Principle;",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 16,
+    "topic": "16.6",
+    "topic_title": "Atomic Structure and Heisenberg’s Uncertainty Principle",
+    "slo_code": "16.6.7",
+    "statement": "explain that Heisenberg’s Uncertainty Principle demonstrates the inaccuracies of Bohr atomic model.",
+    "page": 40
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.1",
+    "topic_title": "Structure of Nucleus",
+    "slo_code": "17.1.1",
+    "statement": "describe the composition and structure of the atomic nucleus;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.1",
+    "topic_title": "Structure of Nucleus",
+    "slo_code": "17.1.2",
+    "statement": "discuss the forces that hold the nucleus together and the role of mesons in mediating these forces;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.2",
+    "topic_title": "Mass Defect and Binding Energy",
+    "slo_code": "17.2.1",
+    "statement": "define the following terms, a. mass defect, b. binding energy;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.2",
+    "topic_title": "Mass Defect and Binding Energy",
+    "slo_code": "17.2.2",
+    "statement": "identify (graphically) variation of binding energy per nucleon using mass number;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.2",
+    "topic_title": "Mass Defect and Binding Energy",
+    "slo_code": "17.2.3",
+    "statement": "show simple nuclear reactions by nuclear equations;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.2",
+    "topic_title": "Mass Defect and Binding Energy",
+    "slo_code": "17.2.4",
+    "statement": "calculate mass defect and binding energy;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Radioactivity",
+    "slo_code": "17.3.1",
+    "statement": "define the term ‘radioactivity’;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Radioactivity",
+    "slo_code": "17.3.2",
+    "statement": "list the properties of ?, ? and ? radiations;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Radioactivity",
+    "slo_code": "17.3.3",
+    "statement": "describe that nucleon number and charge number are conserved in nuclear processes;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Radioactivity",
+    "slo_code": "17.3.4",
+    "statement": "explain ?, ? and ? decay with balanced equations;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Radioactivity",
+    "slo_code": "17.3.5",
+    "statement": "state that antineutrinos (electron) are produced during β– decay and neutrinos (electron) are produced during β+ decay;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.3",
+    "topic_title": "Radioactivity",
+    "slo_code": "17.3.6",
+    "statement": "explain that α-particles have discrete energies but that β-particles have a continuous range of energies because (anti)neutrinos are emitted in β-decay;",
+    "page": 41
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.1",
+    "statement": "state the law of radioactive decay;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.2",
+    "statement": "define activity and decay constant;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.3",
+    "statement": "explain that radioactive decay is both spontaneous and random;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.4",
+    "statement": "illustrate the exponential nature of radioactive decay;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.5",
+    "statement": "solve word problems using the relation A = λ N and N = N e–λt ; 0",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.6",
+    "statement": "define half-life of a radioactive element;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.7",
+    "statement": "derive relation for half-life of a radioactive element;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.4",
+    "topic_title": "Radioactive Decay Law",
+    "slo_code": "17.4.8",
+    "statement": "solve word problems using the relation for the half-life of a radioactive element;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.5",
+    "topic_title": "Nuclear Reactions",
+    "slo_code": "17.5.1",
+    "statement": "differentiate between nuclear fission and fusion;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.5",
+    "topic_title": "Nuclear Reactions",
+    "slo_code": "17.5.2",
+    "statement": "explain the role of neutrons in fission chain reaction;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Nuclear Reactor",
+    "slo_code": "17.6.1",
+    "statement": "explain the working principle of a nuclear reactor;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Nuclear Reactor",
+    "slo_code": "17.6.2",
+    "statement": "describe the function of the principal components of a water moderated nuclear reactor;",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 17,
+    "topic": "17.6",
+    "topic_title": "Nuclear Reactor",
+    "slo_code": "17.6.3",
+    "statement": "discuss the significance of nuclear reactions in space. conditions",
+    "page": 42
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.1",
+    "topic_title": "Basic Forces of Nature",
+    "slo_code": "18.1.1",
+    "statement": "describe basic forces of nature;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Fundamental Particles",
+    "slo_code": "18.2.1",
+    "statement": "state the two fundamental building blocks of matter (fermions and bosons);",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Fundamental Particles",
+    "slo_code": "18.2.2",
+    "statement": "state Higgs Boson as a fundamental particle which is responsible for the particle’s mass;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Fundamental Particles",
+    "slo_code": "18.2.3",
+    "statement": "state W-boson, Z-boson, gluon, and photons as fundamental particles called exchange particles or force carriers;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Fundamental Particles",
+    "slo_code": "18.2.4",
+    "statement": "state that fermions are further divided into leptons and quarks;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.2",
+    "topic_title": "Fundamental Particles",
+    "slo_code": "18.2.5",
+    "statement": "state that electrons and neutrinos are fundamental particles called leptons;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.3",
+    "topic_title": "Quarks and Anti-Quarks",
+    "slo_code": "18.3.1",
+    "statement": "describe quarks and anti-quarks;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.3",
+    "topic_title": "Quarks and Anti-Quarks",
+    "slo_code": "18.3.2",
+    "statement": "list the six types/ flavours of quarks and anti-quarks;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.3",
+    "topic_title": "Quarks and Anti-Quarks",
+    "slo_code": "18.3.3",
+    "statement": "state that a hadron may be either a baryon (consisting of three quarks) or a meson (consisting of one quark and an antiquark);",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.3",
+    "topic_title": "Quarks and Anti-Quarks",
+    "slo_code": "18.3.4",
+    "statement": "describe protons and neutrons in terms of their quark composition;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.3",
+    "topic_title": "Quarks and Anti-Quarks",
+    "slo_code": "18.3.5",
+    "statement": "describe the changes to quark composition that take place during β– and β+ decay;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.3",
+    "topic_title": "Quarks and Anti-Quarks",
+    "slo_code": "18.3.6",
+    "statement": "construct a block diagram of standard model of particle physics;",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 18,
+    "topic": "18.4",
+    "topic_title": "Particle Accelerator",
+    "slo_code": "18.4.1",
+    "statement": "explain the working principle of particle accelerators and its uses.",
+    "page": 43
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Production and Use of Ultrasound",
+    "slo_code": "19.1.1",
+    "statement": "describe the piezo-electric effect;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Production and Use of Ultrasound",
+    "slo_code": "19.1.2",
+    "statement": "explain the generation and detection of ultrasound by piezo- electric transducer;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Production and Use of Ultrasound",
+    "slo_code": "19.1.3",
+    "statement": "describe the specific acoustic impedance of a medium as Z = ρc, where c is the speed of sound in the medium;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Production and Use of Ultrasound",
+    "slo_code": "19.1.4",
+    "statement": "define coupling medium; 𝐼𝑟 (𝑍1−𝑍2)2",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Production and Use of Ultrasound",
+    "slo_code": "19.1.5",
+    "statement": "solve word problems using = ; 𝐼0 (𝑍1+𝑍2)2",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Production and Use of Ultrasound",
+    "slo_code": "19.1.6",
+    "statement": "explain the working principle of ultrasound in diagnosing problems in internal structures;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.1",
+    "topic_title": "Production and Use of Ultrasound",
+    "slo_code": "19.1.7",
+    "statement": "calculate the attenuation of ultrasound in matter using I = I e–μx ; 0",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Production and Use of X-rays",
+    "slo_code": "19.2.1",
+    "statement": "describe inner shell transitions;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Production and Use of X-rays",
+    "slo_code": "19.2.2",
+    "statement": "explain production of X-rays and their properties;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Production and Use of X-rays",
+    "slo_code": "19.2.3",
+    "statement": "explain the use of X-rays in imaging internal body structures;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.2",
+    "topic_title": "Production and Use of X-rays",
+    "slo_code": "19.2.4",
+    "statement": "explain the working of computed tomography (CT) scans;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "PET Scanning",
+    "slo_code": "19.3.1",
+    "statement": "discuss the use of medical tracer use in positron emission tomography (PET) scanning;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.3",
+    "topic_title": "PET Scanning",
+    "slo_code": "19.3.2",
+    "statement": "explain PET scanning including the use of β+ decay tracers, the concept of annihilation in tissue and the production of gamma-ray photons;",
+    "page": 44
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.4",
+    "topic_title": "Luminosity and Inverse Square Law",
+    "slo_code": "19.4.1",
+    "statement": "define the term ?luminosity?;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.4",
+    "topic_title": "Luminosity and Inverse Square Law",
+    "slo_code": "19.4.2",
+    "statement": "describe inverse square law for radiant flux intensity (F) in 𝐿 terms of the luminosity (L) of the source F = ; 4𝜋𝑑2",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.4",
+    "topic_title": "Luminosity and Inverse Square Law",
+    "slo_code": "19.4.3",
+    "statement": "describe standard candle;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.4",
+    "topic_title": "Luminosity and Inverse Square Law",
+    "slo_code": "19.4.4",
+    "statement": "calculate the distances of galaxies using the standard candle;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.5",
+    "topic_title": "Stellar Radii",
+    "slo_code": "19.5.1",
+    "statement": "explain Wein’s displacement law;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.5",
+    "topic_title": "Stellar Radii",
+    "slo_code": "19.5.2",
+    "statement": "calculate the surface temperature of a star using Wein’s displacement law;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.5",
+    "topic_title": "Stellar Radii",
+    "slo_code": "19.5.3",
+    "statement": "state Stefan–Boltzmann’s law;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.5",
+    "topic_title": "Stellar Radii",
+    "slo_code": "19.5.4",
+    "statement": "calculate the radius of a star using relation L = 4πσr2T4;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.6",
+    "topic_title": "Hubble Law",
+    "slo_code": "19.6.1",
+    "statement": "explain the increased wavelength in the emission and absorption spectra lines from distant objects;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.6",
+    "topic_title": "Hubble Law",
+    "slo_code": "19.6.2",
+    "statement": "explain redshift leads to the idea that the Universe is expanding;",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 19,
+    "topic": "19.6",
+    "topic_title": "Hubble Law",
+    "slo_code": "19.6.3",
+    "statement": "explain Hubble’s law and its relation to the Big Bang theory.",
+    "page": 45
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.1",
+    "topic_title": "Debates about Aesthetic in Physics",
+    "slo_code": "20.1.1",
+    "statement": "discuss inherent mathematical beauty in the natural world by means of: a. elegance of simplicity, b. symmetry;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.1",
+    "topic_title": "Debates about Aesthetic in Physics",
+    "slo_code": "20.1.2",
+    "statement": "explain counterargument with examples to the claim that physical truths must inherent mathematical elegance or display;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.1",
+    "topic_title": "Debates about Aesthetic in Physics",
+    "slo_code": "20.1.3",
+    "statement": "discuss the pros and cons in the debate over whether humans should research: a. on the existence of aliens/ extraterrestrial life, b. research into subatomic particles should continue, given the existence of nuclear weapons;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.2",
+    "topic_title": "Thought Experiments",
+    "slo_code": "20.2.1",
+    "statement": "explain the thought experiments along with examples;",
+    "page": 46
+  },
+  {
+    "grade": 12,
+    "chapter": 20,
+    "topic": "20.2",
+    "topic_title": "Thought Experiments",
+    "slo_code": "20.2.2",
+    "statement": "explain that thought experiments have conveyed key concepts that would have been difficult to investigate through empirical methods, e.g. Newton’s cannonball.",
+    "page": 46
+  }
+]

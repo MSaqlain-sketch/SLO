@@ -1,0 +1,1109 @@
+[
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Introduction",
+    "slo_code": "1.1.1",
+    "statement": "define statistics;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Introduction",
+    "slo_code": "1.1.2",
+    "statement": "describe uses of statistics and its importance in different fields;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Introduction",
+    "slo_code": "1.1.3",
+    "statement": "distinguish between: a. descriptive and inferential statistics, b. statistics and parameter, c. population and sample;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.1",
+    "topic_title": "Introduction",
+    "slo_code": "1.1.4",
+    "statement": "explain the limitations of statistics;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Data and its Collection",
+    "slo_code": "1.2.1",
+    "statement": "distinguish between: a. primary and secondary data, b. qualitative and quantitative data, c. discrete and continuous data;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Data and its Collection",
+    "slo_code": "1.2.2",
+    "statement": "explain the methods of collection of primary and secondary data;",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Data and its Collection",
+    "slo_code": "1.2.3",
+    "statement": "describe the following terms: a. constant, b. variable, c. quantitative variable, d. discrete variable, e. continuous variable, f. qualitative variable; [Apply (A), Analyse (An), Evaluate (E), Create (C)]",
+    "page": 10
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Data and its Collection",
+    "slo_code": "1.2.4",
+    "statement": "describe the term, ‘questionnaire’;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Data and its Collection",
+    "slo_code": "1.2.5",
+    "statement": "write the characteristics of a good questionnaire; *",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.2",
+    "topic_title": "Data and its Collection",
+    "slo_code": "1.2.6",
+    "statement": "construct a simple questionnaire using Google Forms or SurveyMonkey;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Measurement Scales",
+    "slo_code": "1.3.1",
+    "statement": "explain nominal scale, ordinal scale, interval scale and ratio scale;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Measurement Scales",
+    "slo_code": "1.3.2",
+    "statement": "distinguish between: a. nominal and ordinal scale, b. interval and ratio scale;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.3",
+    "topic_title": "Measurement Scales",
+    "slo_code": "1.3.3",
+    "statement": "classify variable based on its nature into nominal, ordinal, interval and ratio scale;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.4",
+    "topic_title": "Application of Statistics",
+    "slo_code": "1.4.1",
+    "statement": "explain the applications of statistics in real-world scenarios;",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 1,
+    "topic": "1.5",
+    "topic_title": "Application of Statistical Software in Data Analysis",
+    "slo_code": "1.5.1",
+    "statement": "solve practical data problems using tools like minitab and excel. conditions",
+    "page": 11
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.1",
+    "statement": "describe tabulation and its classification (one way and two way classifications);",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.2",
+    "statement": "describe the importance of accurate data representation in statistical analysis;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.3",
+    "statement": "describe the following terms: a. class interval, b. tally marks/ frequency, c. upper class limit/ boundary, d. lower class limit/ boundary, e. class mark, f. class width;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.4",
+    "statement": "construct a frequency distribution table for discrete and continuous data;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.5",
+    "statement": "calculate relative frequency, less than cumulative frequency and more than cumulative frequency;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.6",
+    "statement": "interpret relative frequency, less than cumulative frequency and more than cumulative frequency;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.7",
+    "statement": "construct stem and leaf diagram for: a. one set of data, b. two sets of data (back to back);",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.1",
+    "topic_title": "Frequency Distribution",
+    "slo_code": "2.1.8",
+    "statement": "solve problems based on the stem and leaf for one and two sets of data;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Graphical Representation",
+    "slo_code": "2.2.1",
+    "statement": "draw simple bar chart, multiple bar chart, components (subdivided) bar chart and pie chart;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Graphical Representation",
+    "slo_code": "2.2.2",
+    "statement": "draw histogram (for both equal and unequal class intervals), frequency polygon, frequency curve, cumulative frequency polygon, and cumulative frequency curve;",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 2,
+    "topic": "2.2",
+    "topic_title": "Graphical Representation",
+    "slo_code": "2.2.3",
+    "statement": "interpret statistical graphs and diagrams related to SLOs # 2.2.1 and 2.2.2.",
+    "page": 12
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Central Tendency",
+    "slo_code": "3.1.1",
+    "statement": "define central tendency;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.1",
+    "topic_title": "Central Tendency",
+    "slo_code": "3.1.2",
+    "statement": "describe averages and their types;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.2.1",
+    "statement": "describe arithmetic mean and weighted arithmetic mean;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.2.2",
+    "statement": "calculate the arithmetic mean for ungrouped and grouped data using formulas;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.2.3",
+    "statement": "calculate the weighted arithmetic mean;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.2.4",
+    "statement": "describe the following properties of arithmetic mean: a. if X = a (a is constant), then X̄ = a, b. if Y = X ± a, then Ȳ = X̄ ± a, c. if Y = bX, then Ȳ = bX̄, d. if Y = X/a, then Ȳ = X̄/a or Ȳ = (1/a)(X̄), e. if Y = aX ± b, then Ȳ = aX̄ ± b;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.2.5",
+    "statement": "Solve problems by applying the properties mentioned in SLO # 3.2.4;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.2",
+    "topic_title": "Arithmetic Mean",
+    "slo_code": "3.2.6",
+    "statement": "describe advantages and disadvantages of using arithmetic mean;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Geometric Mean",
+    "slo_code": "3.3.1",
+    "statement": "describe geometric mean and its formula;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Geometric Mean",
+    "slo_code": "3.3.2",
+    "statement": "calculate the geometric mean for ungrouped and grouped data using formula and the logarithmic method;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.3",
+    "topic_title": "Geometric Mean",
+    "slo_code": "3.3.3",
+    "statement": "describe advantages and disadvantages of using geometric mean;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Harmonic Mean",
+    "slo_code": "3.4.1",
+    "statement": "describe harmonic mean and its formula;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Harmonic Mean",
+    "slo_code": "3.4.2",
+    "statement": "calculate the harmonic mean for ungrouped and grouped data;",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.4",
+    "topic_title": "Harmonic Mean",
+    "slo_code": "3.4.3",
+    "statement": "describe advantages and disadvantages of using harmonic",
+    "page": 13
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Relationship between Arithmetic Mean, Geometric Mean and Harmonic Mean",
+    "slo_code": "3.5.1",
+    "statement": "describe the relationship between arithmetic mean, geometric mean and harmonic mean;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.5",
+    "topic_title": "Relationship between Arithmetic Mean, Geometric Mean and Harmonic Mean",
+    "slo_code": "3.5.2",
+    "statement": "verify the relationship between arithmetic mean, geometric mean and harmonic mean for a given data;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Median and Quartiles",
+    "slo_code": "3.6.1",
+    "statement": "describe median and quartiles for ungrouped and grouped data;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Median and Quartiles",
+    "slo_code": "3.6.2",
+    "statement": "calculate median and quartiles for ungrouped and grouped data;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Median and Quartiles",
+    "slo_code": "3.6.3",
+    "statement": "describe advantages and disadvantages of median;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Median and Quartiles",
+    "slo_code": "3.6.4",
+    "statement": "interpret median and quartiles through the cumulative frequency curve;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Median and Quartiles",
+    "slo_code": "3.6.5",
+    "statement": "draw box and whisker plot;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.6",
+    "topic_title": "Median and Quartiles",
+    "slo_code": "3.6.6",
+    "statement": "solve problems based on the box and whisker plot for one and two sets of data;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Mode",
+    "slo_code": "3.7.1",
+    "statement": "define mode;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Mode",
+    "slo_code": "3.7.2",
+    "statement": "calculate mode for ungrouped and grouped data;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Mode",
+    "slo_code": "3.7.3",
+    "statement": "describe advantages and disadvantages of mode;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.7",
+    "topic_title": "Mode",
+    "slo_code": "3.7.4",
+    "statement": "estimate mode through histogram and stem and leaf diagram;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Empirical Relationship between Mean, Median and Mode",
+    "slo_code": "3.8.1",
+    "statement": "describe the empirical relationship between arithmetic mean, median and mode in symmetric and skewed distributions;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Empirical Relationship between Mean, Median and Mode",
+    "slo_code": "3.8.2",
+    "statement": "solve problems using the empirical relationship between arithmetic mean, median and mode;",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 3,
+    "topic": "3.8",
+    "topic_title": "Empirical Relationship between Mean, Median and Mode",
+    "slo_code": "3.8.3",
+    "statement": "evaluate the appropriateness of majors of central tendency (mean, median, or mode) for a given context.",
+    "page": 14
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Dispersion",
+    "slo_code": "4.1.1",
+    "statement": "describe dispersion of data;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.1",
+    "topic_title": "Dispersion",
+    "slo_code": "4.1.2",
+    "statement": "distinguish between measures of central tendency and measures of dispersion;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Range",
+    "slo_code": "4.2.1",
+    "statement": "define range and semi range;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Range",
+    "slo_code": "4.2.2",
+    "statement": "calculate range for ungrouped and grouped data;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Range",
+    "slo_code": "4.2.3",
+    "statement": "describe advantages and disadvantages of range;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Range",
+    "slo_code": "4.2.4",
+    "statement": "describe coefficient of range for ungrouped and grouped data;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.2",
+    "topic_title": "Range",
+    "slo_code": "4.2.5",
+    "statement": "calculate coefficient of range for ungrouped and grouped data;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.3",
+    "topic_title": "Quartile Deviation",
+    "slo_code": "4.3.1",
+    "statement": "describe interquartile range, quartile deviation and coefficient of quartile deviation;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.3",
+    "topic_title": "Quartile Deviation",
+    "slo_code": "4.3.2",
+    "statement": "describe advantages and disadvantages of quartile deviation;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.3",
+    "topic_title": "Quartile Deviation",
+    "slo_code": "4.3.3",
+    "statement": "find the interquartile range, quartile deviation and coefficient of quartile deviation for ungrouped and grouped data;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.4",
+    "topic_title": "Mean Deviation",
+    "slo_code": "4.4.1",
+    "statement": "describe mean deviation and coefficient of mean deviation from mean, median and mode;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.4",
+    "topic_title": "Mean Deviation",
+    "slo_code": "4.4.2",
+    "statement": "describe advantages and disadvantages of mean deviation;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.4",
+    "topic_title": "Mean Deviation",
+    "slo_code": "4.4.3",
+    "statement": "find the mean deviation and coefficient of mean deviation from mean, median and mode for ungrouped and grouped data;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.5",
+    "topic_title": "Variance and Standard Deviation",
+    "slo_code": "4.5.1",
+    "statement": "describe variance, standard deviation and coefficient of variation;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.5",
+    "topic_title": "Variance and Standard Deviation",
+    "slo_code": "4.5.2",
+    "statement": "describe advantages and disadvantages of coefficient of variation;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.5",
+    "topic_title": "Variance and Standard Deviation",
+    "slo_code": "4.5.3",
+    "statement": "calculate variance and standard deviation for ungrouped and grouped data;",
+    "page": 15
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.5",
+    "topic_title": "Variance and Standard Deviation",
+    "slo_code": "4.5.4",
+    "statement": "calculate the coefficient of variation for ungrouped and grouped data;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.5",
+    "topic_title": "Variance and Standard Deviation",
+    "slo_code": "4.5.5",
+    "statement": "describe the following properties of variance and standard deviation: a. S.D.(a) = 0 and Var(a) = 0, b. S.D.(X + a) = S.D.(X) and Var(X + a) = Var(X), c. S.D.(X ? a) = S.D.(X) and Var(X ? a) = Var(X), d. S.D.(aX) = aS.D.(X) and Var(aX) = a?Var(X), e. S.D.(X/a) = (1/a)S.D.(X) and Var(X/a) = (1/a?)Var(X);",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.5",
+    "topic_title": "Variance and Standard Deviation",
+    "slo_code": "4.5.6",
+    "statement": "solve problems using the properties as given in SLO # 4.5.5;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.6",
+    "topic_title": "Moments",
+    "slo_code": "4.6.1",
+    "statement": "write the formulae for moments about the arithmetic mean and about the origin;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.6",
+    "topic_title": "Moments",
+    "slo_code": "4.6.2",
+    "statement": "solve problems related to moments about the arithmetic mean and about the origin for ungrouped data;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.7",
+    "topic_title": "Symmetry and Skewness of a Distribution",
+    "slo_code": "4.7.1",
+    "statement": "describe symmetry;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.7",
+    "topic_title": "Symmetry and Skewness of a Distribution",
+    "slo_code": "4.7.2",
+    "statement": "explain the following properties of a symmetrical distribution: a. mean = median = mode, b. third quartile – median = median – first quartile, c. all odd ordered moments about mean vanish;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.7",
+    "topic_title": "Symmetry and Skewness of a Distribution",
+    "slo_code": "4.7.3",
+    "statement": "explain the skewness of a distribution (positive or negative);",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.7",
+    "topic_title": "Symmetry and Skewness of a Distribution",
+    "slo_code": "4.7.4",
+    "statement": "find the coefficient of skewness using Karl Pearson’s formulae;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.7",
+    "topic_title": "Symmetry and Skewness of a Distribution",
+    "slo_code": "4.7.5",
+    "statement": "interpret the coefficient of skewness of a distribution;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.7",
+    "topic_title": "Symmetry and Skewness of a Distribution",
+    "slo_code": "4.7.6",
+    "statement": "solve problems related to coefficient of skewness and symmetry;",
+    "page": 16
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.8",
+    "topic_title": "Kurtosis",
+    "slo_code": "4.8.1",
+    "statement": "describe kurtosis and its types;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.8",
+    "topic_title": "Kurtosis",
+    "slo_code": "4.8.2",
+    "statement": "calculate the coefficient of kurtosis to identify whether a symmetrical distribution is platykurtic, mesokurtic, or leptokurtic;",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.8",
+    "topic_title": "Kurtosis",
+    "slo_code": "4.8.3",
+    "statement": "solve problems related to kurtosis.",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 4,
+    "topic": "4.9",
+    "topic_title": "Application of Statistical Software in Data Analysis",
+    "slo_code": "4.9.1",
+    "statement": "solve practical data problems using tools like minitab and excel.",
+    "page": 17
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Introduction to Index Numbers",
+    "slo_code": "5.1.1",
+    "statement": "describe index number and its types (price index, quantity index and aggregate index number);",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Introduction to Index Numbers",
+    "slo_code": "5.1.2",
+    "statement": "write the uses of index numbers;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Introduction to Index Numbers",
+    "slo_code": "5.1.3",
+    "statement": "describe the steps involved in the construction of whole sale price index numbers;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.1",
+    "topic_title": "Introduction to Index Numbers",
+    "slo_code": "5.1.4",
+    "statement": "write the limitations of index numbers;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Simple Relatives or Simple Index Numbers",
+    "slo_code": "5.2.1",
+    "statement": "describe simple index numbers;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Simple Relatives or Simple Index Numbers",
+    "slo_code": "5.2.2",
+    "statement": "distinguish between simple and composite price index numbers;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.2",
+    "topic_title": "Simple Relatives or Simple Index Numbers",
+    "slo_code": "5.2.3",
+    "statement": "calculate simple price index numbers using: a. fixed base method, b. chain base method;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.3",
+    "topic_title": "Unweighted Index Numbers",
+    "slo_code": "5.3.1",
+    "statement": "describe the two methods of constructing unweighted index numbers: a. simple aggregate or aggregative method, b. simple average of relatives method;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.3",
+    "topic_title": "Unweighted Index Numbers",
+    "slo_code": "5.3.2",
+    "statement": "calculate composite price index numbers using the method of simple aggregate or aggregative method;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.4",
+    "topic_title": "Weighted Index Numbers",
+    "slo_code": "5.4.1",
+    "statement": "describe the following methods of constructing weighted index numbers: a. weighted aggregate method, b. weighted average of relatives method;",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 5,
+    "topic": "5.4",
+    "topic_title": "Weighted Index Numbers",
+    "slo_code": "5.4.2",
+    "statement": "calculate weighted aggregative composite price index numbers using: a. Laspeyre’s formula, b. Paasche’s formula, c. Fisher’s formula.",
+    "page": 18
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Concept of Time-Series",
+    "slo_code": "6.1.1",
+    "statement": "describe time-series;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.1",
+    "topic_title": "Concept of Time-Series",
+    "slo_code": "6.1.2",
+    "statement": "describe the following components of a time-series: a. secular trend, b. seasonal variations, c. cyclical fluctuations, d. irregular movements;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Measurement of Secular Trend",
+    "slo_code": "6.2.1",
+    "statement": "define linear trend and trend values;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Measurement of Secular Trend",
+    "slo_code": "6.2.2",
+    "statement": "explain the technique of coding time variable;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Measurement of Secular Trend",
+    "slo_code": "6.2.3",
+    "statement": "describe the following methods of measuring secular trend: a. the freehand curve method, b. the method of semi-averages, c. the method of moving averages;",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.2",
+    "topic_title": "Measurement of Secular Trend",
+    "slo_code": "6.2.4",
+    "statement": "find the trend values of a given data using the methods mentioned in SLO # 6.2.3.",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 6,
+    "topic": "6.3",
+    "topic_title": "Application of Statistical Software in Data Analysis",
+    "slo_code": "6.3.1",
+    "statement": "solve practical data problems using tools like minitab and excel.",
+    "page": 19
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.1",
+    "statement": "define regression;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.2",
+    "statement": "describe independent variable (regressor) and dependent variable (regressand);",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.3",
+    "statement": "draw a scatter diagram;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.4",
+    "statement": "discuss the nature of the data using a scatter diagram;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.5",
+    "statement": "describe simple linear regression and its coefficient;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.6",
+    "statement": "describe the method of least squares line of regression;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.7",
+    "statement": "apply the method of least squares to fit a regression line of Y on X and X on Y;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.1",
+    "topic_title": "Simple Linear Regression",
+    "slo_code": "7.1.8",
+    "statement": "solve problems related to SLOs # 7.1.4 to 7.1.7;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Simple Linear Correlation",
+    "slo_code": "7.2.1",
+    "statement": "describe correlation;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Simple Linear Correlation",
+    "slo_code": "7.2.2",
+    "statement": "explain the nature of correlation (positive correlation, negative correlation, non-linear correlation and no correlation);",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Simple Linear Correlation",
+    "slo_code": "7.2.3",
+    "statement": "distinguish between regression and correlation;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Simple Linear Correlation",
+    "slo_code": "7.2.4",
+    "statement": "describe correlation coefficient ‘r’(also called Pearson product- moment correlation coefficient);",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Simple Linear Correlation",
+    "slo_code": "7.2.5",
+    "statement": "calculate the coefficient of correlation using the following formulae: a. r = (ΣXY − nX̄Ȳ)/√[(ΣX² − nX̄²)(ΣY² − nȲ²)], b. r = [nΣXY − (ΣX)(ΣY)]/√{[nΣX² − (ΣX)²][nΣY² − (ΣY)²]}, c. r = √(b × d) (product of two regression coefficients);",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Simple Linear Correlation",
+    "slo_code": "7.2.6",
+    "statement": "write the properties of the coefficient of correlation;",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.2",
+    "topic_title": "Simple Linear Correlation",
+    "slo_code": "7.2.7",
+    "statement": "solve problems related to the coefficient of correlation,",
+    "page": 20
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Rank Correlation",
+    "slo_code": "7.3.1",
+    "statement": "describe rank correlation;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Rank Correlation",
+    "slo_code": "7.3.2",
+    "statement": "find the coefficient of rank correlation using Spearman’s formula for rank correlation;",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.3",
+    "topic_title": "Rank Correlation",
+    "slo_code": "7.3.3",
+    "statement": "calculate the rank correlation for tied ranks.",
+    "page": 21
+  },
+  {
+    "grade": 11,
+    "chapter": 7,
+    "topic": "7.4",
+    "topic_title": "Application of Statistical Software in Data Analysis",
+    "slo_code": "7.4.1",
+    "statement": "solve practical data problems using tools like minitab and excel.",
+    "page": 21
+  }
+]

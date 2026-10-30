@@ -108,7 +108,9 @@ Deno.test("subject scope validation rejects a clearly unrelated question", async
     [{ slo_code: "12.1.1", statement: "Explain database management systems" }],
     "test-key",
     "test-model",
-    async (_input, init) => {
+12,
+"computer-science",
+async (_input, init) => {
       requests.push(JSON.parse(String(init?.body)));
       return groqResponse('{"in_scope":false}');
     },
@@ -137,7 +139,9 @@ Deno.test("subject scope validation includes syllabus context for concepts beyon
     syllabus,
     "test-key",
     "test-model",
-    async (_input, init) => {
+12,
+"computer-science",
+async (_input, init) => {
       const request = JSON.parse(String(init?.body));
       const messages = request.messages as Array<{ content: string }>;
       const input = JSON.parse(messages[1].content);
@@ -160,7 +164,9 @@ Deno.test("subject scope validation preserves context for genuine follow-ups", a
     [{ slo_code: "12.1.1", statement: "Describe database keys" }],
     "test-key",
     "test-model",
-    async (_input, init) => {
+12,
+"computer-science",
+async (_input, init) => {
       const request = JSON.parse(String(init?.body));
       const messages = request.messages as Array<{ content: string }>;
       const input = JSON.parse(messages[1].content);
@@ -210,8 +216,9 @@ Deno.test("textbook support validation accepts only an explicit support decision
   }
 });
 
-Deno.test("scope validation fails closed on malformed model output", async () => {
+Deno.test("scope validation fails closed on malformed model output", async () => {  
   let failed = false;
+
   try {
     await isSyllabusRelevant(
       "What is database management?",
@@ -219,6 +226,8 @@ Deno.test("scope validation fails closed on malformed model output", async () =>
       [],
       "test-key",
       "test-model",
+      12,
+      "computer-science",
       async () => groqResponse("maybe"),
     );
   } catch {
@@ -227,5 +236,55 @@ Deno.test("scope validation fails closed on malformed model output", async () =>
 
   if (!failed) {
     throw new Error("Malformed validation output must not authorize answers.");
+  }
+});
+Deno.test("scope validation receives correct grade and subject for all subjects", async () => {
+  const cases = [
+    {
+      grade: 11,
+      subject: "mathematics",
+      question: "Solve 2x + 5 = 15",
+    },
+    {
+      grade: 12,
+      subject: "physics",
+      question: "Calculate velocity from displacement and time",
+    },
+    {
+      grade: 11,
+      subject: "statistics",
+      question: "Calculate the mean of 4, 6, and 8",
+    },
+  ];
+
+  for (const testCase of cases) {
+    const inScope = await isSyllabusRelevant(
+      testCase.question,
+      [],
+      [],
+      "test-key",
+      "test-model",
+      testCase.grade,
+      testCase.subject,
+      async (_input, init) => {
+        const request = JSON.parse(String(init?.body));
+        const messages = request.messages as Array<{ content: string }>;
+        const input = JSON.parse(messages[1].content);
+
+        if (
+          input.grade !== testCase.grade ||
+          input.subject !== testCase.subject ||
+          input.question !== testCase.question
+        ) {
+          throw new Error("Incorrect grade, subject, or question.");
+        }
+
+        return groqResponse('{"in_scope":true}');
+      },
+    );
+
+    if (!inScope) {
+      throw new Error(`${testCase.subject} question was rejected.`);
+    }
   }
 });
