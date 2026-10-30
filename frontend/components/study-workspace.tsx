@@ -79,7 +79,9 @@ function renderAssistantAnswer(content: string) {
           {label}
         </span>
       )}
-      <ReactMarkdown>{answer}</ReactMarkdown>
+      <ReactMarkdown>
+  {answer.replace(/\\\r?\n/g, "\n\n")}
+</ReactMarkdown>
     </>
   );
 }
@@ -655,9 +657,13 @@ ${message.paper2_questions
         }),
       });
 
-      if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
-      }
+     if (!response.ok) {
+  if (response.status === 429) {
+    throw new Error("AI is temporarily busy. Please try again shortly.");
+  }
+
+  throw new Error(`API error: ${response.status}`);
+}
 
       const data = await response.json();
 
@@ -680,12 +686,15 @@ ${message.paper2_questions
             : chat
         )
       );
-    } catch {
+   } catch (error) {
       const errorMessage: Message = {
         id: crypto.randomUUID(),
         role: "assistant",
         content:
-          "Unable to connect to Babul Learn AI. Please check the backend server.",
+  error instanceof Error &&
+  error.message === "AI is temporarily busy. Please try again shortly."
+    ? error.message
+    : "Unable to connect to Babul Learn AI. Please check the backend server.",
       };
 
       setChats((prev) =>

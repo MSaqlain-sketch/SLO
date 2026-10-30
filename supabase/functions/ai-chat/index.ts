@@ -553,20 +553,27 @@ ${textbookContext}`
       },
     );
 
-    if (!groqResponse.ok) {
-      console.error(
-        "Groq request failed:",
-        groqResponse.status,
-      );
+   if (!groqResponse.ok) {
+  console.error("Groq request failed:", groqResponse.status);
 
-      return respond(
-        {
-          detail: "Answer generation failed",
-          provider_status: groqResponse.status,
-        },
-        502,
-      );
-    }
+  if (groqResponse.status === 429) {
+    return respond(
+      {
+        detail: "AI is temporarily busy. Please try again shortly.",
+        provider_status: 429,
+      },
+      429,
+    );
+  }
+
+  return respond(
+    {
+      detail: "Answer generation failed",
+      provider_status: groqResponse.status,
+    },
+    502,
+  );
+}
 
     const result = await groqResponse.json();
 
