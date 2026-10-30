@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import {
   ArrowRight,
+  BadgeCheck,
   ArrowUpRight,
   BookOpen,
   ChartColumn,
@@ -186,22 +187,46 @@ export default function HomePage({
               </section>
             </div>
 
-            <div className="home-hero-aside" aria-label="Babul Learn features">
-              <div className="home-hero-orbit" aria-hidden="true" />
-              <div className="home-stat-card home-stat-card-one">
-                <span className="home-stat-icon"><ClipboardCheck size={19} /></span>
-                <span><strong>AKU-EB aligned</strong><small>Built around your syllabus</small></span>
-              </div>
-              <div className="home-stat-card home-stat-card-two">
-                <span className="home-stat-icon"><BookOpen size={19} /></span>
-                <span><strong>Chapter-wise notes</strong><small>Study one topic at a time</small></span>
-              </div>
-              <div className="home-stat-card home-stat-card-three">
-                <span className="home-stat-icon"><Newspaper size={19} /></span>
-                <span><strong>Past paper practice</strong><small>Prepare with confidence</small></span>
-              </div>
-            </div>
-          </div>
+           
+
+<div className="home-hero-aside" aria-label="Babul Learn features">
+  <div className="bl-pill-columns">
+    <div className="bl-pill-column">
+      <div className="bl-pill bl-pill-green bl-pill-1">
+        <strong>AKU-EB<br />aligned</strong>
+        <span className="bl-pill-icon"><ClipboardCheck size={34} strokeWidth={1.6} /></span>
+      </div>
+      <div className="bl-pill bl-pill-amber bl-pill-2">
+        <strong>Chapter-wise<br />notes</strong>
+        <span className="bl-pill-icon"><BookOpen size={34} strokeWidth={1.6} /></span>
+      </div>
+    </div>
+
+    <div className="bl-pill-column">
+      <div className="bl-pill bl-pill-emerald bl-pill-3">
+        <strong>Built for<br />students</strong>
+        <span className="bl-pill-icon"><GraduationCap size={34} strokeWidth={1.6} /></span>
+      </div>
+      <div className="bl-pill bl-pill-dark bl-pill-4">
+        <strong>Textbook<br />verified</strong>
+        <span className="bl-pill-icon"><BadgeCheck size={34} strokeWidth={1.6} /></span>
+      </div>
+    </div>
+
+    <div className="bl-pill-column">
+      <div className="bl-pill bl-pill-mint bl-pill-5">
+        <strong>Past paper<br />practice</strong>
+        <span className="bl-pill-icon"><Newspaper size={34} strokeWidth={1.6} /></span>
+      </div>
+      <div className="bl-pill bl-pill-teal bl-pill-6">
+        <strong>Ask syllabus<br />questions</strong>
+        <span className="bl-pill-icon"><MessageSquare size={34} strokeWidth={1.6} /></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
         </section>
 
         <section className="home-quick-section" id="quick-actions" aria-labelledby="quick-title">

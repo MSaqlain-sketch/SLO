@@ -1,0 +1,182 @@
+
+===== PAGE 10 =====
+Student Learning Outcomes of AKU-EB HSSC Mathematics Syllabus
+Part I (Grade XI)
+Cognitive Level1
+Topics and Sub-topics Student Learning Outcomes A and
+R U
+beyond
+1. Complex Numbers Students should be able to:
+1.1 Complex Numbers 1.1.1 describe the complex number z, represented by an expression *
+of the form z<glyph>a<glyph>ib into the form (a, b) and vice versa, where
+a and b are real numbers and i<glyph> <glyph>1;
+1.1.2 describe complex plane and the representation of a complex *
+number on a complex plane;
+1.1.3 identify a as real part and b as imaginary part of z<glyph>a<glyph>ib; *
+1.1.4 apply the condition of equality of complex numbers to solve A
+problems;
+1.1.5 apply fundamental operations such as addition, subtraction, A
+multiplication and division on complex numbers;
+1.1.6 state z<glyph>a<glyph>ib, the complex conjugate of z<glyph>a<glyph>ib; *
+1.1.7 calculate z <glyph> a2<glyph>b2 , the absolute value or modulus of a A
+complex number z<glyph>a<glyph>ib;
+1.2 Triangular Inequality 1.2.1 define triangular inequality of a complex number;1 FA2
+1R = Remember, U = Understand, A = Apply and beyond [Apply (A), Analyse (An), Evaluate (E), Create (C)]
+2FA= Formative Assessment, not to be assessed under examination conditions.
+Aga Khan University Examination Board Mathematics HSSC Syllabus 2025 10
+
+===== PAGE 11 =====
+Cognitive Level
+Topics and Sub-topics Student Learning Outcomes A and
+R U
+beyond
+1.3 Factorisation and Solution of 1.3.1 factorise quadratic and cubic polynomials of the form: A
+Equations a. z2<glyph>a2 <glyph>(z<glyph>ia)(z<glyph>ia),[a<glyph>R,anda<glyph>0],
+b. z3<glyph>3z2 <glyph>z<glyph>5<glyph>(z<glyph>1)(z<glyph>2<glyph>i)(z<glyph>2<glyph>i);
+1.3.2 solve simultaneous linear equations with complex coefficients A
+such as, 5x – (3 + i)y = 7 – i, and (2 – i)x +2iy = –1+ i;
+1.3 .3 solve quadratic equations of the form pz2<glyph>qz<glyph>r <glyph>0 by A
+completing square, where p, q and r are real numbers with
+p<glyph>0and z is a complex number;
+1.4 Complex Numbers in Polar 1.4.1 define the polar coordinate system; *
+Coordinates 1.4.2 describe the polar representation of a complex number; *
+1.4 .3 convert complex numbers in polar representation and vice A
+versa;
+1.4.4 describe De-Moivre’s theorem; *
+1.4.5 describe the following properties: *
+a. z.z <glyph>r.r{cos(<glyph><glyph><glyph>)<glyph>isin(<glyph><glyph><glyph>)},
+1 2 1 2
+z r
+b. 1 <glyph> 1{cos(<glyph><glyph><glyph>)<glyph>isin(<glyph><glyph><glyph>)};
+z r
+2 2
+1.4.6 solve problems of multiplication and division of a complex A
+number in polar form;
+1.5 Real World Application of 1.5.1 apply the concepts of complex numbers to the real world FA
+Complex Numbers problems.
+Aga Khan University Examination Board Mathematics HSSC Syllabus 2025 11
+
+===== PAGE 12 =====
+Cognitive Level
+Topics and Sub-topics Student Learning Outcomes A and
+R U
+beyond
+2. Matrices and Determinants Students should be able to:
+2.1 Matrices 2.1.1 apply matrix operations such as addition, subtraction and A
+multiplication of matrices with real and complex entries;
+2.1.2 describe the following terms: *
+a. upper triangular matrix,
+b. lower triangular matrix,
+c. transpose of a matrix,
+d. symmetric and skew-symmetric matrices,
+e. hermitian and skew-hermitian matrices,
+f. involutory matrix,
+g. nilpotent matrix,
+h. idempotent matrix,
+i. periodic matrix,
+j. orthogonal matrix;
+2.2 Determinants of Matrices of 2.2.1 explain the properties of determinants; *
+order 3 2.2.2 find the determinant of a square matrix; A
+2.2.3 find the minor and cofactor of elements of a square matrix; A
+2.2.4 find the adjoint of a square matrix; A
+2.2.5 solve problems related to singular and non-singular matrices; A
+2.2.6 evaluate the determinant without expansion (using properties E
+of determinants);
+2.2.7 define: *
+a. elementary row operations,
+b. echelon and reduced echelon forms;
+2.2.8 find the inverse of a matrix using row operation; A
+2.2.9 find the rank of a matrix using row operation; A
+Aga Khan University Examination Board Mathematics HSSC Syllabus 2025 12
+
+===== PAGE 28 =====
+Part II (Grade XII)
+Cognitive Level3
+Topics and Sub-topics Student Learning Outcomes A and
+R U
+beyond
+12. Straight Line Students should be able to:
+12.1 Equation of Straight Line 12.1.1 describe the equation of straight line parallel to coordinate axes; *
+12.1.2 describe the following forms of equation of a straight line: *
+a. point – slope form,
+b. slope – intercept form,
+c. two points form,
+d. two intercepts form,
+e. normal form,
+f. symmetric form;
+12.1.3 convert the general form of the equation of a straight line into the A
+forms mentioned in SLO 12.1.2;
+12.1.4 find the distance between: FA4
+a. a point and a line,
+b. two parallel lines;
+12.1.5 describe concurrent lines and the point of concurrency; *
+12.1.6 find the equations of the medians, altitudes and perpendicular A
+bisectors of a triangle for the given vertices of a triangle;
+12.1.7 determine the condition of concurrency of three straight lines; A
+(Note: When equations or vertices are given.)
+12.1.8 prove that in a triangle, the three: E
+a. perpendicular bisectors are concurrent (circum-centre),
+b. medians are concurrent (centroid),
+c. altitudes are concurrent (orthocentre);
+3R = Remember, U = Understand, A = Application and beyond [Apply (A), Analyse (An), Evaluate (E), Create (C)]
+4FA= Formative Assessment, not to be assessed under examination conditions.
+Aga Khan University Examination Board Mathematics HSSC Syllabus 2025 28
+
+===== PAGE 29 =====
+Cognitive Level
+Topics and Sub-topics Student Learning Outcomes A and
+R U
+beyond
+12.2 Angle Between Lines 12.2.1 find the angle between two intersecting lines; A
+12.2.2 find the equation of the family of lines passing through the point A
+of intersection of two given lines;
+12.2.3 calculate the angles of a triangle when the slopes of the sides are A
+given;
+12.3 Area of Polygon 12.3.1 find the area of a triangular region whose vertices are given; A
+12.3.2 find the area of a quadrilateral region whose vertices are given; A
+12.4 Homogeneous Linear and 12.4.1 define the second degree homogeneous equations in two *
+Quadratic Equations in Two variables;
+Variables 12.4.2 find the equation of the pair of lines represented jointly by the A
+second degree homogeneous equation ax2 + 2hxy + by2 = 0;
+12.4.3 determine the nature of the lines of ax2 + 2hxy + by2 = 0, using A
+the discriminant D<glyph> h2 <glyph>ab ;
+12.4.4 find the acute angle between a pair of straight lines passing A
+through the origin;
+12.4.5 solve the real world problems using the concepts of analytical A
+geometry.
+Aga Khan University Examination Board Mathematics HSSC Syllabus 2025 29
+
+===== PAGE 30 =====
+Cognitive Level
+Topics and Sub-topics Student Learning Outcomes A and
+R U
+beyond
+13. Functions and Limits Students should be able to:
+13.1 Functions and Types of 13.1.1 describe the following types of intervals: *
+Functions a. open interval,
+b. closed interval,
+c. semi-open and semi-closed intervals;
+13.1.2 represent the intervals mentioned in SLO 13.1.1 on a number A
+line;
+13.1.3 describe a function as a rule of correspondence and notation of a *
+function, its domain, codomain and range, including one-one and
+onto functions;
+13.1.4 find the value of a function for given values of dependent and A
+independent variables;
+13.1.5 identify functions as: *
+a. algebraic functions,
+b. transcendental functions;
+13.1.6 describe various transcendental functions such as trigonometric *
+functions, inverse trigonometric functions, logarithmic functions,
+exponential functions and modulus functions;
+13.1.7 describe quadratic and square root functions; *
+13.1.8 describe: *
+a. explicit and implicit functions,
+b. even and odd functions,
+c. parametric equations of functions such as x = at2
+y<glyph>2at, x <glyph>asec<glyph>, y<glyph>btan<glyph>,
+d. piecewise functions, such as
+<glyph> x when 0<glyph> x <glyph>1
+y <glyph> <glyph> ;
+<glyph>x<glyph>1 when 1<glyph> x <glyph> 2
+Aga Khan University Examination Board Mathematics HSSC Syllabus 2025 30

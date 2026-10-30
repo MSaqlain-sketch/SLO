@@ -928,6 +928,56 @@ function closeSLOs() {
           New chat
         </button>
 
+{/* Class and Subject Switcher */}
+<div className="mx-4 mt-4 rounded-xl border border-emerald-400/20 bg-white/5 p-3">
+  <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-emerald-300">
+    Your Study Selection
+  </p>
+
+  <div className="space-y-3">
+    <div>
+      <label
+        htmlFor="sidebar-class"
+        className="mb-1 block text-xs font-medium text-slate-300"
+      >
+        Class
+      </label>
+      <select
+        id="sidebar-class"
+        value={classLevel}
+        onChange={(event) => changeClassLevel(event.target.value)}
+        disabled={loading}
+        className="w-full cursor-pointer rounded-lg border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white outline-none transition focus:border-emerald-400"
+      >
+        <option value="XI">Class XI</option>
+        <option value="XII">Class XII</option>
+      </select>
+    </div>
+
+    <div>
+      <label
+        htmlFor="sidebar-subject"
+        className="mb-1 block text-xs font-medium text-slate-300"
+      >
+        Subject
+      </label>
+      <select
+        id="sidebar-subject"
+        value={selectionSubjectSlug}
+        onChange={(event) => changeSubject(event.target.value)}
+        disabled={loading}
+        className="w-full cursor-pointer rounded-lg border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white outline-none transition focus:border-emerald-400"
+      >
+        {CURRICULUM[classLevel].map((subject) => (
+          <option key={subject} value={toSubjectSlug(subject)}>
+            {subject}
+          </option>
+        ))}
+      </select>
+    </div>
+  </div>
+</div>
+
         <nav className="babul-nav mt-3 flex flex-col gap-1" aria-label="Study navigation">
           <Link
             href={selectionHref("/chat", {
@@ -1232,14 +1282,14 @@ function closeSLOs() {
   setSloFullscreen(false);
   setSelectedSloSubject(null);
 }}
-            className="text-sm font-medium text-blue-600"
+            className="inline-flex cursor-pointer items-center rounded-lg px-4 py-2 text-sm font-medium text-emerald-700 transition-all duration-200 hover:bg-emerald-800 hover:text-white hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
           >
             ← Back to Subjects
           </button>
           <button
   type="button"
   onClick={() => setSloFullscreen((prev) => !prev)}
-  className="ml-4 rounded-lg border border-blue-300 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-100"
+  className="ml-4 inline-flex cursor-pointer items-center rounded-lg border border-emerald-300 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700 transition-all duration-200 hover:border-emerald-800 hover:bg-emerald-800 hover:text-white hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600"
 >
   {sloFullscreen ? (
     <><Minimize2 className="mr-1 inline" size={16} /> Exit Full Screen</>

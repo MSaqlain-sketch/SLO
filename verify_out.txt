@@ -1,0 +1,276 @@
+
+=== Mathematics Grade 1 ===
+  PDF codes=172  JSON codes=177
+  ONLY in PDF (missing from JSON): none
+  ONLY in JSON (extra): ['1.3.3', '1.4.3', '4.1.3', '5.2.3', '5.2.6']
+  Normalized statement diffs: 139
+    1.1.1:
+      PDF : 'describe the complex number z, represented by an expression * of the form z=a\uf02bib into the form (a, b) and vice versa, where a and b are real numbers and i= \uf02d1;'
+      JSON: 'describe the complex number z, represented by an expression of the form z=a+ib into the form (a, b) and vice versa, where a and b are real numbers and i= â\x88\x921;'
+    1.1.2:
+      PDF : 'describe complex plane and the representation of a complex * number on a complex plane;'
+      JSON: 'describe complex plane and the representation of a complex number on a complex plane;'
+    1.1.3:
+      PDF : 'identify a as real part and b as imaginary part of z=a\uf02bib; *'
+      JSON: 'identify a as real part and b as imaginary part of z=a+ib;'
+    1.1.4:
+      PDF : 'apply the condition of equality of complex numbers to solve A problems;'
+      JSON: 'apply the condition of equality of complex numbers to solve problems;'
+    1.1.5:
+      PDF : 'apply fundamental operations such as addition, subtraction, A multiplication and division on complex numbers;'
+      JSON: 'apply fundamental operations such as addition, subtraction, multiplication and division on complex numbers;'
+    1.1.6:
+      PDF : 'state z=a\uf02dib, the complex conjugate of z=a\uf02bib; *'
+      JSON: 'state z=aâ\x88\x92ib, the complex conjugate of z=a+ib;'
+    1.1.7:
+      PDF : 'calculate z = a2\uf02bb2, the absolute value or modulus of a A complex number z=a\uf02bib; 1.2 Triangular Inequality'
+      JSON: 'calculate |z| = â\x88\x9a(aÂ² + bÂ²), the absolute value or modulus of a complex number z = a + ib;'
+    1.2.1:
+      PDF : 'define triangular inequality of a complex number;1 FA2 1R = Remember, U = Understand, A = Apply and beyond [Apply (A), Analyse (An), Evaluate (E), Create (C)] 2'
+      JSON: 'define triangular inequality of a complex number;Â¹;'
+    1.3.1:
+      PDF : 'factorise quadratic and cubic polynomials of the form: A Equations a. z2\uf02ba2 =(z\uf02bia)(z\uf02dia),[a<=R,anda>0], b. z3\uf02d3z2 \uf02bz\uf02b5=(z\uf02b1)(z\uf02d2\uf02di)(z\uf02d2\uf02bi);'
+      JSON: 'factorise quadratic and cubic polynomials of the form: a. zÂ² + aÂ² = (z + ia)(z â\x88\x92 ia), where a â\x88\x88 R and a â\x89 0; b. zÂ³ â\x88\x92 3zÂ² + z + 5 = (z + 1)(z â\x88\x92 2 â\x88'
+    1.3.2:
+      PDF : 'solve simultaneous linear equations with complex coefficients A such as, 5x - (3 + i)y = 7 - i, and (2 - i)x +2iy = -1+ i; 1.3.3 solve quadratic equations of th'
+      JSON: 'solve simultaneous linear equations with complex coefficients such as, 5x â\x80\x93 (3 + i)y = 7 â\x80\x93 i, and (2 â\x80\x93 i)x +2iy = â\x80\x931+ i;'
+    1.4.1:
+      PDF : 'define the polar coordinate system; * Coordinates'
+      JSON: 'define the polar coordinate system;'
+    1.4.2:
+      PDF : 'describe the polar representation of a complex number; * 1.4.3 convert complex numbers in polar representation and vice A versa;'
+      JSON: 'describe the polar representation of a complex number;'
+  Chapter mismatches: none
+  JSON order == PDF order: False
+  Per-chapter PDF : {1: 16, 2: 17, 3: 30, 4: 2, 5: 8, 6: 15, 7: 8, 8: 11, 9: 10, 10: 9, 11: 46}
+  Per-chapter JSON: {1: 18, 2: 17, 3: 30, 4: 3, 5: 10, 6: 15, 7: 8, 8: 11, 9: 10, 10: 9, 11: 46}
+
+=== Mathematics Grade 12 ===
+  PDF codes=201  JSON codes=204
+  ONLY in PDF (missing from JSON): none
+  ONLY in JSON (extra): ['14.3.1', '14.5.1', '14.5.2']
+  Normalized statement diffs: 171
+    12.1.1:
+      PDF : 'describe the equation of straight line parallel to coordinate axes; *'
+      JSON: 'describe the equation of straight line parallel to coordinate axes;'
+    12.1.2:
+      PDF : 'describe the following forms of equation of a straight line: * a. point - slope form, b. slope - intercept form, c. two points form, d. two intercepts form, e. '
+      JSON: 'describe the following forms of equation of a straight line: a. point â\x80\x93 slope form, b. slope â\x80\x93 intercept form, c. two points form, d. two intercepts form, e'
+    12.1.3:
+      PDF : 'convert the general form of the equation of a straight line into the A forms mentioned in SLO'
+      JSON: 'convert the general form of the equation of a straight line into the forms mentioned in SLO 12.1.2;'
+    12.1.4:
+      PDF : 'find the distance between: FA4 a. a point and a line, b. two parallel lines;'
+      JSON: 'find the distance between: a. a point and a line, b. two parallel lines;'
+    12.1.5:
+      PDF : 'describe concurrent lines and the point of concurrency; *'
+      JSON: 'describe concurrent lines and the point of concurrency;'
+    12.1.6:
+      PDF : 'find the equations of the medians, altitudes and perpendicular A bisectors of a triangle for the given vertices of a triangle;'
+      JSON: 'find the equations of the medians, altitudes and perpendicular bisectors of a triangle for the given vertices of a triangle;'
+    12.1.7:
+      PDF : 'determine the condition of concurrency of three straight lines; A (Note: When equations or vertices are given.)'
+      JSON: 'determine the condition of concurrency of three straight lines; (Note: When equations or vertices are given.);'
+    12.1.8:
+      PDF : 'prove that in a triangle, the three: E a. perpendicular bisectors are concurrent (circum-centre), b. medians are concurrent (centroid), c. altitudes are concurr'
+      JSON: 'prove that in a triangle, the three: a. perpendicular bisectors are concurrent (circum-centre), b. medians are concurrent (centroid), c. altitudes are concurren'
+    12.2.2:
+      PDF : 'find the equation of the family of lines passing through the point A of intersection of two given lines;'
+      JSON: 'find the equation of the family of lines passing through the point of intersection of two given lines;'
+    12.2.3:
+      PDF : 'calculate the angles of a triangle when the slopes of the sides are A given; 12.3 Area of Polygon'
+      JSON: 'calculate the angles of a triangle when the slopes of the sides are given;'
+    12.3.2:
+      PDF : 'find the area of a quadrilateral region whose vertices are given; A 12.4 Homogeneous Linear and'
+      JSON: 'find the area of a quadrilateral region whose vertices are given;'
+    12.4.1:
+      PDF : 'define the second degree homogeneous equations in two * Quadratic Equations in Two variables; Variables'
+      JSON: 'define the second degree homogeneous equations in two variables;'
+  Chapter mismatches: none
+  JSON order == PDF order: False
+  Per-chapter PDF : {12: 18, 13: 36, 14: 23, 15: 16, 16: 8, 17: 29, 18: 9, 19: 15, 20: 10, 21: 10, 22: 10, 23: 17}
+  Per-chapter JSON: {12: 18, 13: 36, 14: 26, 15: 16, 16: 8, 17: 29, 18: 9, 19: 15, 20: 10, 21: 10, 22: 10, 23: 17}
+
+=== Physics Grade 1 ===
+  PDF codes=185  JSON codes=185
+  ONLY in PDF (missing from JSON): none
+  ONLY in JSON (extra): none
+  Normalized statement diffs: 170
+    1.1.1:
+      PDF : 'discuss that all physical quantities consist of a numerical E magnitude and a unit;'
+      JSON: 'discuss that all physical quantities consist of a numerical magnitude and a unit;'
+    1.1.3:
+      PDF : 'identify the SI base quantities and their units; *'
+      JSON: 'identify the SI base quantities and their units;'
+    1.1.4:
+      PDF : 'discuss derived units as products or quotients of the SI base E units;'
+      JSON: 'discuss derived units as products or quotients of the SI base units;'
+    1.1.5:
+      PDF : 'use SI base units to check the homogeneity of physical A equations; 1.2 Dimensions'
+      JSON: 'use SI base units to check the homogeneity of physical equations;'
+    1.2.1:
+      PDF : 'describe the concept of dimensions; *'
+      JSON: 'describe the concept of dimensions;'
+    1.2.2:
+      PDF : 'discuss various physical quantities in terms of their E dimensions;'
+      JSON: 'discuss various physical quantities in terms of their dimensions;'
+    1.2.3:
+      PDF : 'show the homogeneity of physical equations by using A dimensions;'
+      JSON: 'show the homogeneity of physical equations by using dimensions;'
+    1.2.4:
+      PDF : 'derive the formula for physical quantities by using dimensions; A 1.3 Precision and Accuracy'
+      JSON: 'derive the formula for physical quantities by using dimensions;'
+    1.3.1:
+      PDF : 'differentiate between precision and accuracy; *'
+      JSON: 'differentiate between precision and accuracy;'
+    1.3.2:
+      PDF : 'analyse the accuracy and precision of data collected using An different measuring instruments; 1R = Remember, U = Understand, A = Apply and beyond [Apply (A), A'
+      JSON: 'analyse the accuracy and precision of data collected using different measuring instruments;'
+    1.4.1:
+      PDF : 'solve word problems related to uncertainty in derived A quantity with correct number of significant figures;'
+      JSON: 'solve word problems related to uncertainty in derived quantity with correct number of significant figures;'
+    1.4.2:
+      PDF : 'justify that all measurements contain uncertainty. E Aga Khan University Examination Board Physics HSSC Syllabus 2025 11'
+      JSON: 'justify that all measurements contain uncertainty.'
+  Chapter mismatches: none
+  JSON order == PDF order: True
+  Per-chapter PDF : {1: 13, 2: 10, 3: 12, 4: 20, 5: 8, 6: 18, 7: 22, 8: 19, 9: 28, 10: 35}
+  Per-chapter JSON: {1: 13, 2: 10, 3: 12, 4: 20, 5: 8, 6: 18, 7: 22, 8: 19, 9: 28, 10: 35}
+
+=== Physics Grade 11 ===
+  PDF codes=213  JSON codes=213
+  ONLY in PDF (missing from JSON): none
+  ONLY in JSON (extra): none
+  Normalized statement diffs: 203
+    11.1.1:
+      PDF : 'explain Newton’s law of gravitation; *'
+      JSON: 'explain Newtonâ\x80\x99s law of gravitation;'
+    11.1.2:
+      PDF : 'solve word problems using Newton’s law of gravitation; A 11.2 Gravitational Field Strength'
+      JSON: 'solve word problems using Newtonâ\x80\x99s law of gravitation;'
+    11.2.1:
+      PDF : 'define gravitational field strength; *'
+      JSON: 'define gravitational field strength;'
+    11.2.2:
+      PDF : 'solve word problems using the relation 𝑔 = 𝐺𝑀/𝑟2; A 11.3 Gravitational Force and Motion'
+      JSON: 'solve word problems using the relation ð\x9d\x91\x94 = ð\x9d\x90ºð\x9d\x91\x80/ð\x9d\x91\x9f2;'
+    11.3.1:
+      PDF : 'analyse circular orbits in gravitational fields; An of Satellite'
+      JSON: 'analyse circular orbits in gravitational fields;'
+    11.3.2:
+      PDF : 'define geo-stationary satellite; *'
+      JSON: 'define geo-stationary satellite;'
+    11.3.3:
+      PDF : 'analyse the motion of geo-stationary satellites; An 11.4 Variation in value of ‘g’'
+      JSON: 'analyse the motion of geo-stationary satellites;'
+    11.4.1:
+      PDF : 'derive the relation for the variation of gravitational field A strength with height and depth;'
+      JSON: 'derive the relation for the variation of gravitational field strength with height and depth;'
+    11.4.2:
+      PDF : 'analyse that ‘g’ is approximately constant for small changes in An height near the Earth’s surface; 11.5 Gravitational Potential'
+      JSON: 'analyse that â\x80\x98gâ\x80\x99 is approximately constant for small changes in height near the Earthâ\x80\x99s surface;'
+    11.5.2:
+      PDF : 'justify that the concept of gravitational potential leads to the E gravitational potential energy of two-point masses. 1R = Remember, U = Understand, A = Apply '
+      JSON: 'justify that the concept of gravitational potential leads to the gravitational potential energy of two-point masses. [Apply (A), Analyse (An), Evaluate (E), Cre'
+    12.1.1:
+      PDF : 'define charge and its types; *'
+      JSON: 'define charge and its types;'
+    12.1.2:
+      PDF : 'calculate the total charge on a body as integral multiple of A elementary charge (electron); 12.2 Coulomb’s Law'
+      JSON: 'calculate the total charge on a body as integral multiple of elementary charge (electron);'
+  Chapter mismatches: none
+  JSON order == PDF order: True
+  Per-chapter PDF : {11: 11, 12: 31, 13: 29, 14: 19, 15: 28, 16: 28, 17: 25, 18: 13, 19: 24, 20: 5}
+  Per-chapter JSON: {11: 11, 12: 31, 13: 29, 14: 19, 15: 28, 16: 28, 17: 25, 18: 13, 19: 24, 20: 5}
+
+=== Statistics Grade 1 ===
+  PDF codes=123  JSON codes=123
+  ONLY in PDF (missing from JSON): none
+  ONLY in JSON (extra): none
+  Normalized statement diffs: 114
+    1.1.1:
+      PDF : 'define statistics; *'
+      JSON: 'define statistics;'
+    1.1.2:
+      PDF : 'describe uses of statistics and its importance in different fields; *'
+      JSON: 'describe uses of statistics and its importance in different fields;'
+    1.1.3:
+      PDF : 'distinguish between: * a. descriptive and inferential statistics, b. statistics and parameter, c. population and sample;'
+      JSON: 'distinguish between: a. descriptive and inferential statistics, b. statistics and parameter, c. population and sample;'
+    1.1.4:
+      PDF : 'explain the limitations of statistics; * 1.2 Data and its Collection'
+      JSON: 'explain the limitations of statistics;'
+    1.2.1:
+      PDF : 'distinguish between: * a. primary and secondary data, b. qualitative and quantitative data, c. discrete and continuous data;'
+      JSON: 'distinguish between: a. primary and secondary data, b. qualitative and quantitative data, c. discrete and continuous data;'
+    1.2.2:
+      PDF : 'explain the methods of collection of primary and secondary * data;'
+      JSON: 'explain the methods of collection of primary and secondary data;'
+    1.2.3:
+      PDF : 'describe the following terms: * a. constant, b. variable, c. quantitative variable, d. discrete variable, e. continuous variable, f. qualitative variable; 1R = '
+      JSON: 'describe the following terms: a. constant, b. variable, c. quantitative variable, d. discrete variable, e. continuous variable, f. qualitative variable; [Apply '
+    1.2.4:
+      PDF : 'describe the term, ‘questionnaire’; *'
+      JSON: 'describe the term, â\x80\x98questionnaireâ\x80\x99;'
+    1.2.6:
+      PDF : 'construct a simple questionnaire using Google Forms or FA2 SurveyMonkey; 1.3 Measurement Scales'
+      JSON: 'construct a simple questionnaire using Google Forms or SurveyMonkey;'
+    1.3.1:
+      PDF : 'explain nominal scale, ordinal scale, interval scale and ratio * scale;'
+      JSON: 'explain nominal scale, ordinal scale, interval scale and ratio scale;'
+    1.3.2:
+      PDF : 'distinguish between: * a. nominal and ordinal scale, b. interval and ratio scale;'
+      JSON: 'distinguish between: a. nominal and ordinal scale, b. interval and ratio scale;'
+    1.3.3:
+      PDF : 'classify variable based on its nature into nominal, ordinal, * interval and ratio scale; 1.4 Application of Statistics'
+      JSON: 'classify variable based on its nature into nominal, ordinal, interval and ratio scale;'
+  Chapter mismatches: none
+  JSON order == PDF order: True
+  Per-chapter PDF : {1: 15, 2: 11, 3: 29, 4: 31, 5: 11, 6: 7, 7: 19}
+  Per-chapter JSON: {1: 15, 2: 11, 3: 29, 4: 31, 5: 11, 6: 7, 7: 19}
+
+=== Statistics Grade 8 ===
+  PDF codes=118  JSON codes=118
+  ONLY in PDF (missing from JSON): none
+  ONLY in JSON (extra): none
+  Normalized statement diffs: 110
+    8.1.1:
+      PDF : 'explain the concept of factorial (!); * Techniques'
+      JSON: 'explain the concept of factorial (!);'
+    8.1.3:
+      PDF : 'describe fundamental principle of counting; *'
+      JSON: 'describe fundamental principle of counting;'
+    8.1.4:
+      PDF : 'construct a tree diagram using the fundamental principle of A counting for: a. repeated values, b. non repeated values;'
+      JSON: 'construct a tree diagram using the fundamental principle of counting for: a. repeated values, b. non repeated values;'
+    8.1.5:
+      PDF : 'solve problems related to fundamental principle of counting A and tree diagram for: a. repeated values, b. non repeated values; 8.2 Permutation'
+      JSON: 'solve problems related to fundamental principle of counting and tree diagram for: a. repeated values, b. non repeated values;'
+    8.2.1:
+      PDF : 'describe permutation of n different objects taken r at a time and * recognise the notation nP; r'
+      JSON: 'describe permutation of n different objects taken r at a time and recognise the notation nP; r'
+    8.2.3:
+      PDF : 'solve problems related to permutation when: A a. repetition is not allowed, b. repetition is allowed, c. elements are identical, d. arrangements are in a circle'
+      JSON: 'solve problems related to permutation when: a. repetition is not allowed, b. repetition is allowed, c. elements are identical, d. arrangements are in a circle;'
+    8.3.1:
+      PDF : 'describe combination of n different objects taken r at a time * and recognise the notation nC; r'
+      JSON: 'describe combination of n different objects taken r at a time and recognise the notation nC; r'
+    8.3.2:
+      PDF : 'solve problems based on combination. 1 R = Remember, U = Understand, A = Apply and beyond [Apply (A), Analyse (An), Evaluate (E), Create (C)] Aga Khan Universit'
+      JSON: 'solve problems based on combination.'
+    9.1.1:
+      PDF : 'describe the following terms: * a. random experiment, b. sample space, sample point and an event, c. simple and compound events, d. impossible and sure events, '
+      JSON: 'describe the following terms: a. random experiment, b. sample space, sample point and an event, c. simple and compound events, d. impossible and sure events, e.'
+    9.1.2:
+      PDF : 'apply set theory concepts to random experiments, sample A spaces, and events;'
+      JSON: 'apply set theory concepts to random experiments, sample spaces, and events;'
+    9.1.3:
+      PDF : 'calculate probability through the classical, relative frequency A and axiomatic approaches;'
+      JSON: 'calculate probability through the classical, relative frequency and axiomatic approaches;'
+    9.1.4:
+      PDF : 'find the probability of occurrence of an event using Venn and A tree diagrams; 9.2 Laws of Probability'
+      JSON: 'find the probability of occurrence of an event using Venn and tree diagrams;'
+  Chapter mismatches: none
+  JSON order == PDF order: True
+  Per-chapter PDF : {8: 10, 9: 9, 10: 19, 11: 30, 12: 17, 13: 5, 14: 28}
+  Per-chapter JSON: {8: 10, 9: 9, 10: 19, 11: 30, 12: 17, 13: 5, 14: 28}
