@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import StudyWorkspace from "./study-workspace";
 import {
@@ -70,9 +70,18 @@ function ComingSoon({
   );
 }
 
-export default function FeaturePage({ feature }: { feature: FeatureName }) {
+export function ChatFeaturePage() {
+  const searchParams = useSearchParams();
+  return <FeaturePage feature="chat" chatSearch={searchParams?.toString() ?? null} />;
+}
+
+export default function FeaturePage({ feature, chatSearch }: {
+  feature: FeatureName;
+  chatSearch?: string | null;
+}) {
   const router = useRouter();
-  const search = useLocationSearch();
+  const locationSearch = useLocationSearch();
+  const search = feature === "chat" && chatSearch !== undefined ? chatSearch : locationSearch;
   const {
     selection: storedSelection,
     hydrated: selectionHydrated,
@@ -154,8 +163,6 @@ export default function FeaturePage({ feature }: { feature: FeatureName }) {
     "Physics",
     "Statistics",
   ].includes(subject);
-  const chatIsSupported =
-    feature !== "chat" || (grade === 12 && subject === "Computer Science");
   const quizIsSupported =
     (feature !== "past-papers" && feature !== "practice") ||
     (grade === 12 && subject === "Computer Science");
@@ -165,7 +172,6 @@ export default function FeaturePage({ feature }: { feature: FeatureName }) {
     grade < 11 ||
     !supportedClassLevel ||
     !supportedSubject ||
-    !chatIsSupported ||
     !quizIsSupported
   ) {
     return (

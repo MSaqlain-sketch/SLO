@@ -1,3 +1,4 @@
+import { createGroqFetcher, GroqRateLimitError, RATE_LIMIT_MESSAGE } from "./groq-rate-limit.ts";
 import { createClient } from "@supabase/supabase-js";
 import {
   getSloCode,
@@ -215,6 +216,8 @@ Deno.serve(async (req: Request): Promise<Response> => {
       );
     }
 
+    const groqFetch = createGroqFetcher();
+
     const history: ChatMessage[] = Array.isArray(body?.history)
       ? body.history
         .filter(
@@ -339,8 +342,21 @@ if (sloCode) {
       }
     }
 
-    let inScope = strongSyllabusMatch;
-    if (!inScope) {
+    const hasAcademicContext =
+  history.some(
+    (message) =>
+      message.role === "user" &&
+      (
+        getSloCode(message.content) !== null ||
+        hasStrongSyllabusMatch(message.content, syllabus)
+      ),
+  );
+
+let inScope =
+  strongSyllabusMatch ||
+  (followUpHint && hasAcademicContext);
+
+if (!inScope) {
       try {
         inScope = await isSyllabusRelevant(
   question,
@@ -350,8 +366,12 @@ if (sloCode) {
   Deno.env.get("GROQ_MODEL") || "openai/gpt-oss-120b",
   grade,
   subject,
+  groqFetch,
 );
       } catch (error) {
+        if (error instanceof GroqRateLimitError) {
+          return respond({ detail: RATE_LIMIT_MESSAGE, provider_status: 429 }, 429);
+        }
         console.error("Subject relevance validation failed:", error);
         return respond(
           { detail: "Subject relevance validation failed" },
@@ -525,7 +545,7 @@ ${textbookContext}`
         : "No textbook extract was retrieved for this request."
     }`;
 
-    const groqResponse = await fetch(
+    const groqResponse = await groqFetch(
       "https://api.groq.com/openai/v1/chat/completions",
       {
         method: "POST",
@@ -559,7 +579,7 @@ ${textbookContext}`
   if (groqResponse.status === 429) {
     return respond(
       {
-        detail: "AI is temporarily busy. Please try again shortly.",
+        detail: RATE_LIMIT_MESSAGE,
         provider_status: 429,
       },
       429,
@@ -612,6 +632,7 @@ ${textbookContext}`
           relevantPassages,
           groqKey,
           Deno.env.get("GROQ_MODEL") || "openai/gpt-oss-120b",
+          groqFetch,
         );
       } catch (error) {
         console.error("Textbook answer verification failed:", error);

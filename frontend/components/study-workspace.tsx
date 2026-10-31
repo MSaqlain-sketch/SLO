@@ -87,10 +87,41 @@ function renderAssistantAnswer(content: string) {
 }
 
 type Chat = {
+  classLevel?: Extract<SchoolClass, "XI" | "XII">;
+  subjectSlug?: string;
   id: string;
   title: string;
   messages: Message[];
 };
+
+function savedChatSubject(chat: Chat): string | null {
+  const match = /^study:(?:XI|XII):([^:]+)(?::[^:]+)?$/.exec(chat.id);
+  const idSubject = match?.[1];
+  const metadata = chat.subjectSlug;
+  if (metadata !== undefined) {
+    if (typeof metadata !== "string" || !subjectLabel(metadata)) return null;
+    if (idSubject && metadata !== idSubject) return null;
+    return subjectLabel(metadata);
+  }
+  return idSubject ? subjectLabel(idSubject) : null;
+}
+
+function selectionChat(
+  chats: Chat[],
+  schoolClass: string,
+  subject: string,
+  preferredId?: string | null,
+): string | null {
+  const matches = (chat: Chat) => {
+    const idClass = /^study:(XI|XII):/.exec(chat.id)?.[1];
+    if (idClass && chat.classLevel && idClass !== chat.classLevel) return false;
+    return (chat.classLevel ?? idClass) === schoolClass &&
+      savedChatSubject(chat) === subjectLabel(subject);
+  };
+  return chats.find((chat) => chat.id === preferredId && matches(chat))?.id ??
+    chats.find((chat) => chat.id === `study:${schoolClass}:${subject}` && matches(chat))?.id ??
+    chats.find(matches)?.id ?? null;
+}
 
 type SLO = {
   slo_code: string;
@@ -363,6 +394,9 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
   const [selectedSloChapterPage, setSelectedSloChapterPage] =
   useState<number | null>(null);
   const [sloFullscreen, setSloFullscreen] = useState(false);
+  const [selectedStudySlo, setSelectedStudySlo] = useState<SLO | null>(null);
+  const [studyListOpen, setStudyListOpen] = useState(true);
+  const [pendingChatId, setPendingChatId] = useState<string | null>(null);
   const [selectedStudyChapter, setSelectedStudyChapter] = useState<number | null>(null);
   const [studyChapters, setStudyChapters] = useState<Chapter[]>([]);
   const [studyChaptersLoading, setStudyChaptersLoading] = useState(false);
@@ -379,8 +413,35 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const requestInFlight = useRef(false);
+  const initialChatSelection = useRef({ initialView, initialClassLevel, initialSubjectSlug });
 
-  const activeChat = chats.find((chat) => chat.id === activeChatId);
+  const pendingStudySlo = useRef<string | null>(null);
+  const queuedStudySlos = useRef<Array<{
+    code: string;
+    run: (history: Message[]) => Promise<void>;
+  }>>([]);
+
+  const [chatRouteSelection, setChatRouteSelection] = useState({
+    classLevel: initialClassLevel,
+    subjectSlug: initialSubjectSlug,
+  });
+  // Synchronize before committing a changed chat route, so old messages never flash.
+  if (initialView === "chat" && (
+    chatRouteSelection.classLevel !== initialClassLevel ||
+    chatRouteSelection.subjectSlug !== initialSubjectSlug
+  )) {
+    setChatRouteSelection({ classLevel: initialClassLevel, subjectSlug: initialSubjectSlug });
+    setClassLevel(initialClassLevel);
+    setSelectionSubjectSlug(initialSubjectSlug);
+    setActiveChatId(selectionChat(chats, initialClassLevel, initialSubjectSlug));
+    setQuestion("");
+    setView("chat");
+  }
+
+  const studyChatId = `study:${classLevel}:${selectionSubjectSlug}`;
+  const visibleChatId = view === "study" ? studyChatId : activeChatId;
+  const activeChat = chats.find((chat) => chat.id === visibleChatId);
+  const visibleChatLoading = loading && pendingChatId === visibleChatId;
   const messages = activeChat?.messages ?? [];
 
   const studyGrade: 11 | 12 = classLevel === "XI" ? 11 : 12;
@@ -472,9 +533,30 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
               Array.isArray(item.messages)
           );
 
-          setChats(validChats);
+          // Keep legacy chats intact and copy their messages into the subject chat once.
+          const restoredChats = [...validChats];
+          for (const legacy of [...validChats].reverse()) {
+            const match = /^study:(XI|XII):([^:]+):[^:]+$/.exec(legacy.id);
+            if (!match) continue;
+            const id = `study:${match[1]}:${match[2]}`;
+            let shared = restoredChats.find((chat) => chat.id === id);
+            if (!shared) {
+              shared = { id, subjectSlug: match[2], title: legacy.title, messages: [] };
+              restoredChats.unshift(shared);
+            }
+            const seen = new Set(shared.messages.map((message) => message.id));
+            const missing = legacy.messages.filter((message) => !seen.has(message.id));
+            if (missing.length) {
+              shared = { ...shared, messages: [...shared.messages, ...missing] };
+              restoredChats[restoredChats.findIndex((chat) => chat.id === id)] = shared;
+            }
+          }
+          setChats(restoredChats);
 
-          if (validChats.some((chat) => chat.id === active)) {
+          const initial = initialChatSelection.current;
+          if (initial.initialView === "chat") {
+            setActiveChatId(selectionChat(restoredChats, initial.initialClassLevel, initial.initialSubjectSlug, active));
+          } else if (validChats.some((chat) => chat.id === active)) {
             setActiveChatId(active);
           }
         }
@@ -570,31 +652,38 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
 
   // Automatically scroll to newest chat message
   useEffect(() => {
-    if (view !== "chat" || messages.length === 0) return;
+    if ((view !== "chat" && view !== "study") || messages.length === 0) return;
 
     messagesEndRef.current?.scrollIntoView({
       behavior: "smooth",
       block: "end",
     });
-  }, [messages, loading, activeChatId, view]);
+  }, [messages, loading, visibleChatId, view]);
 
-  async function askAI(customQuestion?: string) {
+  async function askAI(customQuestion?: string, sloRequest?: SLO, queuedHistory?: Message[]) {
     const text = (customQuestion ?? question).trim();
 
-    if (!text || requestInFlight.current || !historyLoaded) return;
+    if (!text || requestInFlight.current || !historyLoaded || (view === "study" && !sloRequest && !selectedStudySlo)) return;
 
     requestInFlight.current = true;
     setLoading(true);
-    setView("chat");
+    if (view !== "study") setView("chat");
     setSidebarOpen(false);
 
-    const chatId = activeChatId ?? crypto.randomUUID();
+    const chatId = visibleChatId ?? crypto.randomUUID();
+    setPendingChatId(chatId);
+    pendingStudySlo.current = view === "study"
+      ? (sloRequest ?? selectedStudySlo)?.slo_code ?? null
+      : null;
+    const previousMessages = queuedHistory ?? chats.find((chat) => chat.id === chatId)?.messages ?? [];
 
     const userMessage: Message = {
       id: crypto.randomUUID(),
       role: "user",
       content: `${text.replace(/\s*\(\s*\d+\s*marks?\s*\)/gi, "").trim()} (${marks} marks)`,
     };
+
+    let completedHistory = [...previousMessages, userMessage];
 
     setChats((prev) => {
       const existing = prev.some((chat) => chat.id === chatId);
@@ -613,6 +702,8 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
       return [
         {
           id: chatId,
+          classLevel,
+          subjectSlug: selectionSubjectSlug,
           title: text.length > 40 ? `${text.slice(0, 40)}...` : text,
           messages: [userMessage],
         },
@@ -620,7 +711,7 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
       ];
     });
 
-    setActiveChatId(chatId);
+    if (view !== "study") setActiveChatId(chatId);
     setQuestion("");
 
     try {
@@ -634,9 +725,8 @@ const [view, setView] = useState<"chat" | "study" | "slos" | "quiz">(
   marks,
   grade: classLevel === "XI" ? 11 : 12,
   subject: selectionSubjectSlug,
-  history: (
-            chats.find((chat) => chat.id === chatId)?.messages ?? []
-          )
+  history: [
+            ...previousMessages
             .slice(-10)
             .map((message) => ({
               role: message.role,
@@ -654,6 +744,10 @@ ${message.paper2_questions
   .join("\n")}`
                   : message.content,
             })),
+            ...(view === "study" && !sloRequest && selectedStudySlo
+              ? [{ role: "user", content: studySloPrompt(selectedStudySlo) }]
+              : []),
+          ],
         }),
       });
 
@@ -676,6 +770,7 @@ ${message.paper2_questions
     : [],
 };
 
+      completedHistory = [...completedHistory, aiMessage];
       setChats((prev) =>
         prev.map((chat) =>
           chat.id === chatId
@@ -697,6 +792,7 @@ ${message.paper2_questions
     : "Unable to connect to Babul Learn AI. Please check the backend server.",
       };
 
+      completedHistory = [...completedHistory, errorMessage];
       setChats((prev) =>
         prev.map((chat) =>
           chat.id === chatId
@@ -710,7 +806,11 @@ ${message.paper2_questions
     } finally {
       requestInFlight.current = false;
       setLoading(false);
-      textareaRef.current?.focus();
+      setPendingChatId(null);
+      pendingStudySlo.current = null;
+      const next = queuedStudySlos.current.shift();
+      if (next) void next.run(completedHistory);
+      if (view !== "study") textareaRef.current?.focus();
     }
   }
 
@@ -745,7 +845,13 @@ ${message.paper2_questions
 
     setClassLevel(parsedSelection.classLevel as Extract<SchoolClass, "XI" | "XII">);
     setSelectionSubjectSlug(parsedSelection.subjectSlug);
+    if (view === "chat") {
+      setActiveChatId(selectionChat(chats, parsedSelection.classLevel, parsedSelection.subjectSlug));
+    }
     setSelectedStudyChapter(null);
+    setSelectedStudySlo(null);
+    setStudyListOpen(true);
+    setQuestion("");
     setSelectedSloSubject(parsedSelection.subjectSlug);
     setSelectedSloGrade(
   parsedSelection.classLevel === "XI" ? 11 :
@@ -788,7 +894,7 @@ function closeSLOs() {
   function openStudy() {
     if (requestInFlight.current) return;
 
-    setSelectedStudyChapter(null);
+    setStudyListOpen(true);
     setView("study");
     setSidebarOpen(false);
   }
@@ -799,17 +905,31 @@ function closeSLOs() {
     setSidebarOpen(false);
   }
 
-  function practiceSLO(slo: SLO, subject = "Computer Science") {
-    if (requestInFlight.current) return;
-
-    // Explicitly reference the real SLO in the question.
-    // Existing backend SLO matching remains unchanged.
-    const prompt =
-      `Explain this ${subject} learning outcome ` +
+  function studySloPrompt(slo: SLO) {
+    const subject = STUDY_SUBJECTS.find((item) => item.id === studySubject)?.name ?? "Computer Science";
+    return `Explain this ${subject} learning outcome ` +
       `in an exam-style answer: ${slo.statement} ` +
       `(SLO ${slo.slo_code}).`;
+  }
 
-    void askAI(prompt);
+  function selectStudySlo(slo: SLO) {
+    if (!historyLoaded) return;
+    if (pendingStudySlo.current === slo.slo_code ||
+        queuedStudySlos.current.some((request) => request.code === slo.slo_code)) return;
+    // Only queue behind another SLO request; other chat requests retain their guard.
+    if (requestInFlight.current && !pendingStudySlo.current) return;
+    setSelectedStudySlo(slo);
+    setQuestion("");
+    setStudyListOpen(false);
+    const prompt = studySloPrompt(slo);
+    if (requestInFlight.current) {
+      queuedStudySlos.current.push({
+        code: slo.slo_code,
+        run: (history) => askAI(prompt, slo, history),
+      });
+    } else {
+      void askAI(prompt, slo);
+    }
   }
 
   function startRename(chat: Chat) {
@@ -995,7 +1115,7 @@ function closeSLOs() {
               classLevel,
               subjectSlug: selectionSubjectSlug,
             })}
-            onClick={() => setSidebarOpen(false)}
+            onClick={openStudy}
             className={`babul-nav-item ${view === "study" ? "is-active" : ""}`}
           >
             <span className="babul-icon-tile"><BookOpen size={18} /></span>
@@ -1099,7 +1219,10 @@ function closeSLOs() {
                       >
                         <span className="babul-recent-title">
                           <MessageSquare size={16} />
-                          <span>{chat.title}</span>
+                          <span>
+                            <span className="block">AKU-EB Curriculum</span>
+                            <span className="block">{savedChatSubject(chat) ?? "Subject unavailable"}</span>
+                          </span>
                         </span>
                       </button>
 
@@ -1133,8 +1256,10 @@ function closeSLOs() {
         <div className="babul-profile mt-4">
           <span className="babul-avatar" aria-hidden="true">B</span>
           <div>
-            <p>Grade 12</p>
-            <span>Computer Science</span>
+            <p>AKU-EB Curriculum</p>
+            <span>{activeChat
+              ? savedChatSubject(activeChat) ?? "Subject unavailable"
+              : subjectLabel(selectionSubjectSlug) ?? "Subject unavailable"}</span>
           </div>
         </div>
       </aside>
@@ -1163,7 +1288,7 @@ function closeSLOs() {
           </div>
 
           <span className="babul-status">
-            {STUDY_SUBJECTS.find((subject) => subject.id === initialSubject)?.name ??
+            {STUDY_SUBJECTS.find((subject) => subject.id === (view === "chat" ? selectionSubjectSlug : initialSubject))?.name ??
               "Computer Science"}{" "}
             <span aria-hidden="true">·</span> Grade {initialGrade}
           </span>
@@ -1201,7 +1326,7 @@ function closeSLOs() {
       <button
         type="button"
         onClick={closeSLOs}
-        className="rounded-lg border px-4 py-2 text-sm hover:bg-slate-100"
+        className="rounded-lg border px-4 py-2 text-sm hover:bg-slate-900 hover:text-white focus-visible:bg-slate-900 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
       >
         <X className="mr-1 inline" size={16} />
         Close SLOs
@@ -1373,163 +1498,75 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
       </div>
     )}
   </div>
-) : view === "study" ? (
-          <div className="min-h-0 flex-1 overflow-y-auto bg-slate-50 px-4 py-8">
-            <div className="mx-auto max-w-5xl">
-              
-
-              {studyChaptersLoading ? (
-                <p className="mt-8 text-slate-500">Loading study chapters...</p>
-              ) : studyChaptersError ? (
-                <p className="mt-8 rounded-xl bg-red-50 p-4 text-red-700">{studyChaptersError}</p>
-              ) : studyChapters.length === 0 ? (
-                <p className="mt-8 rounded-xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
-                  No syllabus data is available in the production database for{" "}
-                  {STUDY_SUBJECTS.find((subject) => subject.id === studySubject)?.name}{" "}
-                  Grade {studyGrade} yet.
-                </p>
-              ) : (
-                <>
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    <span className="rounded-lg bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">
-                      {studyChapters.length} Chapters
-                    </span>
-                    <span className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-700">
-                      {studyChapters.reduce(
-                        (total, chapter) => total + chapter.slos.length,
-                        0
-                      )}{" "}
-                      Learning Outcomes
-                    </span>
-                  </div>
-
-                  <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {studyChapters.map((chapter) => {
-                      const chapterTitle = getStudyChapterTitle(
-                        studySubject,
-                        studyGrade,
-                        chapter
-                      );
-
-                      return (
-                        <button
-                          key={chapter.chapter}
-                          type="button"
-                          onClick={() => setSelectedStudyChapter(chapter.chapter)}
-                          className={`rounded-2xl border p-5 text-left transition hover:border-blue-400 hover:shadow-sm ${
-                            selectedStudyChapter === chapter.chapter
-                              ? "border-blue-500 bg-blue-50"
-                              : "border-slate-200 bg-white"
-                          }`}
-                        >
-                          <span className="babul-icon-tile mb-3"><BookOpen size={18} /></span>
-                          <h3 className="font-bold">{chapterTitle}</h3>
-                          <p className="mt-2 text-sm text-slate-500">{chapter.slos.length} SLOs</p>
-                          <p className="mt-3 text-sm font-medium text-blue-700">View learning outcomes →</p>
-                        </button>
-                      );
-                    })}
-                  </div>
-
-                  {studyCurrentChapter && (
-                    <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5">
-                      <h3 className="text-xl font-bold">
-                        {getStudyChapterTitle(
-                          studySubject,
-                          studyGrade,
-                          studyCurrentChapter
-                        )}
-                        {" "} — Learning Outcomes
-                      </h3>
-
-                      {studySubject !== "computer-science" && (
-                        <div className="mt-5 space-y-4">
-                          {Array.from(
-                            studyCurrentChapter.slos.reduce((groups, slo) => {
-                              const key = slo.topic || "general";
-                              const label = slo.topic_title || `Subtopic ${slo.topic}`;
-                              const current = groups.get(key) ?? { title: label, slos: [] as SLO[] };
-                              current.slos.push(slo);
-                              groups.set(key, current);
-                              return groups;
-                            }, new Map<string, { title: string; slos: SLO[] }>())
-                          ).map(([topicKey, group]) => (
-                            <div key={topicKey} className="rounded-xl border border-slate-200 p-4">
-                              <h4 className="text-base font-bold text-slate-800">{group.title}</h4>
-                              <div className="mt-3 space-y-3">
-                                {group.slos.map((slo) => (
-                                  <div key={slo.slo_code} className="rounded-lg border border-slate-200 bg-slate-50 p-3">
-                                    <div className="flex flex-wrap items-center gap-2">
-                                      <span className="rounded bg-blue-100 px-2 py-1 text-[11px] font-semibold text-blue-700">
-                                        SLO {slo.slo_code}
-                                      </span>
-                                      {slo.page != null && (
-                                        <span className="text-[11px] text-slate-500">Page {slo.page}</span>
-                                      )}
-                                    </div>
-                                    <p className="mt-2 text-sm leading-6 text-slate-700">{slo.statement}</p>
-                                    <button
-                                      type="button"
-                                      onClick={() => practiceSLO(
-                                        slo,
-                                        STUDY_SUBJECTS.find((subject) => subject.id === studySubject)?.name
-                                      )}
-                                      disabled={loading || !historyLoaded}
-                                      className="mt-3 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
-                                    >
-                                      Practice with AI
-                                    </button>
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-
-                      {studySubject === "computer-science" && (
-                        <div className="mt-5 space-y-3">
-                          {[...studyCurrentChapter.slos]
-  .sort((a, b) =>
-    a.slo_code.localeCompare(b.slo_code, undefined, {
-      numeric: true,
-    })
-  )
-  .map((slo) => (
-                            <div key={slo.slo_code} className="rounded-xl border border-slate-200 p-4">
-                              <div className="flex flex-wrap items-center gap-2">
-                                <span className="rounded-lg bg-blue-100 px-2 py-1 text-xs font-semibold text-blue-700">
-                                  SLO {slo.slo_code}
-                                </span>
-                                <span className="text-xs text-slate-500">Topic {slo.topic}</span>
-                                {slo.page != null && (
-                                  <span className="text-xs text-slate-500">• SLO document page {slo.page}</span>
-                                )}
-                              </div>
-                              <p className="mt-3 text-sm leading-6 text-slate-700">{slo.statement}</p>
-                              <button
-                                type="button"
-                                onClick={() => practiceSLO(slo, "Computer Science")}
-                                disabled={loading || !historyLoaded}
-                                className="mt-4 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
-                              >
-                                Practice with AI
-                              </button>
-                            </div>
+) : (
+          <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
+            {view === "study" && (
+              <>
+                <button
+                  type="button"
+                  className="shrink-0 border-b border-slate-200 bg-slate-50 px-4 py-3 text-left text-sm font-semibold text-blue-700 lg:hidden"
+                  onClick={() => setStudyListOpen((open) => !open)}
+                  aria-expanded={studyListOpen}
+                  aria-controls="study-chapter-list"
+                >
+                  {studyListOpen ? "Show chat" : "Chapters and SLOs"}
+                </button>
+                <aside
+                  id="study-chapter-list"
+                  aria-label="Chapters and learning outcomes"
+                  className={`${studyListOpen ? "flex" : "hidden"} min-h-0 flex-1 flex-col overflow-y-auto border-r border-slate-200 bg-slate-50 p-4 lg:flex lg:w-80 lg:flex-none xl:w-96`}
+                >
+                  {studyChaptersLoading ? (
+                    <p className="text-sm text-slate-500">Loading study chapters...</p>
+                  ) : studyChaptersError ? (
+                    <p className="rounded-xl bg-red-50 p-4 text-sm text-red-700">{studyChaptersError}</p>
+                  ) : studyChapters.length === 0 ? (
+                    <p className="text-sm text-slate-600">No syllabus data is available for this subject yet.</p>
+                  ) : studyChapters.map((chapter) => (
+                    <section key={chapter.chapter} className="mb-3 rounded-xl border border-slate-200 bg-white">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedStudyChapter((current) => current === chapter.chapter ? null : chapter.chapter)}
+                        aria-expanded={selectedStudyChapter === chapter.chapter}
+                        aria-controls={`study-chapter-${chapter.chapter}`}
+                        className={`w-full rounded-xl p-4 text-left text-sm font-bold ${selectedStudyChapter === chapter.chapter ? "bg-blue-50 text-blue-700" : "text-slate-800"}`}
+                      >
+                        {getStudyChapterTitle(studySubject, studyGrade, chapter)}
+                        <span className="mt-1 block text-xs font-normal text-slate-500">{chapter.slos.length} SLOs</span>
+                      </button>
+                      {selectedStudyChapter === chapter.chapter && (
+                        <div id={`study-chapter-${chapter.chapter}`} className="space-y-2 p-2">
+                          {[...chapter.slos].sort((a, b) => a.slo_code.localeCompare(b.slo_code, undefined, { numeric: true })).map((slo) => (
+                            <button
+                              key={slo.slo_code}
+                              type="button"
+                              onClick={() => selectStudySlo(slo)}
+                              disabled={!historyLoaded}
+                              aria-pressed={selectedStudySlo?.slo_code === slo.slo_code}
+                              className={`w-full rounded-lg border p-3 text-left text-sm transition hover:border-blue-400 ${selectedStudySlo?.slo_code === slo.slo_code ? "border-blue-500 bg-blue-50" : "border-slate-200 bg-white"}`}
+                            >
+                              <span className="font-semibold text-blue-700">SLO {slo.slo_code}</span>
+                              {slo.topic_title && <span className="mt-1 block text-xs text-slate-500">{slo.topic_title}</span>}
+                              <span className="mt-2 block leading-6 text-slate-700">{slo.statement}</span>
+                            </button>
                           ))}
                         </div>
                       )}
                     </section>
-                  )}
-                </>
+                  ))}
+                </aside>
+              </>
+            )}
+            <div className={`${view === "study" && studyListOpen ? "hidden lg:flex" : "flex"} min-h-0 min-w-0 flex-1 flex-col`}>
+              {view === "study" && (
+                <div className="shrink-0 border-b border-slate-200 bg-white px-4 py-3">
+                  <p className="text-sm font-semibold text-blue-700">{selectedStudySlo ? `SLO ${selectedStudySlo.slo_code}` : "Select a learning outcome"}</p>
+                  {selectedStudySlo && <p className="mt-1 line-clamp-2 text-sm text-slate-600">{selectedStudySlo.statement}</p>}
+                </div>
               )}
-            </div>
-          </div>
-        ) : (
-          <>
             <div className="babul-feed min-h-0 flex-1 overflow-y-auto">
               <div className="babul-conversation mx-auto">
-                {messages.length === 0 && (
+                {messages.length === 0 && view !== "study" && (
                   <div className="babul-welcome">
                     <div className="babul-welcome-icon">
                       <MessageSquare size={24} />
@@ -1635,7 +1672,7 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                   </div>
                 ))}
 
-                {loading && (
+                {visibleChatLoading && (
                   <div
                     className="flex justify-start"
                     role="status"
@@ -1668,7 +1705,8 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                       e.currentTarget.style.height = `${e.currentTarget.scrollHeight}px`;
                     }}
                     onKeyDown={handleQuestionKeyDown}
-                    placeholder="Ask your Computer Science question..."
+                    disabled={view === "study" && !selectedStudySlo}
+                    placeholder={view === "study" ? "Ask about this learning outcome..." : "Ask your Computer Science question..."}
                     rows={1}
                     className="babul-textarea"
                     aria-label="Your question"
@@ -1709,7 +1747,7 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
 
                     <button
                       onClick={() => void askAI()}
-                      disabled={loading || !question.trim() || !historyLoaded}
+                      disabled={loading || !question.trim() || !historyLoaded || (view === "study" && !selectedStudySlo)}
                       className="babul-send"
                     >
                       <span>{loading ? "Sending" : "Send"}</span>
@@ -1723,7 +1761,8 @@ className="w-full min-h-14 rounded-xl border-2 border-blue-300 bg-blue-50 px-5 p
                 </p>
               </div>
             </div>
-          </>
+            </div>
+          </div>
         )}
       </main>
     </div>

@@ -1,3 +1,5 @@
+import { GroqRateLimitError } from "./groq-rate-limit.ts";
+
 const STOP = new Set(
   (
     "a an the and or of in on to for with what why how is are was were " +
@@ -91,19 +93,34 @@ export function isAffirmative(value: string): boolean {
   return yesReply.test(clean) || actionReply.test(clean);
 }
 
+
 export function isBriefFollowUp(value: string): boolean {
-  const clean = value.trim().toLowerCase();
-  if (tokens(clean).length > 3) return false;
+  const clean = value
+    .trim()
+    .toLowerCase()
+    .replace(/\s*\(?[1-5]\s*(?:marks?|pts?|points?)\)?\s*$/i, "")
+    .replace(/[.!?]+$/g, "")
+    .trim();
+
+  if (!clean || tokens(clean).length > 8) {
+    return false;
+  }
+
+  if (isAffirmative(clean)) {
+    return true;
+  }
 
   return (
-    isAffirmative(clean) ||
-    /^(?:practice|example|again|dobara|short|detail|step|line|meaning|matlab|repeat)(?:\s+(?:it|that|this|question|selected|one))*[.!?]*$/i
-      .test(clean) ||
-    /^(why|how|what)[?.!]*$/i.test(clean) ||
-    /^(?:why|how|what|explain|describe|define|repeat)\s+(?:(?:is|does|did|can|could|would|about)\s+)?(?:this|that|it|they|he|she|these|those|ye|yeh|iska|iski|meaning|matlab)\b/i
-      .test(clean)
+    /^(?:samj|samajh|samjh|smjh)\s+(?:nahi|nahin|nhi|nh|nai|nahu)\s+(?:aya|aaya|ai|ayi)$/i.test(clean) ||
+    /^(?:samjhao|samjha[o]?|samjha do|samjhao na|samjha dein|samjha do please)$/i.test(clean) ||
+    /^(?:explain|explain again|explain please|explain simply|explain in simple words)$/i.test(clean) ||
+    /^(?:example|example do|example de do|give example|give an example)$/i.test(clean) ||
+    /^(?:dobara|dobara samjhao|phir se samjhao|repeat|again|short|detail|step|meaning|matlab|practice)$/i.test(clean) ||
+    /^(?:why|how|what)$/i.test(clean) ||
+    /^(?:why|how|what|explain|describe|define|repeat)\s+(?:(?:is|does|did|can|could|would|about)\s+)?(?:this|that|it|they|he|she|these|those|ye|yeh|iska|iski|meaning|matlab)\b/i.test(clean)
   );
 }
+  
 
 type ScopeSlo = {
   slo_code: string;
@@ -144,6 +161,8 @@ async function requestBooleanDecision(
       }),
     },
   );
+
+  if (response.status === 429) throw new GroqRateLimitError();
 
   if (!response.ok) {
     throw new Error(`Groq validation request failed: ${response.status}`);

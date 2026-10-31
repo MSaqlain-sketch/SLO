@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  height: 100dvh;
+  min-height: 0;
+  flex-direction: column;
+}
+
+.navbar {
+  position: relative;
+  z-index: 40;
+  flex: none;
+}
+
+.workspace {
+  position: relative;
+  isolation: isolate;
+  min-height: 0;
+  flex: 1;
+}
+
+.workspace :global(.babul-app) {
+  height: 100%;
+  min-height: 0;
+}
+
+.workspace :global(.babul-sidebar) {
+  position: absolute;
+  height: 100%;
+}
+
+.workspace :global(button[aria-label="Close sidebar"]) {
+  position: absolute;
+}
