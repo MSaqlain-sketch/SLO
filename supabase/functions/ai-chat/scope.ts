@@ -113,7 +113,7 @@ export function isBriefFollowUp(value: string): boolean {
   return (
     /^(?:samj|samajh|samjh|smjh)\s+(?:nahi|nahin|nhi|nh|nai|nahu)\s+(?:aya|aaya|ai|ayi)$/i.test(clean) ||
     /^(?:samjhao|samjha[o]?|samjha do|samjhao na|samjha dein|samjha do please)$/i.test(clean) ||
-    /^(?:explain|explain again|explain please|explain simply|explain in simple words)$/i.test(clean) ||
+    /^(?:explain|explain again|explain please|explain simply|explain in simple words|easy wording|easy wording ma )$/i.test(clean) ||
     /^(?:example|example do|example de do|give example|give an example)$/i.test(clean) ||
     /^(?:dobara|dobara samjhao|phir se samjhao|repeat|again|short|detail|step|meaning|matlab|practice)$/i.test(clean) ||
     /^(?:why|how|what)$/i.test(clean) ||

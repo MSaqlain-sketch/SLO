@@ -1,5 +1,6 @@
-import FeatureRoute from "../../components/feature-route";
+import { Suspense } from "react";
+import AuthScreen, { type AuthSearch } from "../../components/auth/auth-screen";
 
-export default function Page() {
-  return <FeatureRoute feature="login" />;
+export default function Page(props: { searchParams: AuthSearch }) {
+  return <Suspense fallback={<p className="p-6">Loading...</p>}><AuthScreen mode="login" {...props} /></Suspense>;
 }
